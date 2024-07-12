@@ -1,0 +1,2174 @@
+|ula_32bit
+COUT <= ula_8bit:inst4.COUT
+F[0] => ula_8bit:inst.INC
+F[1] => ula_8bit:inst.INVA
+F[1] => ula_8bit:inst2.INVA
+F[1] => ula_8bit:inst3.INVA
+F[1] => ula_8bit:inst4.INVA
+F[2] => ula_8bit:inst.ENB
+F[2] => ula_8bit:inst2.ENB
+F[2] => ula_8bit:inst3.ENB
+F[2] => ula_8bit:inst4.ENB
+F[3] => ula_8bit:inst.ENA
+F[3] => ula_8bit:inst2.ENA
+F[3] => ula_8bit:inst3.ENA
+F[3] => ula_8bit:inst4.ENA
+F[4] => ula_8bit:inst.F1
+F[4] => ula_8bit:inst2.F1
+F[4] => ula_8bit:inst3.F1
+F[4] => ula_8bit:inst4.F1
+F[5] => ula_8bit:inst.F0
+F[5] => ula_8bit:inst2.F0
+F[5] => ula_8bit:inst3.F0
+F[5] => ula_8bit:inst4.F0
+A[0] => ula_8bit:inst.A[0]
+A[1] => ula_8bit:inst.A[1]
+A[2] => ula_8bit:inst.A[2]
+A[3] => ula_8bit:inst.A[3]
+A[4] => ula_8bit:inst.A[4]
+A[5] => ula_8bit:inst.A[5]
+A[6] => ula_8bit:inst.A[6]
+A[7] => ula_8bit:inst.A[7]
+A[8] => ula_8bit:inst2.A[0]
+A[9] => ula_8bit:inst2.A[1]
+A[10] => ula_8bit:inst2.A[2]
+A[11] => ula_8bit:inst2.A[3]
+A[12] => ula_8bit:inst2.A[4]
+A[13] => ula_8bit:inst2.A[5]
+A[14] => ula_8bit:inst2.A[6]
+A[15] => ula_8bit:inst2.A[7]
+A[16] => ula_8bit:inst3.A[0]
+A[17] => ula_8bit:inst3.A[1]
+A[18] => ula_8bit:inst3.A[2]
+A[19] => ula_8bit:inst3.A[3]
+A[20] => ula_8bit:inst3.A[4]
+A[21] => ula_8bit:inst3.A[5]
+A[22] => ula_8bit:inst3.A[6]
+A[23] => ula_8bit:inst3.A[7]
+A[24] => ula_8bit:inst4.A[0]
+A[25] => ula_8bit:inst4.A[1]
+A[26] => ula_8bit:inst4.A[2]
+A[27] => ula_8bit:inst4.A[3]
+A[28] => ula_8bit:inst4.A[4]
+A[29] => ula_8bit:inst4.A[5]
+A[30] => ula_8bit:inst4.A[6]
+A[31] => ula_8bit:inst4.A[7]
+B[0] => ula_8bit:inst.B[0]
+B[1] => ula_8bit:inst.B[1]
+B[2] => ula_8bit:inst.B[2]
+B[3] => ula_8bit:inst.B[3]
+B[4] => ula_8bit:inst.B[4]
+B[5] => ula_8bit:inst.B[5]
+B[6] => ula_8bit:inst.B[6]
+B[7] => ula_8bit:inst.B[7]
+B[8] => ula_8bit:inst2.B[0]
+B[9] => ula_8bit:inst2.B[1]
+B[10] => ula_8bit:inst2.B[2]
+B[11] => ula_8bit:inst2.B[3]
+B[12] => ula_8bit:inst2.B[4]
+B[13] => ula_8bit:inst2.B[5]
+B[14] => ula_8bit:inst2.B[6]
+B[15] => ula_8bit:inst2.B[7]
+B[16] => ula_8bit:inst3.B[0]
+B[17] => ula_8bit:inst3.B[1]
+B[18] => ula_8bit:inst3.B[2]
+B[19] => ula_8bit:inst3.B[3]
+B[20] => ula_8bit:inst3.B[4]
+B[21] => ula_8bit:inst3.B[5]
+B[22] => ula_8bit:inst3.B[6]
+B[23] => ula_8bit:inst3.B[7]
+B[24] => ula_8bit:inst4.B[0]
+B[25] => ula_8bit:inst4.B[1]
+B[26] => ula_8bit:inst4.B[2]
+B[27] => ula_8bit:inst4.B[3]
+B[28] => ula_8bit:inst4.B[4]
+B[29] => ula_8bit:inst4.B[5]
+B[30] => ula_8bit:inst4.B[6]
+B[31] => ula_8bit:inst4.B[7]
+N <= ula_8bit:inst4.S[7]
+S[0] <= ula_8bit:inst.S[0]
+S[1] <= ula_8bit:inst.S[1]
+S[2] <= ula_8bit:inst.S[2]
+S[3] <= ula_8bit:inst.S[3]
+S[4] <= ula_8bit:inst.S[4]
+S[5] <= ula_8bit:inst.S[5]
+S[6] <= ula_8bit:inst.S[6]
+S[7] <= ula_8bit:inst.S[7]
+S[8] <= ula_8bit:inst2.S[0]
+S[9] <= ula_8bit:inst2.S[1]
+S[10] <= ula_8bit:inst2.S[2]
+S[11] <= ula_8bit:inst2.S[3]
+S[12] <= ula_8bit:inst2.S[4]
+S[13] <= ula_8bit:inst2.S[5]
+S[14] <= ula_8bit:inst2.S[6]
+S[15] <= ula_8bit:inst2.S[7]
+S[16] <= ula_8bit:inst3.S[0]
+S[17] <= ula_8bit:inst3.S[1]
+S[18] <= ula_8bit:inst3.S[2]
+S[19] <= ula_8bit:inst3.S[3]
+S[20] <= ula_8bit:inst3.S[4]
+S[21] <= ula_8bit:inst3.S[5]
+S[22] <= ula_8bit:inst3.S[6]
+S[23] <= ula_8bit:inst3.S[7]
+S[24] <= ula_8bit:inst4.S[0]
+S[25] <= ula_8bit:inst4.S[1]
+S[26] <= ula_8bit:inst4.S[2]
+S[27] <= ula_8bit:inst4.S[3]
+S[28] <= ula_8bit:inst4.S[4]
+S[29] <= ula_8bit:inst4.S[5]
+S[30] <= ula_8bit:inst4.S[6]
+S[31] <= ula_8bit:inst4.S[7]
+Z <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= inst18[0].DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= inst18[1].DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= inst18[2].DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= inst18[3].DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= inst18[4].DB_MAX_OUTPUT_PORT_TYPE
+C[5] <= inst18[5].DB_MAX_OUTPUT_PORT_TYPE
+C[6] <= inst18[6].DB_MAX_OUTPUT_PORT_TYPE
+C[7] <= inst18[7].DB_MAX_OUTPUT_PORT_TYPE
+C[8] <= inst18[8].DB_MAX_OUTPUT_PORT_TYPE
+C[9] <= inst18[9].DB_MAX_OUTPUT_PORT_TYPE
+C[10] <= inst18[10].DB_MAX_OUTPUT_PORT_TYPE
+C[11] <= inst18[11].DB_MAX_OUTPUT_PORT_TYPE
+C[12] <= inst18[12].DB_MAX_OUTPUT_PORT_TYPE
+C[13] <= inst18[13].DB_MAX_OUTPUT_PORT_TYPE
+C[14] <= inst18[14].DB_MAX_OUTPUT_PORT_TYPE
+C[15] <= inst18[15].DB_MAX_OUTPUT_PORT_TYPE
+C[16] <= inst18[16].DB_MAX_OUTPUT_PORT_TYPE
+C[17] <= inst18[17].DB_MAX_OUTPUT_PORT_TYPE
+C[18] <= inst18[18].DB_MAX_OUTPUT_PORT_TYPE
+C[19] <= inst18[19].DB_MAX_OUTPUT_PORT_TYPE
+C[20] <= inst18[20].DB_MAX_OUTPUT_PORT_TYPE
+C[21] <= inst18[21].DB_MAX_OUTPUT_PORT_TYPE
+C[22] <= inst18[22].DB_MAX_OUTPUT_PORT_TYPE
+C[23] <= inst18[23].DB_MAX_OUTPUT_PORT_TYPE
+C[24] <= inst18[24].DB_MAX_OUTPUT_PORT_TYPE
+C[25] <= inst18[25].DB_MAX_OUTPUT_PORT_TYPE
+C[26] <= inst18[26].DB_MAX_OUTPUT_PORT_TYPE
+C[27] <= inst18[27].DB_MAX_OUTPUT_PORT_TYPE
+C[28] <= inst18[28].DB_MAX_OUTPUT_PORT_TYPE
+C[29] <= inst18[29].DB_MAX_OUTPUT_PORT_TYPE
+C[30] <= inst18[30].DB_MAX_OUTPUT_PORT_TYPE
+C[31] <= inst18[31].DB_MAX_OUTPUT_PORT_TYPE
+SLL8 => decoder2_4:inst1.A
+SRA1 => decoder2_4:inst1.B
+
+
+|ula_32bit|ula_8bit:inst4
+COUT <= ula_1bit:inst3.COUT
+INC => ula_1bit:inst6.CIN
+INVA => ula_1bit:inst6.INVA
+INVA => ula_1bit:inst5.INVA
+INVA => ula_1bit:inst8.INVA
+INVA => ula_1bit:inst7.INVA
+INVA => ula_1bit:inst.INVA
+INVA => ula_1bit:inst2.INVA
+INVA => ula_1bit:inst4.INVA
+INVA => ula_1bit:inst3.INVA
+A[0] => ula_1bit:inst6.A
+A[1] => ula_1bit:inst5.A
+A[2] => ula_1bit:inst8.A
+A[3] => ula_1bit:inst7.A
+A[4] => ula_1bit:inst.A
+A[5] => ula_1bit:inst2.A
+A[6] => ula_1bit:inst4.A
+A[7] => ula_1bit:inst3.A
+ENA => ula_1bit:inst6.ENA
+ENA => ula_1bit:inst5.ENA
+ENA => ula_1bit:inst8.ENA
+ENA => ula_1bit:inst7.ENA
+ENA => ula_1bit:inst.ENA
+ENA => ula_1bit:inst2.ENA
+ENA => ula_1bit:inst4.ENA
+ENA => ula_1bit:inst3.ENA
+B[0] => ula_1bit:inst6.B
+B[1] => ula_1bit:inst5.B
+B[2] => ula_1bit:inst8.B
+B[3] => ula_1bit:inst7.B
+B[4] => ula_1bit:inst.B
+B[5] => ula_1bit:inst2.B
+B[6] => ula_1bit:inst4.B
+B[7] => ula_1bit:inst3.B
+ENB => ula_1bit:inst6.ENB
+ENB => ula_1bit:inst5.ENB
+ENB => ula_1bit:inst8.ENB
+ENB => ula_1bit:inst7.ENB
+ENB => ula_1bit:inst.ENB
+ENB => ula_1bit:inst2.ENB
+ENB => ula_1bit:inst4.ENB
+ENB => ula_1bit:inst3.ENB
+F0 => ula_1bit:inst6.F0
+F0 => ula_1bit:inst5.F0
+F0 => ula_1bit:inst8.F0
+F0 => ula_1bit:inst7.F0
+F0 => ula_1bit:inst.F0
+F0 => ula_1bit:inst2.F0
+F0 => ula_1bit:inst4.F0
+F0 => ula_1bit:inst3.F0
+F1 => ula_1bit:inst6.F1
+F1 => ula_1bit:inst5.F1
+F1 => ula_1bit:inst8.F1
+F1 => ula_1bit:inst7.F1
+F1 => ula_1bit:inst.F1
+F1 => ula_1bit:inst2.F1
+F1 => ula_1bit:inst4.F1
+F1 => ula_1bit:inst3.F1
+S[0] <= ula_1bit:inst6.S
+S[1] <= ula_1bit:inst5.S
+S[2] <= ula_1bit:inst8.S
+S[3] <= ula_1bit:inst7.S
+S[4] <= ula_1bit:inst.S
+S[5] <= ula_1bit:inst2.S
+S[6] <= ula_1bit:inst4.S
+S[7] <= ula_1bit:inst3.S
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst3
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst3|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst3|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst3|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst4
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst4|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst4|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst4|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst2
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst2|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst2|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst2|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst7
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst7|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst7|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst7|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst8
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst8|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst8|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst8|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst5
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst5|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst5|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst5|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst6
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst6|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst6|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst4|ula_1bit:inst6|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3
+COUT <= ula_1bit:inst3.COUT
+INC => ula_1bit:inst6.CIN
+INVA => ula_1bit:inst6.INVA
+INVA => ula_1bit:inst5.INVA
+INVA => ula_1bit:inst8.INVA
+INVA => ula_1bit:inst7.INVA
+INVA => ula_1bit:inst.INVA
+INVA => ula_1bit:inst2.INVA
+INVA => ula_1bit:inst4.INVA
+INVA => ula_1bit:inst3.INVA
+A[0] => ula_1bit:inst6.A
+A[1] => ula_1bit:inst5.A
+A[2] => ula_1bit:inst8.A
+A[3] => ula_1bit:inst7.A
+A[4] => ula_1bit:inst.A
+A[5] => ula_1bit:inst2.A
+A[6] => ula_1bit:inst4.A
+A[7] => ula_1bit:inst3.A
+ENA => ula_1bit:inst6.ENA
+ENA => ula_1bit:inst5.ENA
+ENA => ula_1bit:inst8.ENA
+ENA => ula_1bit:inst7.ENA
+ENA => ula_1bit:inst.ENA
+ENA => ula_1bit:inst2.ENA
+ENA => ula_1bit:inst4.ENA
+ENA => ula_1bit:inst3.ENA
+B[0] => ula_1bit:inst6.B
+B[1] => ula_1bit:inst5.B
+B[2] => ula_1bit:inst8.B
+B[3] => ula_1bit:inst7.B
+B[4] => ula_1bit:inst.B
+B[5] => ula_1bit:inst2.B
+B[6] => ula_1bit:inst4.B
+B[7] => ula_1bit:inst3.B
+ENB => ula_1bit:inst6.ENB
+ENB => ula_1bit:inst5.ENB
+ENB => ula_1bit:inst8.ENB
+ENB => ula_1bit:inst7.ENB
+ENB => ula_1bit:inst.ENB
+ENB => ula_1bit:inst2.ENB
+ENB => ula_1bit:inst4.ENB
+ENB => ula_1bit:inst3.ENB
+F0 => ula_1bit:inst6.F0
+F0 => ula_1bit:inst5.F0
+F0 => ula_1bit:inst8.F0
+F0 => ula_1bit:inst7.F0
+F0 => ula_1bit:inst.F0
+F0 => ula_1bit:inst2.F0
+F0 => ula_1bit:inst4.F0
+F0 => ula_1bit:inst3.F0
+F1 => ula_1bit:inst6.F1
+F1 => ula_1bit:inst5.F1
+F1 => ula_1bit:inst8.F1
+F1 => ula_1bit:inst7.F1
+F1 => ula_1bit:inst.F1
+F1 => ula_1bit:inst2.F1
+F1 => ula_1bit:inst4.F1
+F1 => ula_1bit:inst3.F1
+S[0] <= ula_1bit:inst6.S
+S[1] <= ula_1bit:inst5.S
+S[2] <= ula_1bit:inst8.S
+S[3] <= ula_1bit:inst7.S
+S[4] <= ula_1bit:inst.S
+S[5] <= ula_1bit:inst2.S
+S[6] <= ula_1bit:inst4.S
+S[7] <= ula_1bit:inst3.S
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst3
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst3|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst3|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst3|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst4
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst4|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst4|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst4|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst2
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst2|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst2|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst2|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst7
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst7|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst7|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst7|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst8
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst8|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst8|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst8|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst5
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst5|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst5|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst5|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst6
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst6|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst6|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst3|ula_1bit:inst6|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2
+COUT <= ula_1bit:inst3.COUT
+INC => ula_1bit:inst6.CIN
+INVA => ula_1bit:inst6.INVA
+INVA => ula_1bit:inst5.INVA
+INVA => ula_1bit:inst8.INVA
+INVA => ula_1bit:inst7.INVA
+INVA => ula_1bit:inst.INVA
+INVA => ula_1bit:inst2.INVA
+INVA => ula_1bit:inst4.INVA
+INVA => ula_1bit:inst3.INVA
+A[0] => ula_1bit:inst6.A
+A[1] => ula_1bit:inst5.A
+A[2] => ula_1bit:inst8.A
+A[3] => ula_1bit:inst7.A
+A[4] => ula_1bit:inst.A
+A[5] => ula_1bit:inst2.A
+A[6] => ula_1bit:inst4.A
+A[7] => ula_1bit:inst3.A
+ENA => ula_1bit:inst6.ENA
+ENA => ula_1bit:inst5.ENA
+ENA => ula_1bit:inst8.ENA
+ENA => ula_1bit:inst7.ENA
+ENA => ula_1bit:inst.ENA
+ENA => ula_1bit:inst2.ENA
+ENA => ula_1bit:inst4.ENA
+ENA => ula_1bit:inst3.ENA
+B[0] => ula_1bit:inst6.B
+B[1] => ula_1bit:inst5.B
+B[2] => ula_1bit:inst8.B
+B[3] => ula_1bit:inst7.B
+B[4] => ula_1bit:inst.B
+B[5] => ula_1bit:inst2.B
+B[6] => ula_1bit:inst4.B
+B[7] => ula_1bit:inst3.B
+ENB => ula_1bit:inst6.ENB
+ENB => ula_1bit:inst5.ENB
+ENB => ula_1bit:inst8.ENB
+ENB => ula_1bit:inst7.ENB
+ENB => ula_1bit:inst.ENB
+ENB => ula_1bit:inst2.ENB
+ENB => ula_1bit:inst4.ENB
+ENB => ula_1bit:inst3.ENB
+F0 => ula_1bit:inst6.F0
+F0 => ula_1bit:inst5.F0
+F0 => ula_1bit:inst8.F0
+F0 => ula_1bit:inst7.F0
+F0 => ula_1bit:inst.F0
+F0 => ula_1bit:inst2.F0
+F0 => ula_1bit:inst4.F0
+F0 => ula_1bit:inst3.F0
+F1 => ula_1bit:inst6.F1
+F1 => ula_1bit:inst5.F1
+F1 => ula_1bit:inst8.F1
+F1 => ula_1bit:inst7.F1
+F1 => ula_1bit:inst.F1
+F1 => ula_1bit:inst2.F1
+F1 => ula_1bit:inst4.F1
+F1 => ula_1bit:inst3.F1
+S[0] <= ula_1bit:inst6.S
+S[1] <= ula_1bit:inst5.S
+S[2] <= ula_1bit:inst8.S
+S[3] <= ula_1bit:inst7.S
+S[4] <= ula_1bit:inst.S
+S[5] <= ula_1bit:inst2.S
+S[6] <= ula_1bit:inst4.S
+S[7] <= ula_1bit:inst3.S
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst3
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst3|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst3|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst3|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst4
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst4|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst4|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst4|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst2
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst2|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst2|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst2|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst7
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst7|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst7|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst7|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst8
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst8|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst8|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst8|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst5
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst5|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst5|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst5|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst6
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst6|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst6|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst2|ula_1bit:inst6|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst
+COUT <= ula_1bit:inst3.COUT
+INC => ula_1bit:inst6.CIN
+INVA => ula_1bit:inst6.INVA
+INVA => ula_1bit:inst5.INVA
+INVA => ula_1bit:inst8.INVA
+INVA => ula_1bit:inst7.INVA
+INVA => ula_1bit:inst.INVA
+INVA => ula_1bit:inst2.INVA
+INVA => ula_1bit:inst4.INVA
+INVA => ula_1bit:inst3.INVA
+A[0] => ula_1bit:inst6.A
+A[1] => ula_1bit:inst5.A
+A[2] => ula_1bit:inst8.A
+A[3] => ula_1bit:inst7.A
+A[4] => ula_1bit:inst.A
+A[5] => ula_1bit:inst2.A
+A[6] => ula_1bit:inst4.A
+A[7] => ula_1bit:inst3.A
+ENA => ula_1bit:inst6.ENA
+ENA => ula_1bit:inst5.ENA
+ENA => ula_1bit:inst8.ENA
+ENA => ula_1bit:inst7.ENA
+ENA => ula_1bit:inst.ENA
+ENA => ula_1bit:inst2.ENA
+ENA => ula_1bit:inst4.ENA
+ENA => ula_1bit:inst3.ENA
+B[0] => ula_1bit:inst6.B
+B[1] => ula_1bit:inst5.B
+B[2] => ula_1bit:inst8.B
+B[3] => ula_1bit:inst7.B
+B[4] => ula_1bit:inst.B
+B[5] => ula_1bit:inst2.B
+B[6] => ula_1bit:inst4.B
+B[7] => ula_1bit:inst3.B
+ENB => ula_1bit:inst6.ENB
+ENB => ula_1bit:inst5.ENB
+ENB => ula_1bit:inst8.ENB
+ENB => ula_1bit:inst7.ENB
+ENB => ula_1bit:inst.ENB
+ENB => ula_1bit:inst2.ENB
+ENB => ula_1bit:inst4.ENB
+ENB => ula_1bit:inst3.ENB
+F0 => ula_1bit:inst6.F0
+F0 => ula_1bit:inst5.F0
+F0 => ula_1bit:inst8.F0
+F0 => ula_1bit:inst7.F0
+F0 => ula_1bit:inst.F0
+F0 => ula_1bit:inst2.F0
+F0 => ula_1bit:inst4.F0
+F0 => ula_1bit:inst3.F0
+F1 => ula_1bit:inst6.F1
+F1 => ula_1bit:inst5.F1
+F1 => ula_1bit:inst8.F1
+F1 => ula_1bit:inst7.F1
+F1 => ula_1bit:inst.F1
+F1 => ula_1bit:inst2.F1
+F1 => ula_1bit:inst4.F1
+F1 => ula_1bit:inst3.F1
+S[0] <= ula_1bit:inst6.S
+S[1] <= ula_1bit:inst5.S
+S[2] <= ula_1bit:inst8.S
+S[3] <= ula_1bit:inst7.S
+S[4] <= ula_1bit:inst.S
+S[5] <= ula_1bit:inst2.S
+S[6] <= ula_1bit:inst4.S
+S[7] <= ula_1bit:inst3.S
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst3
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst3|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst3|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst3|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst4
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst4|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst4|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst4|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst2
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst2|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst2|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst2|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst7
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst7|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst7|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst7|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst8
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst8|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst8|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst8|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst5
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst5|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst5|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst5|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst6
+COUT <= full_adder_1bit_ula:inst10.COUT
+INVA => inst2.IN0
+A => inst3.IN0
+ENA => inst3.IN1
+B => inst.IN0
+ENB => inst.IN1
+CIN => full_adder_1bit_ula:inst10.CIN
+F0 => decoder2_4:inst6.A
+F1 => decoder2_4:inst6.B
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst6|full_adder_1bit_ula:inst10
+SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN2
+B => inst.IN1
+B => inst2.IN0
+CIN => inst1.IN1
+CIN => inst3.IN2
+EN[3] => inst5.IN1
+EN[3] => inst2.IN1
+EN[3] => inst3.IN1
+COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst6|decoder2_4:inst6
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|ula_8bit:inst|ula_1bit:inst6|logic_unit:inst1
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN1
+B => inst4.IN1
+B => inst6.IN0
+B => inst5.IN0
+EN[0] => inst.IN1
+EN[1] => inst2.IN1
+EN[2] => inst3.IN1
+OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula_32bit|decoder2_4:inst1
+S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst6.IN0
+B => inst2.IN1
+S0 <= instE3R.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
