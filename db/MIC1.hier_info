@@ -1,139 +1,4 @@
-|MDR
-DATA_ADDRESS[0] <= register_32bit:inst.OUTPUT_MEM[0]
-DATA_ADDRESS[1] <= register_32bit:inst.OUTPUT_MEM[1]
-DATA_ADDRESS[2] <= register_32bit:inst.OUTPUT_MEM[2]
-DATA_ADDRESS[3] <= register_32bit:inst.OUTPUT_MEM[3]
-DATA_ADDRESS[4] <= register_32bit:inst.OUTPUT_MEM[4]
-DATA_ADDRESS[5] <= register_32bit:inst.OUTPUT_MEM[5]
-DATA_ADDRESS[6] <= register_32bit:inst.OUTPUT_MEM[6]
-DATA_ADDRESS[7] <= register_32bit:inst.OUTPUT_MEM[7]
-DATA_ADDRESS[8] <= register_32bit:inst.OUTPUT_MEM[8]
-DATA_ADDRESS[9] <= register_32bit:inst.OUTPUT_MEM[9]
-DATA_ADDRESS[10] <= register_32bit:inst.OUTPUT_MEM[10]
-DATA_ADDRESS[11] <= register_32bit:inst.OUTPUT_MEM[11]
-DATA_ADDRESS[12] <= register_32bit:inst.OUTPUT_MEM[12]
-DATA_ADDRESS[13] <= register_32bit:inst.OUTPUT_MEM[13]
-DATA_ADDRESS[14] <= register_32bit:inst.OUTPUT_MEM[14]
-DATA_ADDRESS[15] <= register_32bit:inst.OUTPUT_MEM[15]
-DATA_ADDRESS[16] <= register_32bit:inst.OUTPUT_MEM[16]
-DATA_ADDRESS[17] <= register_32bit:inst.OUTPUT_MEM[17]
-DATA_ADDRESS[18] <= register_32bit:inst.OUTPUT_MEM[18]
-DATA_ADDRESS[19] <= register_32bit:inst.OUTPUT_MEM[19]
-DATA_ADDRESS[20] <= register_32bit:inst.OUTPUT_MEM[20]
-DATA_ADDRESS[21] <= register_32bit:inst.OUTPUT_MEM[21]
-DATA_ADDRESS[22] <= register_32bit:inst.OUTPUT_MEM[22]
-DATA_ADDRESS[23] <= register_32bit:inst.OUTPUT_MEM[23]
-DATA_ADDRESS[24] <= register_32bit:inst.OUTPUT_MEM[24]
-DATA_ADDRESS[25] <= register_32bit:inst.OUTPUT_MEM[25]
-DATA_ADDRESS[26] <= register_32bit:inst.OUTPUT_MEM[26]
-DATA_ADDRESS[27] <= register_32bit:inst.OUTPUT_MEM[27]
-DATA_ADDRESS[28] <= register_32bit:inst.OUTPUT_MEM[28]
-DATA_ADDRESS[29] <= register_32bit:inst.OUTPUT_MEM[29]
-DATA_ADDRESS[30] <= register_32bit:inst.OUTPUT_MEM[30]
-DATA_ADDRESS[31] <= register_32bit:inst.OUTPUT_MEM[31]
-CLOCK => inst7.IN0
-CLOCK => register_32bit:inst.CLOCK
-MIR[0] => inst5.IN3
-MIR[1] => inst5.IN1
-MIR[2] => inst5.IN2
-MIR[3] => inst5.IN0
-MIR[4] => ~NO_FANOUT~
-MIR[5] => inst6.DATAIN
-MIR[6] => register_32bit:inst.OUT_MEM_EN
-MIR[7] => ~NO_FANOUT~
-MIR[8] => inst3.IN1
-MIR[9] => ~NO_FANOUT~
-MIR[10] => ~NO_FANOUT~
-MIR[11] => ~NO_FANOUT~
-MIR[12] => ~NO_FANOUT~
-MIR[13] => ~NO_FANOUT~
-MIR[14] => ~NO_FANOUT~
-MIR[15] => ~NO_FANOUT~
-MIR[16] => ~NO_FANOUT~
-MIR[17] => ~NO_FANOUT~
-MIR[18] => ~NO_FANOUT~
-MIR[19] => ~NO_FANOUT~
-MIR[20] => ~NO_FANOUT~
-MIR[21] => ~NO_FANOUT~
-MIR[22] => ~NO_FANOUT~
-MIR[23] => ~NO_FANOUT~
-MIR[24] => ~NO_FANOUT~
-MIR[25] => ~NO_FANOUT~
-MIR[26] => ~NO_FANOUT~
-MIR[27] => ~NO_FANOUT~
-MIR[28] => ~NO_FANOUT~
-MIR[29] => ~NO_FANOUT~
-MIR[30] => ~NO_FANOUT~
-MIR[31] => ~NO_FANOUT~
-MIR[32] => ~NO_FANOUT~
-MIR[33] => ~NO_FANOUT~
-MIR[34] => ~NO_FANOUT~
-MIR[35] => ~NO_FANOUT~
-LOAD => register_32bit:inst.LOAD
-IN_C[0] => register_32bit:inst.IN_C[0]
-IN_C[1] => register_32bit:inst.IN_C[1]
-IN_C[2] => register_32bit:inst.IN_C[2]
-IN_C[3] => register_32bit:inst.IN_C[3]
-IN_C[4] => register_32bit:inst.IN_C[4]
-IN_C[5] => register_32bit:inst.IN_C[5]
-IN_C[6] => register_32bit:inst.IN_C[6]
-IN_C[7] => register_32bit:inst.IN_C[7]
-IN_C[8] => register_32bit:inst.IN_C[8]
-IN_C[9] => register_32bit:inst.IN_C[9]
-IN_C[10] => register_32bit:inst.IN_C[10]
-IN_C[11] => register_32bit:inst.IN_C[11]
-IN_C[12] => register_32bit:inst.IN_C[12]
-IN_C[13] => register_32bit:inst.IN_C[13]
-IN_C[14] => register_32bit:inst.IN_C[14]
-IN_C[15] => register_32bit:inst.IN_C[15]
-IN_C[16] => register_32bit:inst.IN_C[16]
-IN_C[17] => register_32bit:inst.IN_C[17]
-IN_C[18] => register_32bit:inst.IN_C[18]
-IN_C[19] => register_32bit:inst.IN_C[19]
-IN_C[20] => register_32bit:inst.IN_C[20]
-IN_C[21] => register_32bit:inst.IN_C[21]
-IN_C[22] => register_32bit:inst.IN_C[22]
-IN_C[23] => register_32bit:inst.IN_C[23]
-IN_C[24] => register_32bit:inst.IN_C[24]
-IN_C[25] => register_32bit:inst.IN_C[25]
-IN_C[26] => register_32bit:inst.IN_C[26]
-IN_C[27] => register_32bit:inst.IN_C[27]
-IN_C[28] => register_32bit:inst.IN_C[28]
-IN_C[29] => register_32bit:inst.IN_C[29]
-IN_C[30] => register_32bit:inst.IN_C[30]
-IN_C[31] => register_32bit:inst.IN_C[31]
-DATA_IN[0] => register_32bit:inst.IN_MEM[0]
-DATA_IN[1] => register_32bit:inst.IN_MEM[1]
-DATA_IN[2] => register_32bit:inst.IN_MEM[2]
-DATA_IN[3] => register_32bit:inst.IN_MEM[3]
-DATA_IN[4] => register_32bit:inst.IN_MEM[4]
-DATA_IN[5] => register_32bit:inst.IN_MEM[5]
-DATA_IN[6] => register_32bit:inst.IN_MEM[6]
-DATA_IN[7] => register_32bit:inst.IN_MEM[7]
-DATA_IN[8] => register_32bit:inst.IN_MEM[8]
-DATA_IN[9] => register_32bit:inst.IN_MEM[9]
-DATA_IN[10] => register_32bit:inst.IN_MEM[10]
-DATA_IN[11] => register_32bit:inst.IN_MEM[11]
-DATA_IN[12] => register_32bit:inst.IN_MEM[12]
-DATA_IN[13] => register_32bit:inst.IN_MEM[13]
-DATA_IN[14] => register_32bit:inst.IN_MEM[14]
-DATA_IN[15] => register_32bit:inst.IN_MEM[15]
-DATA_IN[16] => register_32bit:inst.IN_MEM[16]
-DATA_IN[17] => register_32bit:inst.IN_MEM[17]
-DATA_IN[18] => register_32bit:inst.IN_MEM[18]
-DATA_IN[19] => register_32bit:inst.IN_MEM[19]
-DATA_IN[20] => register_32bit:inst.IN_MEM[20]
-DATA_IN[21] => register_32bit:inst.IN_MEM[21]
-DATA_IN[22] => register_32bit:inst.IN_MEM[22]
-DATA_IN[23] => register_32bit:inst.IN_MEM[23]
-DATA_IN[24] => register_32bit:inst.IN_MEM[24]
-DATA_IN[25] => register_32bit:inst.IN_MEM[25]
-DATA_IN[26] => register_32bit:inst.IN_MEM[26]
-DATA_IN[27] => register_32bit:inst.IN_MEM[27]
-DATA_IN[28] => register_32bit:inst.IN_MEM[28]
-DATA_IN[29] => register_32bit:inst.IN_MEM[29]
-DATA_IN[30] => register_32bit:inst.IN_MEM[30]
-DATA_IN[31] => register_32bit:inst.IN_MEM[31]
+|PC
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -166,9 +31,111 @@ OUT_B[28] <= register_32bit:inst.OUTPUT[28]
 OUT_B[29] <= register_32bit:inst.OUTPUT[29]
 OUT_B[30] <= register_32bit:inst.OUTPUT[30]
 OUT_B[31] <= register_32bit:inst.OUTPUT[31]
+LOAD => register_32bit:inst.LOAD
+MIR[0] => inst4.IN1
+MIR[1] => AAAA.IN2
+MIR[2] => AAAA.IN1
+MIR[3] => AAAA.IN0
+MIR[4] => ~NO_FANOUT~
+MIR[5] => ~NO_FANOUT~
+MIR[6] => ~NO_FANOUT~
+MIR[7] => ~NO_FANOUT~
+MIR[8] => ~NO_FANOUT~
+MIR[9] => register_32bit:inst.WRITE_EN
+MIR[10] => ~NO_FANOUT~
+MIR[11] => ~NO_FANOUT~
+MIR[12] => ~NO_FANOUT~
+MIR[13] => ~NO_FANOUT~
+MIR[14] => ~NO_FANOUT~
+MIR[15] => ~NO_FANOUT~
+MIR[16] => ~NO_FANOUT~
+MIR[17] => ~NO_FANOUT~
+MIR[18] => ~NO_FANOUT~
+MIR[19] => ~NO_FANOUT~
+MIR[20] => ~NO_FANOUT~
+MIR[21] => ~NO_FANOUT~
+MIR[22] => ~NO_FANOUT~
+MIR[23] => ~NO_FANOUT~
+MIR[24] => ~NO_FANOUT~
+MIR[25] => ~NO_FANOUT~
+MIR[26] => ~NO_FANOUT~
+MIR[27] => ~NO_FANOUT~
+MIR[28] => ~NO_FANOUT~
+MIR[29] => ~NO_FANOUT~
+MIR[30] => ~NO_FANOUT~
+MIR[31] => ~NO_FANOUT~
+MIR[32] => ~NO_FANOUT~
+MIR[33] => ~NO_FANOUT~
+MIR[34] => ~NO_FANOUT~
+MIR[35] => ~NO_FANOUT~
+CLOCK => register_32bit:inst.CLOCK
+IN_C[0] => register_32bit:inst.IN_C[0]
+IN_C[1] => register_32bit:inst.IN_C[1]
+IN_C[2] => register_32bit:inst.IN_C[2]
+IN_C[3] => register_32bit:inst.IN_C[3]
+IN_C[4] => register_32bit:inst.IN_C[4]
+IN_C[5] => register_32bit:inst.IN_C[5]
+IN_C[6] => register_32bit:inst.IN_C[6]
+IN_C[7] => register_32bit:inst.IN_C[7]
+IN_C[8] => register_32bit:inst.IN_C[8]
+IN_C[9] => register_32bit:inst.IN_C[9]
+IN_C[10] => register_32bit:inst.IN_C[10]
+IN_C[11] => register_32bit:inst.IN_C[11]
+IN_C[12] => register_32bit:inst.IN_C[12]
+IN_C[13] => register_32bit:inst.IN_C[13]
+IN_C[14] => register_32bit:inst.IN_C[14]
+IN_C[15] => register_32bit:inst.IN_C[15]
+IN_C[16] => register_32bit:inst.IN_C[16]
+IN_C[17] => register_32bit:inst.IN_C[17]
+IN_C[18] => register_32bit:inst.IN_C[18]
+IN_C[19] => register_32bit:inst.IN_C[19]
+IN_C[20] => register_32bit:inst.IN_C[20]
+IN_C[21] => register_32bit:inst.IN_C[21]
+IN_C[22] => register_32bit:inst.IN_C[22]
+IN_C[23] => register_32bit:inst.IN_C[23]
+IN_C[24] => register_32bit:inst.IN_C[24]
+IN_C[25] => register_32bit:inst.IN_C[25]
+IN_C[26] => register_32bit:inst.IN_C[26]
+IN_C[27] => register_32bit:inst.IN_C[27]
+IN_C[28] => register_32bit:inst.IN_C[28]
+IN_C[29] => register_32bit:inst.IN_C[29]
+IN_C[30] => register_32bit:inst.IN_C[30]
+IN_C[31] => register_32bit:inst.IN_C[31]
+PROGRAM_COUNTER[0] <= register_32bit:inst.OUTPUT_MEM[0]
+PROGRAM_COUNTER[1] <= register_32bit:inst.OUTPUT_MEM[1]
+PROGRAM_COUNTER[2] <= register_32bit:inst.OUTPUT_MEM[2]
+PROGRAM_COUNTER[3] <= register_32bit:inst.OUTPUT_MEM[3]
+PROGRAM_COUNTER[4] <= register_32bit:inst.OUTPUT_MEM[4]
+PROGRAM_COUNTER[5] <= register_32bit:inst.OUTPUT_MEM[5]
+PROGRAM_COUNTER[6] <= register_32bit:inst.OUTPUT_MEM[6]
+PROGRAM_COUNTER[7] <= register_32bit:inst.OUTPUT_MEM[7]
+PROGRAM_COUNTER[8] <= register_32bit:inst.OUTPUT_MEM[8]
+PROGRAM_COUNTER[9] <= register_32bit:inst.OUTPUT_MEM[9]
+PROGRAM_COUNTER[10] <= register_32bit:inst.OUTPUT_MEM[10]
+PROGRAM_COUNTER[11] <= register_32bit:inst.OUTPUT_MEM[11]
+PROGRAM_COUNTER[12] <= register_32bit:inst.OUTPUT_MEM[12]
+PROGRAM_COUNTER[13] <= register_32bit:inst.OUTPUT_MEM[13]
+PROGRAM_COUNTER[14] <= register_32bit:inst.OUTPUT_MEM[14]
+PROGRAM_COUNTER[15] <= register_32bit:inst.OUTPUT_MEM[15]
+PROGRAM_COUNTER[16] <= register_32bit:inst.OUTPUT_MEM[16]
+PROGRAM_COUNTER[17] <= register_32bit:inst.OUTPUT_MEM[17]
+PROGRAM_COUNTER[18] <= register_32bit:inst.OUTPUT_MEM[18]
+PROGRAM_COUNTER[19] <= register_32bit:inst.OUTPUT_MEM[19]
+PROGRAM_COUNTER[20] <= register_32bit:inst.OUTPUT_MEM[20]
+PROGRAM_COUNTER[21] <= register_32bit:inst.OUTPUT_MEM[21]
+PROGRAM_COUNTER[22] <= register_32bit:inst.OUTPUT_MEM[22]
+PROGRAM_COUNTER[23] <= register_32bit:inst.OUTPUT_MEM[23]
+PROGRAM_COUNTER[24] <= register_32bit:inst.OUTPUT_MEM[24]
+PROGRAM_COUNTER[25] <= register_32bit:inst.OUTPUT_MEM[25]
+PROGRAM_COUNTER[26] <= register_32bit:inst.OUTPUT_MEM[26]
+PROGRAM_COUNTER[27] <= register_32bit:inst.OUTPUT_MEM[27]
+PROGRAM_COUNTER[28] <= register_32bit:inst.OUTPUT_MEM[28]
+PROGRAM_COUNTER[29] <= register_32bit:inst.OUTPUT_MEM[29]
+PROGRAM_COUNTER[30] <= register_32bit:inst.OUTPUT_MEM[30]
+PROGRAM_COUNTER[31] <= register_32bit:inst.OUTPUT_MEM[31]
 
 
-|MDR|register_32bit:inst
+|PC|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -438,7 +405,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|MDR|register_32bit:inst|register_4bit:inst4
+|PC|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -462,7 +429,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst5
+|PC|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -486,7 +453,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst6
+|PC|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -510,7 +477,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst
+|PC|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -534,7 +501,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst7
+|PC|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -558,7 +525,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst1
+|PC|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -582,7 +549,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst2
+|PC|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -606,7 +573,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|MDR|register_32bit:inst|register_4bit:inst3
+|PC|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
