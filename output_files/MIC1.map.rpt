@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Sat Aug 03 15:05:31 2024
+Sat Aug 03 16:06:19 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 03 15:05:31 2024      ;
+; Analysis & Synthesis Status        ; Successful - Sat Aug 03 16:06:19 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                       ;
-; Top-level Entity Name              ; MAR                                        ;
+; Top-level Entity Name              ; MDR                                        ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 33                                         ;
-;     Total combinational functions  ; 1                                          ;
-;     Dedicated logic registers      ; 32                                         ;
-; Total registers                    ; 32                                         ;
-; Total pins                         ; 102                                        ;
+; Total logic elements               ; 35                                         ;
+;     Total combinational functions  ; 34                                         ;
+;     Dedicated logic registers      ; 33                                         ;
+; Total registers                    ; 33                                         ;
+; Total pins                         ; 166                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C70F896I8       ;                    ;
-; Top-level entity name                                                      ; MAR                ; MIC1               ;
+; Top-level entity name                                                      ; MDR                ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,38 +161,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 ; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/register_4bit.bdf  ;         ;
 ; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/register_32bit.bdf ;         ;
-; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MAR.bdf            ;         ;
+; MDR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MDR.bdf            ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                              ;
-+---------------------------------------------+----------------------------+
-; Resource                                    ; Usage                      ;
-+---------------------------------------------+----------------------------+
-; Estimated Total logic elements              ; 33                         ;
-;                                             ;                            ;
-; Total combinational functions               ; 1                          ;
-; Logic element usage by number of LUT inputs ;                            ;
-;     -- 4 input functions                    ; 0                          ;
-;     -- 3 input functions                    ; 0                          ;
-;     -- <=2 input functions                  ; 1                          ;
-;                                             ;                            ;
-; Logic elements by mode                      ;                            ;
-;     -- normal mode                          ; 1                          ;
-;     -- arithmetic mode                      ; 0                          ;
-;                                             ;                            ;
-; Total registers                             ; 32                         ;
-;     -- Dedicated logic registers            ; 32                         ;
-;     -- I/O registers                        ; 0                          ;
-;                                             ;                            ;
-; I/O pins                                    ; 102                        ;
-; Embedded Multiplier 9-bit elements          ; 0                          ;
-; Maximum fan-out node                        ; register_32bit:inst|inst12 ;
-; Maximum fan-out                             ; 32                         ;
-; Total fan-out                               ; 130                        ;
-; Average fan-out                             ; 0.96                       ;
-+---------------------------------------------+----------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 35    ;
+;                                             ;       ;
+; Total combinational functions               ; 34    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 1     ;
+;     -- 3 input functions                    ; 33    ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 34    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 33    ;
+;     -- Dedicated logic registers            ; 33    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 166   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; inst6 ;
+; Maximum fan-out                             ; 33    ;
+; Total fan-out                               ; 329   ;
+; Average fan-out                             ; 1.41  ;
++---------------------------------------------+-------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -200,16 +200,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-; |MAR                        ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |MAR                                         ;              ;
-;    |register_32bit:inst|    ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst                     ;              ;
-;       |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst1 ;              ;
-;       |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst2 ;              ;
-;       |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst3 ;              ;
-;       |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst4 ;              ;
-;       |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst5 ;              ;
-;       |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst6 ;              ;
-;       |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst7 ;              ;
-;       |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|register_32bit:inst|register_4bit:inst  ;              ;
+; |MDR                        ; 34 (1)            ; 33 (1)       ; 0           ; 0            ; 0       ; 0         ; 166  ; 0            ; |MDR                                         ;              ;
+;    |register_32bit:inst|    ; 33 (33)           ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst                     ;              ;
+;       |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst1 ;              ;
+;       |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst2 ;              ;
+;       |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst3 ;              ;
+;       |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst4 ;              ;
+;       |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst5 ;              ;
+;       |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst6 ;              ;
+;       |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst7 ;              ;
+;       |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register_32bit:inst|register_4bit:inst  ;              ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,7 +219,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
@@ -244,7 +244,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Aug 03 15:05:30 2024
+    Info: Processing started: Sat Aug 03 16:06:18 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
@@ -273,45 +273,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file shifter
     Info (12023): Found entity 1: shifter
 Info (12021): Found 1 design units, including 1 entities, in source file mar.bdf
     Info (12023): Found entity 1: MAR
-Info (12127): Elaborating entity "MAR" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file mdr.bdf
+    Info (12023): Found entity 1: MDR
+Info (12127): Elaborating entity "MDR" for the top level hierarchy
 Info (12128): Elaborating entity "register_32bit" for hierarchy "register_32bit:inst"
 Info (12128): Elaborating entity "register_4bit" for hierarchy "register_32bit:inst|register_4bit:inst4"
-Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[31]" to the node "DATA_ADDRESS[31]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[30]" to the node "DATA_ADDRESS[30]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[29]" to the node "DATA_ADDRESS[29]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[28]" to the node "DATA_ADDRESS[28]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[27]" to the node "DATA_ADDRESS[27]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[26]" to the node "DATA_ADDRESS[26]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[25]" to the node "DATA_ADDRESS[25]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[24]" to the node "DATA_ADDRESS[24]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[23]" to the node "DATA_ADDRESS[23]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[22]" to the node "DATA_ADDRESS[22]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[21]" to the node "DATA_ADDRESS[21]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[20]" to the node "DATA_ADDRESS[20]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[19]" to the node "DATA_ADDRESS[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[18]" to the node "DATA_ADDRESS[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[17]" to the node "DATA_ADDRESS[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[16]" to the node "DATA_ADDRESS[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[15]" to the node "DATA_ADDRESS[15]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[14]" to the node "DATA_ADDRESS[14]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[13]" to the node "DATA_ADDRESS[13]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[12]" to the node "DATA_ADDRESS[12]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[11]" to the node "DATA_ADDRESS[11]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[10]" to the node "DATA_ADDRESS[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[9]" to the node "DATA_ADDRESS[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[8]" to the node "DATA_ADDRESS[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[7]" to the node "DATA_ADDRESS[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[6]" to the node "DATA_ADDRESS[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[5]" to the node "DATA_ADDRESS[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[4]" to the node "DATA_ADDRESS[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[3]" to the node "DATA_ADDRESS[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[2]" to the node "DATA_ADDRESS[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[1]" to the node "DATA_ADDRESS[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "register_32bit:inst|inst13[0]" to the node "DATA_ADDRESS[0]" into a wire
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 35 input pin(s) that do not drive logic
+Warning (21074): Design contains 29 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MIR[35]"
     Warning (15610): No output dependent on input pin "MIR[34]"
     Warning (15610): No output dependent on input pin "MIR[33]"
@@ -339,21 +308,15 @@ Warning (21074): Design contains 35 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MIR[11]"
     Warning (15610): No output dependent on input pin "MIR[10]"
     Warning (15610): No output dependent on input pin "MIR[9]"
-    Warning (15610): No output dependent on input pin "MIR[8]"
-    Warning (15610): No output dependent on input pin "MIR[6]"
-    Warning (15610): No output dependent on input pin "MIR[5]"
+    Warning (15610): No output dependent on input pin "MIR[7]"
     Warning (15610): No output dependent on input pin "MIR[4]"
-    Warning (15610): No output dependent on input pin "MIR[3]"
-    Warning (15610): No output dependent on input pin "MIR[2]"
-    Warning (15610): No output dependent on input pin "MIR[1]"
-    Warning (15610): No output dependent on input pin "MIR[0]"
-Info (21057): Implemented 135 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 70 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Sat Aug 03 15:05:31 2024
+Info (21057): Implemented 201 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 102 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 35 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4594 megabytes
+    Info: Processing ended: Sat Aug 03 16:06:19 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
