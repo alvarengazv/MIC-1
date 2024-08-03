@@ -2,34 +2,50 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ula_32bit
+# -- Compiling module MAR
 # 
 # Top level modules:
-# 	ula_32bit
+# 	MAR
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ula_32bit_vlg_sample_tst
-# -- Compiling module ula_32bit_vlg_check_tst
-# -- Compiling module ula_32bit_vlg_vec_tst
+# -- Compiling module MAR_vlg_sample_tst
+# -- Compiling module MAR_vlg_check_tst
+# -- Compiling module MAR_vlg_vec_tst
 # 
 # Top level modules:
-# 	ula_32bit_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ula_32bit_vlg_vec_tst 
-# Loading work.ula_32bit_vlg_vec_tst
-# Loading work.ula_32bit
-# Loading cycloneii_ver.cycloneii_lcell_comb
+# 	MAR_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.MAR_vlg_vec_tst 
+# Loading work.MAR_vlg_vec_tst
+# Loading work.MAR
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading work.ula_32bit_vlg_sample_tst
-# Loading work.ula_32bit_vlg_check_tst
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.MAR_vlg_sample_tst
+# Loading work.MAR_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from MIC1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Loading timing data from MIC1_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /ula_32bit_vlg_vec_tst File: MIC1.vt
-# Simulation passed !
-# ** Note: $finish    : MIC1.vt(1375)
-#    Time: 1600 ns  Iteration: 0  Instance: /ula_32bit_vlg_vec_tst/tb_out
+#    Time: 0 ps  Iteration: 0  Instance: /MAR_vlg_vec_tst File: MIC1.vt
+# ERROR! Vector Mismatch for output port DATA_ADDRESS[2] :: @time = 1300000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001100
+# ERROR! Vector Mismatch for output port DATA_ADDRESS[3] :: @time = 1300000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001100
+# ERROR! Vector Mismatch for output port DATA_ADDRESS[0] :: @time = 1400000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001101
+# ERROR! Vector Mismatch for output port DATA_ADDRESS[1] :: @time = 1500000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001110
+#           4 mismatched vectors : Simulation failed !
+# ** Note: $finish    : MIC1.vt(743)
+#    Time: 1600 ns  Iteration: 0  Instance: /MAR_vlg_vec_tst/tb_out

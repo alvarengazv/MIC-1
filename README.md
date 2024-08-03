@@ -1,4 +1,4 @@
-Simulação da microarquitetura MIC-1 (Tanembaum) feita no software Quartus II.
+Simulação da microarquitetura MIC-1 (Tanenbaum) feita no software Quartus II.
 
 ## 📨 Contato
 
