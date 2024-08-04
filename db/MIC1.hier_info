@@ -1,41 +1,41 @@
-|OPC
-OUT_B[0] <= register_32bit:inst.OUTPUT[0]
-OUT_B[1] <= register_32bit:inst.OUTPUT[1]
-OUT_B[2] <= register_32bit:inst.OUTPUT[2]
-OUT_B[3] <= register_32bit:inst.OUTPUT[3]
-OUT_B[4] <= register_32bit:inst.OUTPUT[4]
-OUT_B[5] <= register_32bit:inst.OUTPUT[5]
-OUT_B[6] <= register_32bit:inst.OUTPUT[6]
-OUT_B[7] <= register_32bit:inst.OUTPUT[7]
-OUT_B[8] <= register_32bit:inst.OUTPUT[8]
-OUT_B[9] <= register_32bit:inst.OUTPUT[9]
-OUT_B[10] <= register_32bit:inst.OUTPUT[10]
-OUT_B[11] <= register_32bit:inst.OUTPUT[11]
-OUT_B[12] <= register_32bit:inst.OUTPUT[12]
-OUT_B[13] <= register_32bit:inst.OUTPUT[13]
-OUT_B[14] <= register_32bit:inst.OUTPUT[14]
-OUT_B[15] <= register_32bit:inst.OUTPUT[15]
-OUT_B[16] <= register_32bit:inst.OUTPUT[16]
-OUT_B[17] <= register_32bit:inst.OUTPUT[17]
-OUT_B[18] <= register_32bit:inst.OUTPUT[18]
-OUT_B[19] <= register_32bit:inst.OUTPUT[19]
-OUT_B[20] <= register_32bit:inst.OUTPUT[20]
-OUT_B[21] <= register_32bit:inst.OUTPUT[21]
-OUT_B[22] <= register_32bit:inst.OUTPUT[22]
-OUT_B[23] <= register_32bit:inst.OUTPUT[23]
-OUT_B[24] <= register_32bit:inst.OUTPUT[24]
-OUT_B[25] <= register_32bit:inst.OUTPUT[25]
-OUT_B[26] <= register_32bit:inst.OUTPUT[26]
-OUT_B[27] <= register_32bit:inst.OUTPUT[27]
-OUT_B[28] <= register_32bit:inst.OUTPUT[28]
-OUT_B[29] <= register_32bit:inst.OUTPUT[29]
-OUT_B[30] <= register_32bit:inst.OUTPUT[30]
-OUT_B[31] <= register_32bit:inst.OUTPUT[31]
+|H
+OUT_A[0] <= register_32bit:inst.OUTPUT[0]
+OUT_A[1] <= register_32bit:inst.OUTPUT[1]
+OUT_A[2] <= register_32bit:inst.OUTPUT[2]
+OUT_A[3] <= register_32bit:inst.OUTPUT[3]
+OUT_A[4] <= register_32bit:inst.OUTPUT[4]
+OUT_A[5] <= register_32bit:inst.OUTPUT[5]
+OUT_A[6] <= register_32bit:inst.OUTPUT[6]
+OUT_A[7] <= register_32bit:inst.OUTPUT[7]
+OUT_A[8] <= register_32bit:inst.OUTPUT[8]
+OUT_A[9] <= register_32bit:inst.OUTPUT[9]
+OUT_A[10] <= register_32bit:inst.OUTPUT[10]
+OUT_A[11] <= register_32bit:inst.OUTPUT[11]
+OUT_A[12] <= register_32bit:inst.OUTPUT[12]
+OUT_A[13] <= register_32bit:inst.OUTPUT[13]
+OUT_A[14] <= register_32bit:inst.OUTPUT[14]
+OUT_A[15] <= register_32bit:inst.OUTPUT[15]
+OUT_A[16] <= register_32bit:inst.OUTPUT[16]
+OUT_A[17] <= register_32bit:inst.OUTPUT[17]
+OUT_A[18] <= register_32bit:inst.OUTPUT[18]
+OUT_A[19] <= register_32bit:inst.OUTPUT[19]
+OUT_A[20] <= register_32bit:inst.OUTPUT[20]
+OUT_A[21] <= register_32bit:inst.OUTPUT[21]
+OUT_A[22] <= register_32bit:inst.OUTPUT[22]
+OUT_A[23] <= register_32bit:inst.OUTPUT[23]
+OUT_A[24] <= register_32bit:inst.OUTPUT[24]
+OUT_A[25] <= register_32bit:inst.OUTPUT[25]
+OUT_A[26] <= register_32bit:inst.OUTPUT[26]
+OUT_A[27] <= register_32bit:inst.OUTPUT[27]
+OUT_A[28] <= register_32bit:inst.OUTPUT[28]
+OUT_A[29] <= register_32bit:inst.OUTPUT[29]
+OUT_A[30] <= register_32bit:inst.OUTPUT[30]
+OUT_A[31] <= register_32bit:inst.OUTPUT[31]
 LOAD => register_32bit:inst.LOAD
-MIR[0] => inst4.IN2
-MIR[1] => inst4.IN0
-MIR[2] => inst4.IN1
-MIR[3] => inst1.IN0
+MIR[0] => ~NO_FANOUT~
+MIR[1] => ~NO_FANOUT~
+MIR[2] => ~NO_FANOUT~
+MIR[3] => ~NO_FANOUT~
 MIR[4] => ~NO_FANOUT~
 MIR[5] => ~NO_FANOUT~
 MIR[6] => ~NO_FANOUT~
@@ -46,8 +46,8 @@ MIR[10] => ~NO_FANOUT~
 MIR[11] => ~NO_FANOUT~
 MIR[12] => ~NO_FANOUT~
 MIR[13] => ~NO_FANOUT~
-MIR[14] => register_32bit:inst.WRITE_EN
-MIR[15] => ~NO_FANOUT~
+MIR[14] => ~NO_FANOUT~
+MIR[15] => register_32bit:inst.WRITE_EN
 MIR[16] => ~NO_FANOUT~
 MIR[17] => ~NO_FANOUT~
 MIR[18] => ~NO_FANOUT~
@@ -103,7 +103,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|OPC|register_32bit:inst
+|H|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -373,7 +373,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|OPC|register_32bit:inst|register_4bit:inst4
+|H|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -397,7 +397,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst5
+|H|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -421,7 +421,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst6
+|H|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -445,7 +445,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst
+|H|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -469,7 +469,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst7
+|H|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -493,7 +493,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst1
+|H|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -517,7 +517,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst2
+|H|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -541,7 +541,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|OPC|register_32bit:inst|register_4bit:inst3
+|H|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
