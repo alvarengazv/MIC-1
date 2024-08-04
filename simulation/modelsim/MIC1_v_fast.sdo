@@ -23,8 +23,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "CPP")
-  (DATE "08/04/2024 11:25:12")
+  (DESIGN "TOS")
+  (DATE "08/04/2024 12:42:54")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -33,7 +33,7 @@
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[12\]\~I.asynch_inst)
+    (INSTANCE MIR\[13\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (437:437:437) (437:437:437))
@@ -155,7 +155,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[0\]\~I.asynch_inst)
+    (INSTANCE MIR\[3\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (417:417:417) (417:417:417))
@@ -182,7 +182,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[3\]\~I.asynch_inst)
+    (INSTANCE MIR\[0\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (427:427:427) (427:427:427))
@@ -191,16 +191,16 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst4\~0)
+    (INSTANCE inst1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2695:2695:2695) (2695:2695:2695))
         (PORT datab (2687:2687:2687) (2687:2687:2687))
         (PORT datac (2694:2694:2694) (2694:2694:2694))
         (PORT datad (2685:2685:2685) (2685:2685:2685))
-        (IOPATH dataa combout (179:179:179) (179:179:179))
+        (IOPATH dataa combout (172:172:172) (172:172:172))
         (IOPATH datab combout (172:172:172) (172:172:172))
-        (IOPATH datac combout (129:129:129) (129:129:129))
+        (IOPATH datac combout (127:127:127) (127:127:127))
         (IOPATH datad combout (57:57:57) (57:57:57))
       )
     )
@@ -991,11 +991,11 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst\|inst2\|inst\~0)
+    (INSTANCE inst\|inst2\|inst\~feeder)
     (DELAY
       (ABSOLUTE
         (PORT datad (2572:2572:2572) (2572:2572:2572))
-        (IOPATH datad combout (76:76:76) (76:76:76))
+        (IOPATH datad combout (57:57:57) (57:57:57))
       )
     )
   )

@@ -23,8 +23,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "CPP")
-  (DATE "08/04/2024 11:25:12")
+  (DESIGN "TOS")
+  (DATE "08/04/2024 12:42:54")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -33,7 +33,7 @@
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[12\]\~I.asynch_inst)
+    (INSTANCE MIR\[13\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (924:924:924) (924:924:924))
@@ -155,7 +155,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[0\]\~I.asynch_inst)
+    (INSTANCE MIR\[3\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (904:904:904) (904:904:904))
@@ -182,7 +182,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[3\]\~I.asynch_inst)
+    (INSTANCE MIR\[0\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (914:914:914) (914:914:914))
@@ -191,17 +191,17 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst4\~0)
+    (INSTANCE inst1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (5731:5731:5731) (5731:5731:5731))
         (PORT datab (5706:5706:5706) (5706:5706:5706))
         (PORT datac (5719:5719:5719) (5719:5719:5719))
         (PORT datad (5699:5699:5699) (5699:5699:5699))
-        (IOPATH dataa combout (537:537:537) (537:537:537))
-        (IOPATH datab combout (616:616:616) (616:616:616))
+        (IOPATH dataa combout (499:499:499) (499:499:499))
+        (IOPATH datab combout (580:580:580) (580:580:580))
         (IOPATH datac combout (370:370:370) (370:370:370))
-        (IOPATH datad combout (202:202:202) (202:202:202))
+        (IOPATH datad combout (206:206:206) (206:206:206))
       )
     )
   )
@@ -991,11 +991,11 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst\|inst2\|inst\~0)
+    (INSTANCE inst\|inst2\|inst\~feeder)
     (DELAY
       (ABSOLUTE
         (PORT datad (5248:5248:5248) (5248:5248:5248))
-        (IOPATH datad combout (202:202:202) (202:202:202))
+        (IOPATH datad combout (206:206:206) (206:206:206))
       )
     )
   )

@@ -1,5 +1,5 @@
 Flow report for MIC1
-Sun Aug 04 11:25:12 2024
+Sun Aug 04 12:42:54 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sun Aug 04 11:25:12 2024      ;
+; Flow Status                        ; Successful - Sun Aug 04 12:42:54 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                       ;
-; Top-level Entity Name              ; CPP                                        ;
+; Top-level Entity Name              ; TOS                                        ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C70F896I8                               ;
 ; Timing Models                      ; Final                                      ;
 ; Total logic elements               ; 34 / 68,416 ( < 1 % )                      ;
-;     Total combinational functions  ; 3 / 68,416 ( < 1 % )                       ;
+;     Total combinational functions  ; 2 / 68,416 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 32 / 68,416 ( < 1 % )                      ;
 ; Total registers                    ; 32                                         ;
 ; Total pins                         ; 102 / 622 ( 16 % )                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/04/2024 11:24:58 ;
+; Start date & time ; 08/04/2024 12:42:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIC1                ;
 +-------------------+---------------------+
@@ -75,20 +75,20 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 198112244448532.172278149813856       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 198112244448532.172278615901072       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                   ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 125                                   ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                                   ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; CPP         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; CPP         ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; CPP         ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; TOS         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; TOS         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; TOS         ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; CPP                                   ; MIC1          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; TOS                                   ; MIC1          ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -97,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 4982 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4561 MB             ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 4975 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4543 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4514 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:12                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4514 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

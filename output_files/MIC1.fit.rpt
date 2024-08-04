@@ -1,5 +1,5 @@
 Fitter report for MIC1
-Sun Aug 04 11:25:06 2024
+Sun Aug 04 12:42:48 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -62,15 +62,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Aug 04 11:25:06 2024      ;
+; Fitter Status                      ; Successful - Sun Aug 04 12:42:48 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                       ;
-; Top-level Entity Name              ; CPP                                        ;
+; Top-level Entity Name              ; TOS                                        ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C70F896I8                               ;
 ; Timing Models                      ; Final                                      ;
 ; Total logic elements               ; 34 / 68,416 ( < 1 % )                      ;
-;     Total combinational functions  ; 3 / 68,416 ( < 1 % )                       ;
+;     Total combinational functions  ; 2 / 68,416 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 32 / 68,416 ( < 1 % )                      ;
 ; Total registers                    ; 32                                         ;
 ; Total pins                         ; 102 / 622 ( 16 % )                         ;
@@ -148,8 +148,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 143 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 143 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 142 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 142 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -172,7 +172,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 140     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 139     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -190,17 +190,17 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 +---------------------------------------------+-----------------------+
 ; Total logic elements                        ; 34 / 68,416 ( < 1 % ) ;
 ;     -- Combinational with no register       ; 2                     ;
-;     -- Register only                        ; 31                    ;
-;     -- Combinational with a register        ; 1                     ;
+;     -- Register only                        ; 32                    ;
+;     -- Combinational with a register        ; 0                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 1                     ;
 ;     -- 3 input functions                    ; 0                     ;
-;     -- <=2 input functions                  ; 2                     ;
-;     -- Register only                        ; 31                    ;
+;     -- <=2 input functions                  ; 1                     ;
+;     -- Register only                        ; 32                    ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 3                     ;
+;     -- normal mode                          ; 2                     ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 32 / 70,234 ( < 1 % ) ;
@@ -242,17 +242,17 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ;                                             ;                      ;                                ;
 ; Total logic elements                        ; 34 / 68416 ( < 1 % ) ; 0 / 68416 ( 0 % )              ;
 ;     -- Combinational with no register       ; 2                    ; 0                              ;
-;     -- Register only                        ; 31                   ; 0                              ;
-;     -- Combinational with a register        ; 1                    ; 0                              ;
+;     -- Register only                        ; 32                   ; 0                              ;
+;     -- Combinational with a register        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 1                    ; 0                              ;
 ;     -- 3 input functions                    ; 0                    ; 0                              ;
-;     -- <=2 input functions                  ; 2                    ; 0                              ;
-;     -- Register only                        ; 31                   ; 0                              ;
+;     -- <=2 input functions                  ; 1                    ; 0                              ;
+;     -- Register only                        ; 32                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 3                    ; 0                              ;
+;     -- normal mode                          ; 2                    ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 32                   ; 0                              ;
@@ -341,11 +341,11 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; IN_C[8]  ; A19   ; 4        ; 58           ; 51           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; IN_C[9]  ; G6    ; 2        ; 0            ; 48           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; LOAD     ; T2    ; 1        ; 0            ; 25           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[0]   ; H16   ; 4        ; 49           ; 51           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[0]   ; G16   ; 4        ; 51           ; 51           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[10]  ; D10   ; 3        ; 22           ; 51           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[11]  ; AE27  ; 6        ; 95           ; 7            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[12]  ; E15   ; 3        ; 44           ; 51           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[13]  ; V24   ; 6        ; 95           ; 16           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[12]  ; V24   ; 6        ; 95           ; 16           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[13]  ; E15   ; 3        ; 44           ; 51           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[14]  ; B12   ; 3        ; 35           ; 51           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[15]  ; W29   ; 6        ; 95           ; 20           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[16]  ; B6    ; 3        ; 11           ; 51           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
@@ -370,7 +370,7 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; MIR[33]  ; AD8   ; 8        ; 5            ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[34]  ; AF8   ; 8        ; 11           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[35]  ; B2    ; 2        ; 0            ; 46           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; MIR[3]   ; G16   ; 4        ; 51           ; 51           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; MIR[3]   ; H16   ; 4        ; 49           ; 51           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[4]   ; V9    ; 1        ; 0            ; 16           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[5]   ; Y25   ; 6        ; 95           ; 14           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; MIR[6]   ; N3    ; 2        ; 0            ; 32           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
@@ -871,7 +871,7 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; E12      ; 589        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E13      ; 579        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E14      ; 570        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E15      ; 566        ; 3        ; MIR[12]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E15      ; 566        ; 3        ; MIR[13]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E16      ; 560        ; 4        ; CLOCK                                    ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E17      ; 550        ; 4        ; IN_C[5]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -932,7 +932,7 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; G13      ; 582        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 576        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G15      ; 562        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; G16      ; 555        ; 4        ; MIR[3]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G16      ; 555        ; 4        ; MIR[0]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G17      ; 551        ; 4        ; IN_C[24]                                 ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G18      ; 542        ; 4        ; OUT_B[17]                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G19      ; 521        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -962,7 +962,7 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; H13      ; 587        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H14      ; 574        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H15      ; 563        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; H16      ; 557        ; 4        ; MIR[0]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H16      ; 557        ; 4        ; MIR[3]                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H17      ; 552        ; 4        ; OUT_B[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H18      ; 535        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H19      ; 524        ; 4        ; IN_C[11]                                 ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
@@ -1270,7 +1270,7 @@ The pin-out file can be found in D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-G
 ; V21      ; 373        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V22      ; 370        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V23      ; 382        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V24      ; 368        ; 6        ; MIR[13]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V24      ; 368        ; 6        ; MIR[12]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V25      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V26      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; V27      ; 387        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -1383,16 +1383,16 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                          ; Library Name ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+--------------+
-; |CPP                        ; 34 (1)      ; 32 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 102  ; 0            ; 2 (1)        ; 31 (0)            ; 1 (0)            ; |CPP                                         ;              ;
-;    |register_32bit:inst|    ; 33 (1)      ; 32 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 31 (0)            ; 1 (0)            ; |CPP|register_32bit:inst                     ;              ;
-;       |register_4bit:inst1| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst1 ;              ;
-;       |register_4bit:inst2| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 1 (1)            ; |CPP|register_32bit:inst|register_4bit:inst2 ;              ;
-;       |register_4bit:inst3| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst3 ;              ;
-;       |register_4bit:inst4| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst4 ;              ;
-;       |register_4bit:inst5| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst5 ;              ;
-;       |register_4bit:inst6| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst6 ;              ;
-;       |register_4bit:inst7| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst7 ;              ;
-;       |register_4bit:inst|  ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |CPP|register_32bit:inst|register_4bit:inst  ;              ;
+; |TOS                        ; 34 (1)      ; 32 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 102  ; 0            ; 2 (1)        ; 32 (0)            ; 0 (0)            ; |TOS                                         ;              ;
+;    |register_32bit:inst|    ; 33 (1)      ; 32 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 32 (0)            ; 0 (0)            ; |TOS|register_32bit:inst                     ;              ;
+;       |register_4bit:inst1| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst1 ;              ;
+;       |register_4bit:inst2| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst2 ;              ;
+;       |register_4bit:inst3| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst3 ;              ;
+;       |register_4bit:inst4| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst4 ;              ;
+;       |register_4bit:inst5| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst5 ;              ;
+;       |register_4bit:inst6| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst6 ;              ;
+;       |register_4bit:inst7| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst7 ;              ;
+;       |register_4bit:inst|  ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; |TOS|register_32bit:inst|register_4bit:inst  ;              ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1456,7 +1456,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MIR[16]   ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 ; MIR[15]   ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
 ; MIR[14]   ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
-; MIR[13]   ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
+; MIR[12]   ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
 ; MIR[11]   ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
 ; MIR[10]   ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 ; MIR[9]    ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
@@ -1467,8 +1467,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MIR[4]    ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
 ; MIR[2]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; MIR[1]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
-; MIR[3]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; MIR[0]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
+; MIR[3]    ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; IN_C[31]  ; Input    ; (6) 2403 ps   ; (6) 2403 ps   ; --                    ; --  ;
 ; LOAD      ; Input    ; (0) 163 ps    ; (0) 163 ps    ; --                    ; --  ;
 ; IN_C[30]  ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
@@ -1502,7 +1502,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IN_C[2]   ; Input    ; (6) 2403 ps   ; (6) 2403 ps   ; --                    ; --  ;
 ; IN_C[1]   ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; IN_C[0]   ; Input    ; (6) 2403 ps   ; (6) 2403 ps   ; --                    ; --  ;
-; MIR[12]   ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
+; MIR[13]   ; Input    ; (6) 2395 ps   ; (6) 2395 ps   ; --                    ; --  ;
 ; CLOCK     ; Input    ; (0) 162 ps    ; (0) 162 ps    ; --                    ; --  ;
 +-----------+----------+---------------+---------------+-----------------------+-----+
 
@@ -1534,7 +1534,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MIR[16]                                                     ;                   ;         ;
 ; MIR[15]                                                     ;                   ;         ;
 ; MIR[14]                                                     ;                   ;         ;
-; MIR[13]                                                     ;                   ;         ;
+; MIR[12]                                                     ;                   ;         ;
 ; MIR[11]                                                     ;                   ;         ;
 ; MIR[10]                                                     ;                   ;         ;
 ; MIR[9]                                                      ;                   ;         ;
@@ -1544,13 +1544,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MIR[5]                                                      ;                   ;         ;
 ; MIR[4]                                                      ;                   ;         ;
 ; MIR[2]                                                      ;                   ;         ;
-;      - inst4~0                                              ; 0                 ; 6       ;
+;      - inst1~0                                              ; 0                 ; 6       ;
 ; MIR[1]                                                      ;                   ;         ;
-;      - inst4~0                                              ; 0                 ; 6       ;
-; MIR[3]                                                      ;                   ;         ;
-;      - inst4~0                                              ; 0                 ; 6       ;
+;      - inst1~0                                              ; 0                 ; 6       ;
 ; MIR[0]                                                      ;                   ;         ;
-;      - inst4~0                                              ; 0                 ; 6       ;
+;      - inst1~0                                              ; 0                 ; 6       ;
+; MIR[3]                                                      ;                   ;         ;
+;      - inst1~0                                              ; 0                 ; 6       ;
 ; IN_C[31]                                                    ;                   ;         ;
 ;      - register_32bit:inst|register_4bit:inst5|inst~feeder  ; 1                 ; 6       ;
 ; LOAD                                                        ;                   ;         ;
@@ -1601,7 +1601,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IN_C[8]                                                     ;                   ;         ;
 ;      - register_32bit:inst|register_4bit:inst1|inst3~feeder ; 0                 ; 6       ;
 ; IN_C[7]                                                     ;                   ;         ;
-;      - register_32bit:inst|register_4bit:inst2|inst~0       ; 1                 ; 6       ;
+;      - register_32bit:inst|register_4bit:inst2|inst~feeder  ; 1                 ; 6       ;
 ; IN_C[6]                                                     ;                   ;         ;
 ;      - register_32bit:inst|register_4bit:inst2|inst1~feeder ; 0                 ; 6       ;
 ; IN_C[5]                                                     ;                   ;         ;
@@ -1616,7 +1616,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - register_32bit:inst|register_4bit:inst3|inst2~feeder ; 0                 ; 6       ;
 ; IN_C[0]                                                     ;                   ;         ;
 ;      - register_32bit:inst|register_4bit:inst3|inst3~feeder ; 1                 ; 6       ;
-; MIR[12]                                                     ;                   ;         ;
+; MIR[13]                                                     ;                   ;         ;
 ;      - register_32bit:inst|inst12                           ; 0                 ; 6       ;
 ; CLOCK                                                       ;                   ;         ;
 +-------------------------------------------------------------+-------------------+---------+
@@ -1628,7 +1628,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location           ; Fan-Out ; Usage         ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+--------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
 ; LOAD                       ; PIN_T2             ; 32      ; Async. clear  ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; inst4~0                    ; LCCOMB_X50_Y50_N16 ; 32      ; Output enable ; no     ; --                   ; --               ; --                        ;
+; inst1~0                    ; LCCOMB_X50_Y50_N16 ; 32      ; Output enable ; no     ; --                   ; --               ; --                        ;
 ; register_32bit:inst|inst12 ; LCCOMB_X47_Y50_N0  ; 32      ; Clock         ; yes    ; Global Clock         ; GCLK9            ; --                        ;
 +----------------------------+--------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
 
@@ -1643,84 +1643,83 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------+
-; Non-Global High Fan-Out Signals                          ;
-+------------------------------------------------+---------+
-; Name                                           ; Fan-Out ;
-+------------------------------------------------+---------+
-; inst4~0                                        ; 32      ;
-; CLOCK                                          ; 1       ;
-; MIR[12]                                        ; 1       ;
-; IN_C[0]                                        ; 1       ;
-; IN_C[1]                                        ; 1       ;
-; IN_C[2]                                        ; 1       ;
-; IN_C[3]                                        ; 1       ;
-; IN_C[4]                                        ; 1       ;
-; IN_C[5]                                        ; 1       ;
-; IN_C[6]                                        ; 1       ;
-; IN_C[7]                                        ; 1       ;
-; IN_C[8]                                        ; 1       ;
-; IN_C[9]                                        ; 1       ;
-; IN_C[10]                                       ; 1       ;
-; IN_C[11]                                       ; 1       ;
-; IN_C[12]                                       ; 1       ;
-; IN_C[13]                                       ; 1       ;
-; IN_C[14]                                       ; 1       ;
-; IN_C[15]                                       ; 1       ;
-; IN_C[16]                                       ; 1       ;
-; IN_C[17]                                       ; 1       ;
-; IN_C[18]                                       ; 1       ;
-; IN_C[19]                                       ; 1       ;
-; IN_C[20]                                       ; 1       ;
-; IN_C[21]                                       ; 1       ;
-; IN_C[22]                                       ; 1       ;
-; IN_C[23]                                       ; 1       ;
-; IN_C[24]                                       ; 1       ;
-; IN_C[25]                                       ; 1       ;
-; IN_C[26]                                       ; 1       ;
-; IN_C[27]                                       ; 1       ;
-; IN_C[28]                                       ; 1       ;
-; IN_C[29]                                       ; 1       ;
-; IN_C[30]                                       ; 1       ;
-; IN_C[31]                                       ; 1       ;
-; MIR[0]                                         ; 1       ;
-; MIR[3]                                         ; 1       ;
-; MIR[1]                                         ; 1       ;
-; MIR[2]                                         ; 1       ;
-; register_32bit:inst|register_4bit:inst2|inst~0 ; 1       ;
-; register_32bit:inst|register_4bit:inst3|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst3|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst3|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst3|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst2|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst2|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst2|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst2|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst1|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst1|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst1|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst1|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst|inst3   ; 1       ;
-; register_32bit:inst|register_4bit:inst|inst2   ; 1       ;
-; register_32bit:inst|register_4bit:inst|inst1   ; 1       ;
-; register_32bit:inst|register_4bit:inst|inst    ; 1       ;
-; register_32bit:inst|register_4bit:inst7|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst7|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst7|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst7|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst6|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst6|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst6|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst6|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst4|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst4|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst4|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst4|inst   ; 1       ;
-; register_32bit:inst|register_4bit:inst5|inst3  ; 1       ;
-; register_32bit:inst|register_4bit:inst5|inst2  ; 1       ;
-; register_32bit:inst|register_4bit:inst5|inst1  ; 1       ;
-; register_32bit:inst|register_4bit:inst5|inst   ; 1       ;
-+------------------------------------------------+---------+
++---------------------------------------------------------+
+; Non-Global High Fan-Out Signals                         ;
++-----------------------------------------------+---------+
+; Name                                          ; Fan-Out ;
++-----------------------------------------------+---------+
+; inst1~0                                       ; 32      ;
+; CLOCK                                         ; 1       ;
+; MIR[13]                                       ; 1       ;
+; IN_C[0]                                       ; 1       ;
+; IN_C[1]                                       ; 1       ;
+; IN_C[2]                                       ; 1       ;
+; IN_C[3]                                       ; 1       ;
+; IN_C[4]                                       ; 1       ;
+; IN_C[5]                                       ; 1       ;
+; IN_C[6]                                       ; 1       ;
+; IN_C[7]                                       ; 1       ;
+; IN_C[8]                                       ; 1       ;
+; IN_C[9]                                       ; 1       ;
+; IN_C[10]                                      ; 1       ;
+; IN_C[11]                                      ; 1       ;
+; IN_C[12]                                      ; 1       ;
+; IN_C[13]                                      ; 1       ;
+; IN_C[14]                                      ; 1       ;
+; IN_C[15]                                      ; 1       ;
+; IN_C[16]                                      ; 1       ;
+; IN_C[17]                                      ; 1       ;
+; IN_C[18]                                      ; 1       ;
+; IN_C[19]                                      ; 1       ;
+; IN_C[20]                                      ; 1       ;
+; IN_C[21]                                      ; 1       ;
+; IN_C[22]                                      ; 1       ;
+; IN_C[23]                                      ; 1       ;
+; IN_C[24]                                      ; 1       ;
+; IN_C[25]                                      ; 1       ;
+; IN_C[26]                                      ; 1       ;
+; IN_C[27]                                      ; 1       ;
+; IN_C[28]                                      ; 1       ;
+; IN_C[29]                                      ; 1       ;
+; IN_C[30]                                      ; 1       ;
+; IN_C[31]                                      ; 1       ;
+; MIR[3]                                        ; 1       ;
+; MIR[0]                                        ; 1       ;
+; MIR[1]                                        ; 1       ;
+; MIR[2]                                        ; 1       ;
+; register_32bit:inst|register_4bit:inst3|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst3|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst3|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst3|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst2|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst2|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst2|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst2|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst1|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst1|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst1|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst1|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst|inst3  ; 1       ;
+; register_32bit:inst|register_4bit:inst|inst2  ; 1       ;
+; register_32bit:inst|register_4bit:inst|inst1  ; 1       ;
+; register_32bit:inst|register_4bit:inst|inst   ; 1       ;
+; register_32bit:inst|register_4bit:inst7|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst7|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst7|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst7|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst6|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst6|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst6|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst6|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst4|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst4|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst4|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst4|inst  ; 1       ;
+; register_32bit:inst|register_4bit:inst5|inst3 ; 1       ;
+; register_32bit:inst|register_4bit:inst5|inst2 ; 1       ;
+; register_32bit:inst|register_4bit:inst5|inst1 ; 1       ;
+; register_32bit:inst|register_4bit:inst5|inst  ; 1       ;
++-----------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -1906,7 +1905,7 @@ Critical Warning (169085): No exact pin location assignment(s) for 102 pins of 1
     Info (169086): Pin MIR[16] not assigned to an exact location on the device
     Info (169086): Pin MIR[15] not assigned to an exact location on the device
     Info (169086): Pin MIR[14] not assigned to an exact location on the device
-    Info (169086): Pin MIR[13] not assigned to an exact location on the device
+    Info (169086): Pin MIR[12] not assigned to an exact location on the device
     Info (169086): Pin MIR[11] not assigned to an exact location on the device
     Info (169086): Pin MIR[10] not assigned to an exact location on the device
     Info (169086): Pin MIR[9] not assigned to an exact location on the device
@@ -1917,8 +1916,8 @@ Critical Warning (169085): No exact pin location assignment(s) for 102 pins of 1
     Info (169086): Pin MIR[4] not assigned to an exact location on the device
     Info (169086): Pin MIR[2] not assigned to an exact location on the device
     Info (169086): Pin MIR[1] not assigned to an exact location on the device
-    Info (169086): Pin MIR[3] not assigned to an exact location on the device
     Info (169086): Pin MIR[0] not assigned to an exact location on the device
+    Info (169086): Pin MIR[3] not assigned to an exact location on the device
     Info (169086): Pin IN_C[31] not assigned to an exact location on the device
     Info (169086): Pin LOAD not assigned to an exact location on the device
     Info (169086): Pin IN_C[30] not assigned to an exact location on the device
@@ -1952,7 +1951,7 @@ Critical Warning (169085): No exact pin location assignment(s) for 102 pins of 1
     Info (169086): Pin IN_C[2] not assigned to an exact location on the device
     Info (169086): Pin IN_C[1] not assigned to an exact location on the device
     Info (169086): Pin IN_C[0] not assigned to an exact location on the device
-    Info (169086): Pin MIR[12] not assigned to an exact location on the device
+    Info (169086): Pin MIR[13] not assigned to an exact location on the device
     Info (169086): Pin CLOCK not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MIC1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1977,7 +1976,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  80 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  74 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1990,7 +1989,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 32 output pins without output pin load capacitance assignment
     Info (306007): Pin "OUT_B[31]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2032,9 +2031,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/output_files/MIC1.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4982 megabytes
-    Info: Processing ended: Sun Aug 04 11:25:06 2024
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4975 megabytes
+    Info: Processing ended: Sun Aug 04 12:42:48 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 
 
