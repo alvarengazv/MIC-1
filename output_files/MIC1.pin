@@ -405,11 +405,11 @@ MIR[32]                      : B8        : input  : 3.3-V LVTTL       :         
 GND*                         : B9        :        :                   :         : 3         :                
 GND*                         : B10       :        :                   :         : 3         :                
 GND*                         : B11       :        :                   :         : 3         :                
-MIR[14]                      : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
+MIR[13]                      : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B13       :        :                   :         : 3         :                
 GND*                         : B14       :        :                   :         : 3         :                
 MIR[9]                       : B15       : input  : 3.3-V LVTTL       :         : 3         : N              
-MIR[2]                       : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[3]                       : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
 OUT_B[19]                    : B17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B18       :        :                   :         : 4         :                
 OUT_B[8]                     : B19       : output : 3.3-V LVTTL       :         : 4         : N              
@@ -439,7 +439,7 @@ OUT_B[29]                    : C12       : output : 3.3-V LVTTL       :         
 GND*                         : C13       :        :                   :         : 3         :                
 GND*                         : C14       :        :                   :         : 3         :                
 GND*                         : C15       :        :                   :         : 3         :                
-MIR[1]                       : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[2]                       : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
 IN_C[21]                     : C17       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C18       :        :                   :         : 4         :                
 GND*                         : C19       :        :                   :         : 4         :                
@@ -498,7 +498,7 @@ GND*                         : E11       :        :                   :         
 GND*                         : E12       :        :                   :         : 3         :                
 GND*                         : E13       :        :                   :         : 3         :                
 GND*                         : E14       :        :                   :         : 3         :                
-MIR[13]                      : E15       : input  : 3.3-V LVTTL       :         : 3         : N              
+MIR[14]                      : E15       : input  : 3.3-V LVTTL       :         : 3         : N              
 CLOCK                        : E16       : input  : 3.3-V LVTTL       :         : 4         : N              
 IN_C[5]                      : E17       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : E18       : power  :                   : 3.3V    : 4         :                
@@ -559,7 +559,7 @@ GND*                         : G12       :        :                   :         
 GND*                         : G13       :        :                   :         : 3         :                
 GND*                         : G14       :        :                   :         : 3         :                
 GND+                         : G15       :        :                   :         : 3         :                
-MIR[0]                       : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[1]                       : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
 IN_C[24]                     : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
 OUT_B[17]                    : G18       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : G19       :        :                   :         : 4         :                
@@ -589,7 +589,7 @@ GND*                         : H12       :        :                   :         
 GND*                         : H13       :        :                   :         : 3         :                
 GND*                         : H14       :        :                   :         : 3         :                
 GND+                         : H15       :        :                   :         : 3         :                
-MIR[3]                       : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[0]                       : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
 OUT_B[5]                     : H17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : H18       :        :                   :         : 4         :                
 IN_C[11]                     : H19       : input  : 3.3-V LVTTL       :         : 4         : N              

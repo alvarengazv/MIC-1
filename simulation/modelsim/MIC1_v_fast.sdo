@@ -23,8 +23,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "TOS")
-  (DATE "08/04/2024 12:42:54")
+  (DESIGN "OPC")
+  (DATE "08/04/2024 12:52:49")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -33,7 +33,7 @@
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[13\]\~I.asynch_inst)
+    (INSTANCE MIR\[14\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (437:437:437) (437:437:437))
@@ -155,19 +155,10 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[3\]\~I.asynch_inst)
+    (INSTANCE MIR\[0\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (417:417:417) (417:417:417))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[1\]\~I.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (447:447:447) (447:447:447))
       )
     )
   )
@@ -182,7 +173,16 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[0\]\~I.asynch_inst)
+    (INSTANCE MIR\[3\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (447:447:447) (447:447:447))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE MIR\[1\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (427:427:427) (427:427:427))
@@ -198,9 +198,9 @@
         (PORT datab (2687:2687:2687) (2687:2687:2687))
         (PORT datac (2694:2694:2694) (2694:2694:2694))
         (PORT datad (2685:2685:2685) (2685:2685:2685))
-        (IOPATH dataa combout (172:172:172) (172:172:172))
+        (IOPATH dataa combout (179:179:179) (179:179:179))
         (IOPATH datab combout (172:172:172) (172:172:172))
-        (IOPATH datac combout (127:127:127) (127:127:127))
+        (IOPATH datac combout (129:129:129) (129:129:129))
         (IOPATH datad combout (57:57:57) (57:57:57))
       )
     )

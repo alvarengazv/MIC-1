@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C70F896I8
-set_global_assignment -name TOP_LEVEL_ENTITY TOS
+set_global_assignment -name TOP_LEVEL_ENTITY OPC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:56:21  MARCH 16, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.0
@@ -97,9 +97,11 @@ set_global_assignment -name BDF_FILE CPP.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPP_initial_address.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPP.vwf
 set_global_assignment -name BDF_FILE TOS.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TOS.vwf
+set_global_assignment -name BDF_FILE OPC.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE TOS.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/TOS.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE OPC.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/OPC.vwf"
