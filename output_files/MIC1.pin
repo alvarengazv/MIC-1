@@ -242,7 +242,7 @@ GND*                         : AE23      :        :                   :         
 GND*                         : AE24      :        :                   :         : 7         :                
 GND                          : AE25      : gnd    :                   :         :           :                
 VCCIO6                       : AE26      : power  :                   : 3.3V    : 6         :                
-MIR[12]                      : AE27      : input  : 3.3-V LVTTL       :         : 6         : N              
+MIR[11]                      : AE27      : input  : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : AE28      :        :                   :         : 6         :                
 MIR[22]                      : AE29      : input  : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : AE30      :        :                   :         : 6         :                
@@ -439,7 +439,7 @@ OUT_B[29]                    : C12       : output : 3.3-V LVTTL       :         
 GND*                         : C13       :        :                   :         : 3         :                
 GND*                         : C14       :        :                   :         : 3         :                
 GND*                         : C15       :        :                   :         : 3         :                
-MIR[0]                       : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[1]                       : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
 IN_C[21]                     : C17       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C18       :        :                   :         : 4         :                
 GND*                         : C19       :        :                   :         : 4         :                
@@ -498,7 +498,7 @@ GND*                         : E11       :        :                   :         
 GND*                         : E12       :        :                   :         : 3         :                
 GND*                         : E13       :        :                   :         : 3         :                
 GND*                         : E14       :        :                   :         : 3         :                
-MIR[11]                      : E15       : input  : 3.3-V LVTTL       :         : 3         : N              
+MIR[12]                      : E15       : input  : 3.3-V LVTTL       :         : 3         : N              
 CLOCK                        : E16       : input  : 3.3-V LVTTL       :         : 4         : N              
 IN_C[5]                      : E17       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : E18       : power  :                   : 3.3V    : 4         :                
@@ -589,7 +589,7 @@ GND*                         : H12       :        :                   :         
 GND*                         : H13       :        :                   :         : 3         :                
 GND*                         : H14       :        :                   :         : 3         :                
 GND+                         : H15       :        :                   :         : 3         :                
-MIR[1]                       : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[0]                       : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
 OUT_B[5]                     : H17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : H18       :        :                   :         : 4         :                
 IN_C[11]                     : H19       : input  : 3.3-V LVTTL       :         : 4         : N              

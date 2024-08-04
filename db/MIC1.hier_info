@@ -1,4 +1,4 @@
-|LV
+|CPP
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -32,8 +32,8 @@ OUT_B[29] <= register_32bit:inst.OUTPUT[29]
 OUT_B[30] <= register_32bit:inst.OUTPUT[30]
 OUT_B[31] <= register_32bit:inst.OUTPUT[31]
 LOAD => register_32bit:inst.LOAD
-MIR[0] => inst4.IN1
-MIR[1] => inst1.IN0
+MIR[0] => inst1.IN0
+MIR[1] => inst4.IN1
 MIR[2] => inst4.IN0
 MIR[3] => inst1.IN1
 MIR[4] => ~NO_FANOUT~
@@ -43,8 +43,8 @@ MIR[7] => ~NO_FANOUT~
 MIR[8] => ~NO_FANOUT~
 MIR[9] => ~NO_FANOUT~
 MIR[10] => ~NO_FANOUT~
-MIR[11] => register_32bit:inst.WRITE_EN
-MIR[12] => ~NO_FANOUT~
+MIR[11] => ~NO_FANOUT~
+MIR[12] => register_32bit:inst.WRITE_EN
 MIR[13] => ~NO_FANOUT~
 MIR[14] => ~NO_FANOUT~
 MIR[15] => ~NO_FANOUT~
@@ -103,7 +103,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|LV|register_32bit:inst
+|CPP|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -373,7 +373,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|LV|register_32bit:inst|register_4bit:inst4
+|CPP|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -397,7 +397,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst5
+|CPP|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -421,7 +421,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst6
+|CPP|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -445,7 +445,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst
+|CPP|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -469,7 +469,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst7
+|CPP|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -493,7 +493,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst1
+|CPP|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -517,7 +517,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst2
+|CPP|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -541,7 +541,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|register_32bit:inst|register_4bit:inst3
+|CPP|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -565,38 +565,38 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|LV|LV_initial_address:inst5
-LV_INIT[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[3] <= inst6[3].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[4] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[5] <= inst5[0].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[6] <= inst5[1].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[7] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[8] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[9] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[10] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[11] <= inst2[3].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[12] <= inst2[4].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[13] <= inst2[5].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[14] <= inst2[6].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[15] <= inst2[7].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[16] <= inst2[8].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[17] <= inst2[9].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[18] <= inst2[10].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[19] <= inst2[11].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[20] <= inst2[12].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[21] <= inst2[13].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[22] <= inst2[14].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[23] <= inst2[15].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[24] <= inst2[16].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[25] <= inst2[17].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[26] <= inst2[18].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[27] <= inst2[19].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[28] <= inst2[20].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[29] <= inst2[21].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[30] <= inst2[22].DB_MAX_OUTPUT_PORT_TYPE
-LV_INIT[31] <= inst2[23].DB_MAX_OUTPUT_PORT_TYPE
+|CPP|CPP_initial_address:inst5
+CPP_INIT[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[3] <= inst2[3].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[4] <= inst2[4].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[5] <= inst2[5].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[6] <= inst2[6].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[7] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[8] <= inst4[0].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[9] <= inst4[1].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[10] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[11] <= inst4[3].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[12] <= inst4[4].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[13] <= inst4[5].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[14] <= inst4[6].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[15] <= inst4[7].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[16] <= inst4[8].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[17] <= inst4[9].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[18] <= inst4[10].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[19] <= inst4[11].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[20] <= inst4[12].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[21] <= inst4[13].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[22] <= inst4[14].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[23] <= inst4[15].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[24] <= inst4[16].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[25] <= inst4[17].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[26] <= inst4[18].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[27] <= inst4[19].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[28] <= inst4[20].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[29] <= inst4[21].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[30] <= inst4[22].DB_MAX_OUTPUT_PORT_TYPE
+CPP_INIT[31] <= inst4[23].DB_MAX_OUTPUT_PORT_TYPE
 
 

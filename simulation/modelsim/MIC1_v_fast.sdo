@@ -23,8 +23,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "LV")
-  (DATE "08/04/2024 11:02:11")
+  (DESIGN "CPP")
+  (DATE "08/04/2024 11:25:12")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -33,7 +33,7 @@
 
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[11\]\~I.asynch_inst)
+    (INSTANCE MIR\[12\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (437:437:437) (437:437:437))
@@ -155,7 +155,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[1\]\~I.asynch_inst)
+    (INSTANCE MIR\[0\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (417:417:417) (417:417:417))
@@ -164,7 +164,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE MIR\[0\]\~I.asynch_inst)
+    (INSTANCE MIR\[1\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (447:447:447) (447:447:447))
@@ -1095,29 +1095,19 @@
     )
   )
   (CELL
-    (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE inst\|inst2\|inst3\~0)
-    (DELAY
-      (ABSOLUTE
-        (PORT datac (2694:2694:2694) (2694:2694:2694))
-        (IOPATH datac combout (102:102:102) (102:102:102))
-      )
-    )
-  )
-  (CELL
     (CELLTYPE "cycloneii_lcell_ff")
     (INSTANCE inst\|inst2\|inst3)
     (DELAY
       (ABSOLUTE
         (PORT clk (1085:1085:1085) (1085:1085:1085))
-        (PORT datain (40:40:40) (40:40:40))
+        (PORT sdata (2871:2871:2871) (2871:2871:2871))
         (PORT aclr (1084:1084:1084) (1084:1084:1084))
         (IOPATH (posedge clk) regout (135:135:135) (135:135:135))
         (IOPATH (posedge aclr) regout (127:127:127) (127:127:127))
       )
     )
     (TIMINGCHECK
-      (HOLD datain (posedge clk) (148:148:148))
+      (HOLD sdata (posedge clk) (148:148:148))
     )
   )
   (CELL
