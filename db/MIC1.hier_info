@@ -1,4 +1,4 @@
-|SP
+|LV
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -32,18 +32,18 @@ OUT_B[29] <= register_32bit:inst.OUTPUT[29]
 OUT_B[30] <= register_32bit:inst.OUTPUT[30]
 OUT_B[31] <= register_32bit:inst.OUTPUT[31]
 LOAD => register_32bit:inst.LOAD
-MIR[0] => inst1.IN2
-MIR[1] => inst1.IN1
+MIR[0] => inst4.IN1
+MIR[1] => inst1.IN0
 MIR[2] => inst4.IN0
-MIR[3] => inst1.IN0
+MIR[3] => inst1.IN1
 MIR[4] => ~NO_FANOUT~
 MIR[5] => ~NO_FANOUT~
 MIR[6] => ~NO_FANOUT~
 MIR[7] => ~NO_FANOUT~
 MIR[8] => ~NO_FANOUT~
 MIR[9] => ~NO_FANOUT~
-MIR[10] => register_32bit:inst.WRITE_EN
-MIR[11] => ~NO_FANOUT~
+MIR[10] => ~NO_FANOUT~
+MIR[11] => register_32bit:inst.WRITE_EN
 MIR[12] => ~NO_FANOUT~
 MIR[13] => ~NO_FANOUT~
 MIR[14] => ~NO_FANOUT~
@@ -103,7 +103,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|SP|register_32bit:inst
+|LV|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -373,7 +373,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|SP|register_32bit:inst|register_4bit:inst4
+|LV|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -397,7 +397,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst5
+|LV|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -421,7 +421,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst6
+|LV|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -445,7 +445,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst
+|LV|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -469,7 +469,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst7
+|LV|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -493,7 +493,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst1
+|LV|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -517,7 +517,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst2
+|LV|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -541,7 +541,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|register_32bit:inst|register_4bit:inst3
+|LV|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -565,7 +565,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|SP|LV_initial_address:inst5
+|LV|LV_initial_address:inst5
 LV_INIT[0] <= inst6[0].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[1] <= inst6[1].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[2] <= inst6[2].DB_MAX_OUTPUT_PORT_TYPE
