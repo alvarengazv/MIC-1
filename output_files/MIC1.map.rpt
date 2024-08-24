@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Sun Aug 04 14:05:07 2024
+Sat Aug 24 19:36:29 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -16,9 +16,8 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +43,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 04 14:05:07 2024      ;
+; Analysis & Synthesis Status        ; Successful - Sat Aug 24 19:36:29 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                       ;
-; Top-level Entity Name              ; DATA_PATH                                  ;
+; Top-level Entity Name              ; BANK_REGS                                  ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 710                                        ;
-;     Total combinational functions  ; 450                                        ;
+; Total logic elements               ; 496                                        ;
+;     Total combinational functions  ; 227                                        ;
 ;     Dedicated logic registers      ; 306                                        ;
 ; Total registers                    ; 306                                        ;
-; Total pins                         ; 280                                        ;
+; Total pins                         ; 278                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -67,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C70F896I8       ;                    ;
-; Top-level entity name                                                      ; DATA_PATH          ; MIC1               ;
+; Top-level entity name                                                      ; BANK_REGS          ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,36 +156,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; ula_1bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/ula_1bit.bdf            ;         ;
-; decoder2_4.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/decoder2_4.bdf          ;         ;
-; logic_unit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/logic_unit.bdf          ;         ;
-; full_adder_1bit_ula.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/full_adder_1bit_ula.bdf ;         ;
-; ula_8bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/ula_8bit.bdf            ;         ;
-; ula_32bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/ula_32bit.bdf           ;         ;
-; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/register_4bit.bdf       ;         ;
-; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/register_32bit.bdf      ;         ;
-; shifter.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/shifter.bdf             ;         ;
-; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MAR.bdf                 ;         ;
-; MDR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MDR.bdf                 ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/PC.bdf                  ;         ;
-; MBR_EXTENSOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MBR_EXTENSOR.bdf        ;         ;
-; MBR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/MBR.bdf                 ;         ;
-; SP.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/SP.bdf                  ;         ;
-; LV_initial_address.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/LV_initial_address.bdf  ;         ;
-; LV.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/LV.bdf                  ;         ;
-; CPP_initial_address.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/CPP_initial_address.bdf ;         ;
-; CPP.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/CPP.bdf                 ;         ;
-; TOS.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/TOS.bdf                 ;         ;
-; OPC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/OPC.bdf                 ;         ;
-; H.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/H.bdf                   ;         ;
-; BANK_REGS.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/BANK_REGS.bdf           ;         ;
-; DATA_PATH.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/TRABAI-COM-REGISTERS/MIC1-GUILHERME-MATHEUS/DATA_PATH.bdf           ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; register_4bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/register_4bit.bdf       ;         ;
+; register_32bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/register_32bit.bdf      ;         ;
+; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/MAR.bdf                 ;         ;
+; MDR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/MDR.bdf                 ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/PC.bdf                  ;         ;
+; MBR_EXTENSOR.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/MBR_EXTENSOR.bdf        ;         ;
+; MBR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/MBR.bdf                 ;         ;
+; SP.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/SP.bdf                  ;         ;
+; LV_initial_address.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/LV_initial_address.bdf  ;         ;
+; LV.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/LV.bdf                  ;         ;
+; CPP_initial_address.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/CPP_initial_address.bdf ;         ;
+; CPP.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/CPP.bdf                 ;         ;
+; TOS.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/TOS.bdf                 ;         ;
+; OPC.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/OPC.bdf                 ;         ;
+; H.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/H.bdf                   ;         ;
+; BANK_REGS.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Backup/AULAS/AOC/MIC1-GUILHERME-MATHEUS/BANK_REGS.bdf           ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -194,265 +185,193 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 710   ;
+; Estimated Total logic elements              ; 496   ;
 ;                                             ;       ;
-; Total combinational functions               ; 450   ;
+; Total combinational functions               ; 227   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 333   ;
-;     -- 3 input functions                    ; 91    ;
-;     -- <=2 input functions                  ; 26    ;
+;     -- 4 input functions                    ; 146   ;
+;     -- 3 input functions                    ; 66    ;
+;     -- <=2 input functions                  ; 15    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 450   ;
+;     -- normal mode                          ; 227   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 306   ;
 ;     -- Dedicated logic registers            ; 306   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 280   ;
+; I/O pins                                    ; 278   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; LOAD  ;
 ; Maximum fan-out                             ; 304   ;
-; Total fan-out                               ; 2848  ;
-; Average fan-out                             ; 2.75  ;
+; Total fan-out                               ; 1955  ;
+; Average fan-out                             ; 2.41  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
-+------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Library Name ;
-+------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
-; |DATA_PATH                               ; 450 (0)           ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 280  ; 0            ; |DATA_PATH                                                                          ;              ;
-;    |BANK_REGS:inst|                      ; 195 (147)         ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst                                                           ;              ;
-;       |CPP:inst7|                        ; 2 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7                                                 ;              ;
-;          |register_32bit:inst|           ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst                             ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst1         ;              ;
-;             |register_4bit:inst2|        ; 1 (1)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst2         ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst3         ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst4         ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst5         ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst6         ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst7         ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst          ;              ;
-;       |H:inst10|                         ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10                                                  ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst                              ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst1          ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst2          ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst3          ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst4          ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst5          ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst6          ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst7          ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst           ;              ;
-;       |LV:inst6|                         ; 3 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6                                                  ;              ;
-;          |register_32bit:inst|           ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst                              ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst1          ;              ;
-;             |register_4bit:inst2|        ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst2          ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst3          ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst4          ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst5          ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst6          ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst7          ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst           ;              ;
-;       |MAR:inst|                         ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst                                                  ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst                              ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst1          ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst2          ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst3          ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst4          ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst5          ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst6          ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst7          ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst           ;              ;
-;       |MBR:inst4|                        ; 2 (0)             ; 17 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4                                                 ;              ;
-;          |register_32bit:inst1|          ; 1 (1)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst1                            ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2        ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst3        ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst                             ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst2         ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst3         ;              ;
-;       |MDR:inst2|                        ; 33 (0)            ; 33 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2                                                 ;              ;
-;          |register_32bit:inst|           ; 33 (10)           ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst                             ;              ;
-;             |register_4bit:inst1|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst1         ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst2         ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst3         ;              ;
-;             |register_4bit:inst4|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst4         ;              ;
-;             |register_4bit:inst5|        ; 3 (3)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst5         ;              ;
-;             |register_4bit:inst6|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst6         ;              ;
-;             |register_4bit:inst7|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst7         ;              ;
-;             |register_4bit:inst|         ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst          ;              ;
-;       |OPC:inst9|                        ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9                                                 ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst                             ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst1         ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst2         ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst3         ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst4         ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst5         ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst6         ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst7         ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst          ;              ;
-;       |PC:inst3|                         ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3                                                  ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst                              ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst1          ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst2          ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst3          ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst4          ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst5          ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst6          ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst7          ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst           ;              ;
-;       |SP:inst5|                         ; 3 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5                                                  ;              ;
-;          |register_32bit:inst|           ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst                              ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst1          ;              ;
-;             |register_4bit:inst2|        ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst2          ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst3          ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst4          ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst5          ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst6          ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst7          ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst           ;              ;
-;       |TOS:inst8|                        ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8                                                 ;              ;
-;          |register_32bit:inst|           ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst                             ;              ;
-;             |register_4bit:inst1|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst1         ;              ;
-;             |register_4bit:inst2|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst2         ;              ;
-;             |register_4bit:inst3|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst3         ;              ;
-;             |register_4bit:inst4|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst4         ;              ;
-;             |register_4bit:inst5|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst5         ;              ;
-;             |register_4bit:inst6|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst6         ;              ;
-;             |register_4bit:inst7|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst7         ;              ;
-;             |register_4bit:inst|         ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst          ;              ;
-;    |ula_32bit:inst2|                     ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2                                                          ;              ;
-;       |shifter:inst1|                    ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|shifter:inst1                                            ;              ;
-;       |ula_8bit:inst2|                   ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2                                           ;              ;
-;          |ula_1bit:inst2|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst3|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst4|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst5|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst6|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst7|                ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst8|                ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst|                 ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|full_adder_1bit_ula:inst10  ;              ;
-;       |ula_8bit:inst3|                   ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3                                           ;              ;
-;          |ula_1bit:inst2|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst3|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst4|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst5|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst6|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst7|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst8|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst|                 ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|full_adder_1bit_ula:inst10  ;              ;
-;       |ula_8bit:inst4|                   ; 51 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4                                           ;              ;
-;          |ula_1bit:inst2|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst3|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst4|                ; 5 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst5|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst6|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst7|                ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst8|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8                            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|full_adder_1bit_ula:inst10 ;              ;
-;          |ula_1bit:inst|                 ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|full_adder_1bit_ula:inst10  ;              ;
-;       |ula_8bit:inst|                    ; 59 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst                                            ;              ;
-;          |ula_1bit:inst2|                ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst3|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst4|                ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst5|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst6|                ; 6 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst7|                ; 10 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7                             ;              ;
-;             |decoder2_4:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|decoder2_4:inst6            ;              ;
-;             |full_adder_1bit_ula:inst10| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst8|                ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8                             ;              ;
-;             |full_adder_1bit_ula:inst10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|full_adder_1bit_ula:inst10  ;              ;
-;          |ula_1bit:inst|                 ; 10 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst                              ;              ;
-;             |full_adder_1bit_ula:inst10| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DATA_PATH|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|full_adder_1bit_ula:inst10   ;              ;
-+------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; |BANK_REGS                     ; 227 (0)           ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 278  ; 0            ; |BANK_REGS                                                    ;              ;
+;    |CPP:inst7|                 ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7                                          ;              ;
+;       |register_32bit:inst|    ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst                      ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst1  ;              ;
+;          |register_4bit:inst2| ; 1 (1)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst2  ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst3  ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst4  ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst5  ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst6  ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst7  ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|CPP:inst7|register_32bit:inst|register_4bit:inst   ;              ;
+;    |H:inst10|                  ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10                                           ;              ;
+;       |register_32bit:inst|    ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst                       ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst1   ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst2   ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst3   ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst4   ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst5   ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst6   ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst7   ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|H:inst10|register_32bit:inst|register_4bit:inst    ;              ;
+;    |LV:inst6|                  ; 4 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6                                           ;              ;
+;       |register_32bit:inst|    ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst                       ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst1   ;              ;
+;          |register_4bit:inst2| ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst2   ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst3   ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst4   ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst5   ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst6   ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst7   ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|LV:inst6|register_32bit:inst|register_4bit:inst    ;              ;
+;    |MAR:inst|                  ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst                                           ;              ;
+;       |register_32bit:inst|    ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst                       ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst1   ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst2   ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst3   ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst4   ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst5   ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst6   ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst7   ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MAR:inst|register_32bit:inst|register_4bit:inst    ;              ;
+;    |MBR:inst4|                 ; 126 (2)           ; 17 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4                                          ;              ;
+;       |register_32bit:inst1|   ; 1 (1)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst1                     ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst1|register_4bit:inst2 ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst1|register_4bit:inst3 ;              ;
+;       |register_32bit:inst|    ; 123 (123)         ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst                      ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst|register_4bit:inst2  ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MBR:inst4|register_32bit:inst|register_4bit:inst3  ;              ;
+;    |MDR:inst2|                 ; 34 (1)            ; 33 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2                                          ;              ;
+;       |register_32bit:inst|    ; 33 (33)           ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst                      ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst1  ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst2  ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst3  ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst4  ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst5  ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst6  ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst7  ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|MDR:inst2|register_32bit:inst|register_4bit:inst   ;              ;
+;    |OPC:inst9|                 ; 50 (1)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9                                          ;              ;
+;       |register_32bit:inst|    ; 49 (49)           ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst                      ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst1  ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst2  ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst3  ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst4  ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst5  ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst6  ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst7  ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|OPC:inst9|register_32bit:inst|register_4bit:inst   ;              ;
+;    |PC:inst3|                  ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3                                           ;              ;
+;       |register_32bit:inst|    ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst                       ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst1   ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst2   ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst3   ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst4   ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst5   ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst6   ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst7   ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|PC:inst3|register_32bit:inst|register_4bit:inst    ;              ;
+;    |SP:inst5|                  ; 4 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5                                           ;              ;
+;       |register_32bit:inst|    ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst                       ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst1   ;              ;
+;          |register_4bit:inst2| ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst2   ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst3   ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst4   ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst5   ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst6   ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst7   ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|SP:inst5|register_32bit:inst|register_4bit:inst    ;              ;
+;    |TOS:inst8|                 ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8                                          ;              ;
+;       |register_32bit:inst|    ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst                      ;              ;
+;          |register_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst1  ;              ;
+;          |register_4bit:inst2| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst2  ;              ;
+;          |register_4bit:inst3| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst3  ;              ;
+;          |register_4bit:inst4| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst4  ;              ;
+;          |register_4bit:inst5| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst5  ;              ;
+;          |register_4bit:inst6| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst6  ;              ;
+;          |register_4bit:inst7| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst7  ;              ;
+;          |register_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BANK_REGS|TOS:inst8|register_32bit:inst|register_4bit:inst   ;              ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                           ;
-+-------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-; Register name                                                           ; Reason for Removal                                                                 ;
-+-------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1|inst   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1|inst1  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1|inst3  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1|inst2  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7|inst   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7|inst1  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7|inst3  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7|inst2  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst|inst    ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst|inst1   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst|inst3   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst|inst2   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6|inst   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6|inst1  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6|inst3  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6|inst2  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5|inst   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5|inst1  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5|inst3  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5|inst2  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4|inst   ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4|inst1  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4|inst3  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4|inst2  ; Stuck at GND due to stuck port data_in                                             ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst1 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst2 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst3 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst1 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst2 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst3 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst1 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst2 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst3 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst1 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst2 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst3 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst|inst   ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst|inst1  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst|inst2  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst|inst3  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst  ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst1 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst2 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst3 ; Merged with BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
-; Total Number of Removed Registers = 48                                  ;                                                                                    ;
-+-------------------------------------------------------------------------+------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                             ;
++----------------------------------------------------------+---------------------------------------------------------------------+
+; Register name                                            ; Reason for Removal                                                  ;
++----------------------------------------------------------+---------------------------------------------------------------------+
+; MBR:inst4|register_32bit:inst|register_4bit:inst1|inst   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst1|inst1  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst1|inst3  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst1|inst2  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst7|inst   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst7|inst1  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst7|inst3  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst7|inst2  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst|inst    ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst|inst1   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst|inst3   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst|inst2   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst6|inst   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst6|inst1  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst6|inst3  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst6|inst2  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst5|inst   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst5|inst1  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst5|inst3  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst5|inst2  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst4|inst   ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst4|inst1  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst4|inst3  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst|register_4bit:inst4|inst2  ; Stuck at GND due to stuck port data_in                              ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst1 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst2 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst5|inst3 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst1 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst2 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst4|inst3 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst1 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst2 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst6|inst3 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst1 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst2 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst7|inst3 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst|inst   ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst|inst1  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst|inst2  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst|inst3  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst  ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst1 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst2 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; MBR:inst4|register_32bit:inst1|register_4bit:inst1|inst3 ; Merged with MBR:inst4|register_32bit:inst1|register_4bit:inst2|inst ;
+; Total Number of Removed Registers = 48                   ;                                                                     ;
++----------------------------------------------------------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -462,7 +381,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 306   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 23    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 304   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
@@ -470,28 +389,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------+
-; Inverted Register Statistics                                                    ;
-+-----------------------------------------------------------------------+---------+
-; Inverted Register                                                     ; Fan out ;
-+-----------------------------------------------------------------------+---------+
-; BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst2|inst ; 1       ;
-; BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst2|inst  ; 1       ;
-; BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst2|inst  ; 1       ;
-; BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst2|inst3 ; 1       ;
-; BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst2|inst3 ; 1       ;
-; Total number of inverted registers = 5                                ;         ;
-+-----------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 9:1                ; 24 bits   ; 144 LEs       ; 144 LEs              ; 0 LEs                  ; No         ; |DATA_PATH|BANK_REGS:inst|OUT_B[23] ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DATA_PATH|BANK_REGS:inst|OUT_B[7]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
++------------------------------------------------------------------+
+; Inverted Register Statistics                                     ;
++--------------------------------------------------------+---------+
+; Inverted Register                                      ; Fan out ;
++--------------------------------------------------------+---------+
+; CPP:inst7|register_32bit:inst|register_4bit:inst2|inst ; 1       ;
+; LV:inst6|register_32bit:inst|register_4bit:inst2|inst  ; 1       ;
+; SP:inst5|register_32bit:inst|register_4bit:inst2|inst  ; 1       ;
+; LV:inst6|register_32bit:inst|register_4bit:inst2|inst3 ; 1       ;
+; SP:inst5|register_32bit:inst|register_4bit:inst2|inst3 ; 1       ;
+; Total number of inverted registers = 5                 ;         ;
++--------------------------------------------------------+---------+
 
 
 +-------------------------------+
@@ -509,7 +418,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Aug 04 14:05:05 2024
+    Info: Processing started: Sat Aug 24 19:36:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
@@ -566,237 +475,132 @@ Info (12021): Found 1 design units, including 1 entities, in source file bank_re
     Info (12023): Found entity 1: BANK_REGS
 Info (12021): Found 1 design units, including 1 entities, in source file data_path.bdf
     Info (12023): Found entity 1: DATA_PATH
-Info (12127): Elaborating entity "DATA_PATH" for the top level hierarchy
-Info (12128): Elaborating entity "ula_32bit" for hierarchy "ula_32bit:inst2"
-Info (12128): Elaborating entity "ula_8bit" for hierarchy "ula_32bit:inst2|ula_8bit:inst4"
-Info (12128): Elaborating entity "ula_1bit" for hierarchy "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3"
-Info (12128): Elaborating entity "full_adder_1bit_ula" for hierarchy "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|full_adder_1bit_ula:inst10"
-Info (12128): Elaborating entity "decoder2_4" for hierarchy "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|decoder2_4:inst6"
-Info (12128): Elaborating entity "logic_unit" for hierarchy "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|logic_unit:inst1"
-Info (12128): Elaborating entity "shifter" for hierarchy "ula_32bit:inst2|shifter:inst1"
-Info (12128): Elaborating entity "BANK_REGS" for hierarchy "BANK_REGS:inst"
-Info (12128): Elaborating entity "MAR" for hierarchy "BANK_REGS:inst|MAR:inst"
-Info (12128): Elaborating entity "register_32bit" for hierarchy "BANK_REGS:inst|MAR:inst|register_32bit:inst"
-Info (12128): Elaborating entity "register_4bit" for hierarchy "BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst4"
-Info (12128): Elaborating entity "MBR" for hierarchy "BANK_REGS:inst|MBR:inst4"
-Info (12128): Elaborating entity "MBR_EXTENSOR" for hierarchy "BANK_REGS:inst|MBR:inst4|MBR_EXTENSOR:inst44"
-Info (12128): Elaborating entity "MDR" for hierarchy "BANK_REGS:inst|MDR:inst2"
-Info (12128): Elaborating entity "H" for hierarchy "BANK_REGS:inst|H:inst10"
-Info (12128): Elaborating entity "OPC" for hierarchy "BANK_REGS:inst|OPC:inst9"
-Info (12128): Elaborating entity "TOS" for hierarchy "BANK_REGS:inst|TOS:inst8"
-Info (12128): Elaborating entity "CPP" for hierarchy "BANK_REGS:inst|CPP:inst7"
-Info (12128): Elaborating entity "CPP_initial_address" for hierarchy "BANK_REGS:inst|CPP:inst7|CPP_initial_address:inst5"
-Info (12128): Elaborating entity "LV" for hierarchy "BANK_REGS:inst|LV:inst6"
-Info (12128): Elaborating entity "LV_initial_address" for hierarchy "BANK_REGS:inst|LV:inst6|LV_initial_address:inst5"
-Info (12128): Elaborating entity "SP" for hierarchy "BANK_REGS:inst|SP:inst5"
-Info (12128): Elaborating entity "PC" for hierarchy "BANK_REGS:inst|PC:inst3"
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[31]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[30]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[29]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[28]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[27]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[26]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[25]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[24]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[23]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[22]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[21]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[20]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[19]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[18]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[17]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[16]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[15]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[14]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[13]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[12]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[11]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[10]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[9]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[8]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[7]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[6]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[5]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[4]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[3]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[2]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[1]" into a selector
-    Warning (13048): Converted tri-state node "BANK_REGS:inst|OUT_B[0]" into a selector
+Info (12127): Elaborating entity "BANK_REGS" for the top level hierarchy
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:inst"
+Info (12128): Elaborating entity "register_32bit" for hierarchy "MAR:inst|register_32bit:inst"
+Info (12128): Elaborating entity "register_4bit" for hierarchy "MAR:inst|register_32bit:inst|register_4bit:inst4"
+Info (12128): Elaborating entity "MBR" for hierarchy "MBR:inst4"
+Info (12128): Elaborating entity "MBR_EXTENSOR" for hierarchy "MBR:inst4|MBR_EXTENSOR:inst44"
+Info (12128): Elaborating entity "MDR" for hierarchy "MDR:inst2"
+Info (12128): Elaborating entity "H" for hierarchy "H:inst10"
+Info (12128): Elaborating entity "OPC" for hierarchy "OPC:inst9"
+Info (12128): Elaborating entity "TOS" for hierarchy "TOS:inst8"
+Info (12128): Elaborating entity "CPP" for hierarchy "CPP:inst7"
+Info (12128): Elaborating entity "CPP_initial_address" for hierarchy "CPP:inst7|CPP_initial_address:inst5"
+Info (12128): Elaborating entity "LV" for hierarchy "LV:inst6"
+Info (12128): Elaborating entity "LV_initial_address" for hierarchy "LV:inst6|LV_initial_address:inst5"
+Info (12128): Elaborating entity "SP" for hierarchy "SP:inst5"
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst3"
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[31]" to the node "MAR[31]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[30]" to the node "MAR[30]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[29]" to the node "MAR[29]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[28]" to the node "MAR[28]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[27]" to the node "MAR[27]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[26]" to the node "MAR[26]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[25]" to the node "MAR[25]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[24]" to the node "MAR[24]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[23]" to the node "MAR[23]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[22]" to the node "MAR[22]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[21]" to the node "MAR[21]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[20]" to the node "MAR[20]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[19]" to the node "MAR[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[18]" to the node "MAR[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[17]" to the node "MAR[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[16]" to the node "MAR[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[15]" to the node "MAR[15]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[14]" to the node "MAR[14]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[13]" to the node "MAR[13]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[12]" to the node "MAR[12]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[11]" to the node "MAR[11]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[10]" to the node "MAR[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[9]" to the node "MAR[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[8]" to the node "MAR[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[7]" to the node "MAR[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[6]" to the node "MAR[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[5]" to the node "MAR[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[4]" to the node "MAR[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[3]" to the node "MAR[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[2]" to the node "MAR[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[1]" to the node "MAR[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MAR:inst|register_32bit:inst|inst13[0]" to the node "MAR[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[7]" to the node "MBR_OUT[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[6]" to the node "MBR_OUT[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[5]" to the node "MBR_OUT[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[4]" to the node "MBR_OUT[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[3]" to the node "MBR_OUT[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[2]" to the node "MBR_OUT[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[1]" to the node "MBR_OUT[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|MBR:inst4|register_32bit:inst1|inst13[0]" to the node "MBR_OUT[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[31]" to the node "PC[31]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[30]" to the node "PC[30]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[29]" to the node "PC[29]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[28]" to the node "PC[28]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[27]" to the node "PC[27]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[26]" to the node "PC[26]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[25]" to the node "PC[25]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[24]" to the node "PC[24]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[23]" to the node "PC[23]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[22]" to the node "PC[22]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[21]" to the node "PC[21]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[20]" to the node "PC[20]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[19]" to the node "PC[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[18]" to the node "PC[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[17]" to the node "PC[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[16]" to the node "PC[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[15]" to the node "PC[15]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[14]" to the node "PC[14]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[13]" to the node "PC[13]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[12]" to the node "PC[12]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[11]" to the node "PC[11]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[10]" to the node "PC[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[9]" to the node "PC[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[8]" to the node "PC[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[7]" to the node "PC[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[6]" to the node "PC[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[5]" to the node "PC[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[4]" to the node "PC[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[3]" to the node "PC[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[2]" to the node "PC[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[1]" to the node "PC[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|PC:inst3|register_32bit:inst|inst13[0]" to the node "PC[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[31]" to the node "A[31]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[31]" to the node "B[31]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[30]" to the node "A[30]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[30]" to the node "B[30]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[29]" to the node "A[29]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[29]" to the node "B[29]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[28]" to the node "A[28]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[28]" to the node "B[28]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[27]" to the node "A[27]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[27]" to the node "B[27]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[26]" to the node "A[26]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[26]" to the node "B[26]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[25]" to the node "A[25]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[25]" to the node "B[25]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[24]" to the node "A[24]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[24]" to the node "B[24]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[23]" to the node "A[23]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[23]" to the node "B[23]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[22]" to the node "A[22]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[22]" to the node "B[22]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[21]" to the node "A[21]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[21]" to the node "B[21]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[20]" to the node "A[20]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[20]" to the node "B[20]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[19]" to the node "A[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[19]" to the node "B[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[18]" to the node "A[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[18]" to the node "B[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[17]" to the node "A[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[17]" to the node "B[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[16]" to the node "A[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[16]" to the node "B[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[15]" to the node "A[15]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[15]" to the node "B[15]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[14]" to the node "A[14]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[14]" to the node "B[14]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[13]" to the node "A[13]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[13]" to the node "B[13]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[12]" to the node "A[12]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[12]" to the node "B[12]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[11]" to the node "A[11]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[11]" to the node "B[11]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[10]" to the node "A[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[10]" to the node "B[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[9]" to the node "A[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[9]" to the node "B[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[8]" to the node "A[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[8]" to the node "B[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[7]" to the node "A[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[7]" to the node "B[7]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[6]" to the node "A[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[6]" to the node "B[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[5]" to the node "A[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[5]" to the node "B[5]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[4]" to the node "A[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[4]" to the node "B[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[3]" to the node "A[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[3]" to the node "B[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[2]" to the node "A[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[2]" to the node "B[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[1]" to the node "A[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[1]" to the node "B[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[0]" to the node "A[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[0]" to the node "B[0]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[31]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[30]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[29]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[28]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[27]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[26]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[25]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[24]" to the node "ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[23]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[22]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[21]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[20]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[19]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[18]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[17]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[16]" to the node "ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[15]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[14]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[13]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[12]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[11]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[10]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[9]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[8]" to the node "ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[7]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[6]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[5]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[4]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[3]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[2]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[1]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|inst3" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "BANK_REGS:inst|H:inst10|register_32bit:inst|inst14[0]" to the node "ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|inst3" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[31]" to the node "MAR[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[30]" to the node "MAR[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[29]" to the node "MAR[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[28]" to the node "MAR[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[27]" to the node "MAR[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[26]" to the node "MAR[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[25]" to the node "MAR[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[24]" to the node "MAR[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[23]" to the node "MAR[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[22]" to the node "MAR[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[21]" to the node "MAR[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[20]" to the node "MAR[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[19]" to the node "MAR[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[18]" to the node "MAR[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[17]" to the node "MAR[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[16]" to the node "MAR[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[15]" to the node "MAR[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[14]" to the node "MAR[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[13]" to the node "MAR[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[12]" to the node "MAR[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[11]" to the node "MAR[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[10]" to the node "MAR[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[9]" to the node "MAR[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[8]" to the node "MAR[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[7]" to the node "MAR[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[6]" to the node "MAR[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[5]" to the node "MAR[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[4]" to the node "MAR[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[3]" to the node "MAR[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[2]" to the node "MAR[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[1]" to the node "MAR[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MAR:inst|register_32bit:inst|inst13[0]" to the node "MAR[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[7]" to the node "MBR_OUT[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[6]" to the node "MBR_OUT[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[5]" to the node "MBR_OUT[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[4]" to the node "MBR_OUT[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[3]" to the node "MBR_OUT[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[2]" to the node "MBR_OUT[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[1]" to the node "MBR_OUT[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "MBR:inst4|register_32bit:inst1|inst13[0]" to the node "MBR_OUT[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[31]" to the node "OUT_A[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[30]" to the node "OUT_A[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[29]" to the node "OUT_A[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[28]" to the node "OUT_A[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[27]" to the node "OUT_A[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[26]" to the node "OUT_A[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[25]" to the node "OUT_A[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[24]" to the node "OUT_A[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[23]" to the node "OUT_A[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[22]" to the node "OUT_A[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[21]" to the node "OUT_A[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[20]" to the node "OUT_A[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[19]" to the node "OUT_A[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[18]" to the node "OUT_A[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[17]" to the node "OUT_A[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[16]" to the node "OUT_A[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[15]" to the node "OUT_A[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[14]" to the node "OUT_A[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[13]" to the node "OUT_A[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[12]" to the node "OUT_A[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[11]" to the node "OUT_A[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[10]" to the node "OUT_A[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[9]" to the node "OUT_A[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[8]" to the node "OUT_A[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[7]" to the node "OUT_A[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[6]" to the node "OUT_A[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[5]" to the node "OUT_A[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[4]" to the node "OUT_A[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[3]" to the node "OUT_A[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[2]" to the node "OUT_A[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[1]" to the node "OUT_A[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "H:inst10|register_32bit:inst|inst14[0]" to the node "OUT_A[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[31]" to the node "PC[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[30]" to the node "PC[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[29]" to the node "PC[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[28]" to the node "PC[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[27]" to the node "PC[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[26]" to the node "PC[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[25]" to the node "PC[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[24]" to the node "PC[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[23]" to the node "PC[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[22]" to the node "PC[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[21]" to the node "PC[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[20]" to the node "PC[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[19]" to the node "PC[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[18]" to the node "PC[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[17]" to the node "PC[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[16]" to the node "PC[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[15]" to the node "PC[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[14]" to the node "PC[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[13]" to the node "PC[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[12]" to the node "PC[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[11]" to the node "PC[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[10]" to the node "PC[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[9]" to the node "PC[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[8]" to the node "PC[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[7]" to the node "PC[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[6]" to the node "PC[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[5]" to the node "PC[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[4]" to the node "PC[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[3]" to the node "PC[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[2]" to the node "PC[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[1]" to the node "PC[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "PC:inst3|register_32bit:inst|inst13[0]" to the node "PC[0]" into a wire
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 20 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MIR[35]"
     Warning (15610): No output dependent on input pin "MIR[34]"
     Warning (15610): No output dependent on input pin "MIR[33]"
@@ -809,13 +613,21 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MIR[26]"
     Warning (15610): No output dependent on input pin "MIR[25]"
     Warning (15610): No output dependent on input pin "MIR[24]"
-Info (21057): Implemented 1022 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 78 input pins
-    Info (21059): Implemented 202 output pins
-    Info (21061): Implemented 742 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 216 warnings
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Sun Aug 04 14:05:07 2024
+    Warning (15610): No output dependent on input pin "MIR[23]"
+    Warning (15610): No output dependent on input pin "MIR[22]"
+    Warning (15610): No output dependent on input pin "MIR[21]"
+    Warning (15610): No output dependent on input pin "MIR[20]"
+    Warning (15610): No output dependent on input pin "MIR[19]"
+    Warning (15610): No output dependent on input pin "MIR[18]"
+    Warning (15610): No output dependent on input pin "MIR[17]"
+    Warning (15610): No output dependent on input pin "MIR[16]"
+Info (21057): Implemented 774 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 110 input pins
+    Info (21059): Implemented 168 output pins
+    Info (21061): Implemented 496 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 127 warnings
+    Info: Peak virtual memory: 4598 megabytes
+    Info: Processing ended: Sat Aug 24 19:36:29 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

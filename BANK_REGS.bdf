@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 24 -1408 40 -1240)
+	(rect 24 -1392 40 -1224)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "IN_C[31..0]" (rect 4 5 16 63)(font "Arial" )(vertical))
+	(text "IN_C[31..0]" (rect 4 5 16 62)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -70,9 +70,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 -1408 88 -1240)
+	(rect 72 -1392 88 -1224)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "LOAD" (rect 4 5 16 35)(font "Arial" )(vertical))
+	(text "LOAD" (rect 4 5 16 34)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -87,9 +87,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 120 -1408 136 -1240)
+	(rect 120 -1392 136 -1224)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "CLOCK" (rect 4 5 16 43)(font "Arial" )(vertical))
+	(text "CLOCK" (rect 4 5 16 42)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -104,9 +104,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 168 -1408 184 -1240)
+	(rect 168 -1392 184 -1224)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "MIR[35..0]" (rect 4 5 16 57)(font "Arial" )(vertical))
+	(text "MIR[35..0]" (rect 4 5 16 56)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -121,7 +121,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 952 336 968 512)
+	(rect 952 296 968 472)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
 	(text "OUT_B[31..0]" (rect 4 90 16 157)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -770,16 +770,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 960 -112)
-	(pt 960 56)
-	(bus)
-)
-(connector
-	(pt 960 56)
-	(pt 960 336)
-	(bus)
-)
-(connector
 	(pt 448 -1200)
 	(pt 32 -1200)
 	(bus)
@@ -822,16 +812,6 @@ applicable agreement for further details.
 (connector
 	(pt 504 216)
 	(pt 32 216)
-	(bus)
-)
-(connector
-	(pt 32 -1240)
-	(pt 32 -1200)
-	(bus)
-)
-(connector
-	(pt 32 -1200)
-	(pt 32 -1032)
 	(bus)
 )
 (connector
@@ -970,26 +950,12 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 176 -1240)
-	(pt 176 -1168)
-	(bus)
-)
-(connector
-	(pt 176 -1168)
-	(pt 176 -968)
-	(bus)
-)
-(connector
 	(pt 128 264)
 	(pt 504 264)
 )
 (connector
 	(pt 128 88)
 	(pt 504 88)
-)
-(connector
-	(pt 128 -1416)
-	(pt 128 -1240)
 )
 (connector
 	(pt 128 88)
@@ -1054,14 +1020,6 @@ applicable agreement for further details.
 (connector
 	(pt 448 -1152)
 	(pt 128 -1152)
-)
-(connector
-	(pt 128 -1240)
-	(pt 128 -1152)
-)
-(connector
-	(pt 128 -1152)
-	(pt 128 -984)
 )
 (connector
 	(pt 80 232)
@@ -1136,12 +1094,50 @@ applicable agreement for further details.
 	(pt 80 -1184)
 )
 (connector
-	(pt 80 -1240)
+	(pt 32 -1224)
+	(pt 32 -1200)
+	(bus)
+)
+(connector
+	(pt 32 -1200)
+	(pt 32 -1032)
+	(bus)
+)
+(connector
+	(pt 80 -1224)
 	(pt 80 -1184)
 )
 (connector
 	(pt 80 -1184)
 	(pt 80 -1000)
+)
+(connector
+	(pt 128 -1224)
+	(pt 128 -1152)
+)
+(connector
+	(pt 128 -1152)
+	(pt 128 -984)
+)
+(connector
+	(pt 176 -1224)
+	(pt 176 -1168)
+	(bus)
+)
+(connector
+	(pt 176 -1168)
+	(pt 176 -968)
+	(bus)
+)
+(connector
+	(pt 960 -112)
+	(pt 960 56)
+	(bus)
+)
+(connector
+	(pt 960 56)
+	(pt 960 296)
+	(bus)
 )
 (junction (pt 960 -872))
 (junction (pt 960 -728))
@@ -1167,7 +1163,6 @@ applicable agreement for further details.
 (junction (pt 176 -824))
 (junction (pt 176 -968))
 (junction (pt 176 -1168))
-(junction (pt 128 -1240))
 (junction (pt 128 88))
 (junction (pt 128 -80))
 (junction (pt 128 -224))
