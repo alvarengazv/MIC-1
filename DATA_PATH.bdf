@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 184 464 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 168 464 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 216 464 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 232 464 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MDR_IN[31..0]" (rect 5 0 80 12)(font "Arial" ))
+	(text "MDR_IN[31..0]" (rect 5 0 79 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 296 248 464 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MBR_IN[7..0]" (rect 5 0 73 12)(font "Arial" ))
+	(text "MBR_IN[7..0]" (rect 5 0 72 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -415,11 +415,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 816 400)
-	(pt 816 240)
-	(bus)
-)
-(connector
 	(pt 856 424)
 	(pt 792 424)
 	(bus)
@@ -460,16 +455,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 736 240)
-	(pt 816 240)
-	(bus)
-)
-(connector
-	(pt 816 240)
-	(pt 840 240)
-	(bus)
-)
-(connector
 	(pt 1080 272)
 	(pt 1112 272)
 	(bus)
@@ -500,11 +485,6 @@ applicable agreement for further details.
 (connector
 	(pt 840 240)
 	(pt 928 240)
-	(bus)
-)
-(connector
-	(pt 736 256)
-	(pt 928 256)
 	(bus)
 )
 (connector
@@ -555,7 +535,27 @@ applicable agreement for further details.
 	(pt 512 224)
 	(bus)
 )
-(junction (pt 816 240))
+(connector
+	(pt 736 240)
+	(pt 840 240)
+	(bus)
+)
+(connector
+	(pt 816 400)
+	(pt 816 256)
+	(bus)
+)
+(connector
+	(pt 736 256)
+	(pt 816 256)
+	(bus)
+)
+(connector
+	(pt 816 256)
+	(pt 928 256)
+	(bus)
+)
 (junction (pt 840 240))
 (junction (pt 792 104))
 (junction (pt 488 224))
+(junction (pt 816 256))

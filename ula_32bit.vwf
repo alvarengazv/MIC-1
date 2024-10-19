@@ -1412,21 +1412,6 @@ SIGNAL("MIR[0]")
 	PARENT = "";
 }
 
-GROUP("SEM_FUNCOES")
-{
-	MEMBERS = "MIR[35]", "MIR[34]", "MIR[33]", "MIR[32]", "MIR[31]", "MIR[30]", "MIR[29]", "MIR[28]", "MIR[27]", "MIR[26]", "MIR[25]", "MIR[24]", "MIR[15]", "MIR[14]", "MIR[13]", "MIR[12]", "MIR[11]", "MIR[10]", "MIR[9]", "MIR[8]", "MIR[7]", "MIR[6]", "MIR[5]", "MIR[4]", "MIR[3]", "MIR[2]", "MIR[1]", "MIR[0]";
-}
-
-GROUP("SHIFTER")
-{
-	MEMBERS = "MIR[23]", "MIR[22]";
-}
-
-GROUP("FUNCOES-ULA")
-{
-	MEMBERS = "MIR[21]", "MIR[20]", "MIR[19]", "MIR[18]", "MIR[17]", "MIR[16]";
-}
-
 SIGNAL("S")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1755,6 +1740,21 @@ SIGNAL("S[0]")
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "S";
+}
+
+GROUP("SEM_FUNCOES")
+{
+	MEMBERS = "MIR[35]", "MIR[34]", "MIR[33]", "MIR[32]", "MIR[31]", "MIR[30]", "MIR[29]", "MIR[28]", "MIR[27]", "MIR[26]", "MIR[25]", "MIR[24]", "MIR[15]", "MIR[14]", "MIR[13]", "MIR[12]", "MIR[11]", "MIR[10]", "MIR[9]", "MIR[8]", "MIR[7]", "MIR[6]", "MIR[5]", "MIR[4]", "MIR[3]", "MIR[2]", "MIR[1]", "MIR[0]";
+}
+
+GROUP("SHIFTER")
+{
+	MEMBERS = "MIR[23]", "MIR[22]";
+}
+
+GROUP("FUNCOES-ULA")
+{
+	MEMBERS = "MIR[21]", "MIR[20]", "MIR[19]", "MIR[18]", "MIR[17]", "MIR[16]";
 }
 
 TRANSITION_LIST("A[31]")
@@ -2840,7 +2840,9 @@ TRANSITION_LIST("MIR[21]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1600.0;
+		LEVEL 0 FOR 900.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 650.0;
 	}
 }
 
@@ -2849,12 +2851,8 @@ TRANSITION_LIST("MIR[20]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 800.0;
-			LEVEL 1 FOR 800.0;
-		}
+		LEVEL 0 FOR 800.0;
+		LEVEL 1 FOR 800.0;
 	}
 }
 
@@ -2865,10 +2863,12 @@ TRANSITION_LIST("MIR[19]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
+			REPEAT = 1;
 			LEVEL 0 FOR 400.0;
 			LEVEL 1 FOR 400.0;
 		}
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 400.0;
 	}
 }
 
@@ -2879,7 +2879,17 @@ TRANSITION_LIST("MIR[18]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
+			REPEAT = 2;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
+		}
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 200.0;
+		NODE
+		{
+			REPEAT = 1;
 			LEVEL 0 FOR 200.0;
 			LEVEL 1 FOR 200.0;
 		}
@@ -2893,7 +2903,17 @@ TRANSITION_LIST("MIR[17]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 8;
+			REPEAT = 4;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+		}
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		NODE
+		{
+			REPEAT = 2;
 			LEVEL 0 FOR 100.0;
 			LEVEL 1 FOR 100.0;
 		}
@@ -2907,7 +2927,17 @@ TRANSITION_LIST("MIR[16]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 16;
+			REPEAT = 8;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+		}
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		NODE
+		{
+			REPEAT = 5;
 			LEVEL 0 FOR 50.0;
 			LEVEL 1 FOR 50.0;
 		}
