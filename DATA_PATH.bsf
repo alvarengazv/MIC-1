@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 136 208)
+	(text "DATA_PATH" (rect 5 0 33 5)(font "Arial" (font_size 3)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "LOAD" (rect 0 0 12 5)(font "Arial" (font_size 3)))
+		(text "LOAD" (rect 21 27 33 32)(font "Arial" (font_size 3)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK" (rect 0 0 16 5)(font "Arial" (font_size 3)))
+		(text "CLOCK" (rect 21 43 37 48)(font "Arial" (font_size 3)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "MIR[35..0]" (rect 0 0 20 5)(font "Arial" (font_size 3)))
+		(text "MIR[35..0]" (rect 21 59 41 64)(font "Arial" (font_size 3)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MDR_IN[31..0]" (rect 0 0 29 5)(font "Arial" (font_size 3)))
+		(text "MDR_IN[31..0]" (rect 21 75 50 80)(font "Arial" (font_size 3)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MBR_IN[7..0]" (rect 0 0 27 5)(font "Arial" (font_size 3)))
+		(text "MBR_IN[7..0]" (rect 21 91 48 96)(font "Arial" (font_size 3)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "MAR[31..0]" (rect 0 0 22 5)(font "Arial" (font_size 3)))
+		(text "MAR[31..0]" (rect 77 27 99 32)(font "Arial" (font_size 3)))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(port
+		(pt 120 48)
+		(output)
+		(text "MDR_OUT[31..0]" (rect 0 0 34 5)(font "Arial" (font_size 3)))
+		(text "MDR_OUT[31..0]" (rect 65 43 99 48)(font "Arial" (font_size 3)))
+		(line (pt 120 48)(pt 104 48)(line_width 3))
+	)
+	(port
+		(pt 120 64)
+		(output)
+		(text "PC[31..0]" (rect 0 0 18 5)(font "Arial" (font_size 3)))
+		(text "PC[31..0]" (rect 81 59 99 64)(font "Arial" (font_size 3)))
+		(line (pt 120 64)(pt 104 64)(line_width 3))
+	)
+	(port
+		(pt 120 80)
+		(output)
+		(text "MBR_OUT[7..0]" (rect 0 0 31 5)(font "Arial" (font_size 3)))
+		(text "MBR_OUT[7..0]" (rect 68 75 99 80)(font "Arial" (font_size 3)))
+		(line (pt 120 80)(pt 104 80)(line_width 3))
+	)
+	(port
+		(pt 120 96)
+		(output)
+		(text "N" (rect 0 0 3 5)(font "Arial" (font_size 3)))
+		(text "N" (rect 96 91 99 96)(font "Arial" (font_size 3)))
+		(line (pt 120 96)(pt 104 96))
+	)
+	(port
+		(pt 120 112)
+		(output)
+		(text "Z" (rect 0 0 2 5)(font "Arial" (font_size 3)))
+		(text "Z" (rect 97 107 99 112)(font "Arial" (font_size 3)))
+		(line (pt 120 112)(pt 104 112))
+	)
+	(port
+		(pt 120 128)
+		(output)
+		(text "A[31..0]" (rect 0 0 15 5)(font "Arial" (font_size 3)))
+		(text "A[31..0]" (rect 84 123 99 128)(font "Arial" (font_size 3)))
+		(line (pt 120 128)(pt 104 128)(line_width 3))
+	)
+	(port
+		(pt 120 144)
+		(output)
+		(text "B[31..0]" (rect 0 0 15 5)(font "Arial" (font_size 3)))
+		(text "B[31..0]" (rect 84 139 99 144)(font "Arial" (font_size 3)))
+		(line (pt 120 144)(pt 104 144)(line_width 3))
+	)
+	(port
+		(pt 120 160)
+		(output)
+		(text "C[31..0]" (rect 0 0 15 5)(font "Arial" (font_size 3)))
+		(text "C[31..0]" (rect 84 155 99 160)(font "Arial" (font_size 3)))
+		(line (pt 120 160)(pt 104 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 176))
+	)
+)

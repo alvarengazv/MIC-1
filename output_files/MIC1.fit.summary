@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sat Aug 24 19:36:38 2024
-Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Fitter Status : Successful - Fri Oct 18 20:05:09 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : MIC1
-Top-level Entity Name : BANK_REGS
+Top-level Entity Name : DATA_PATH
 Family : Cyclone II
 Device : EP2C70F896I8
 Timing Models : Final
-Total logic elements : 383 / 68,416 ( < 1 % )
-    Total combinational functions : 227 / 68,416 ( < 1 % )
+Total logic elements : 575 / 68,416 ( < 1 % )
+    Total combinational functions : 450 / 68,416 ( < 1 % )
     Dedicated logic registers : 306 / 68,416 ( < 1 % )
 Total registers : 306
-Total pins : 278 / 622 ( 45 % )
+Total pins : 280 / 622 ( 45 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,152,000 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
