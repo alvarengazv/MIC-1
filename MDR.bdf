@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 72 280 248 296)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "DATA_IN[31..0]" (rect 5 0 83 12)(font "Arial" ))
+	(text "DATA_IN[31..0]" (rect 5 0 82 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -393,6 +393,22 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 608 384 624 416)
+	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
+	(text "inst2" (rect 5 6 17 29)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 7 8 19 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 24)(pt 8 8))
+	)
+	(rotate90)
+)
 (connector
 	(pt 936 288)
 	(pt 968 288)
@@ -402,11 +418,6 @@ applicable agreement for further details.
 	(pt 672 336)
 	(pt 664 336)
 	(bus)
-)
-(connector
-	(text "MIR[6]" (rect 351 464 384 476)(font "Arial" ))
-	(pt 624 400)
-	(pt 672 400)
 )
 (connector
 	(pt 672 352)
@@ -494,19 +505,6 @@ applicable agreement for further details.
 	(pt 384 376)
 )
 (connector
-	(pt 624 400)
-	(pt 624 464)
-)
-(connector
-	(pt 336 464)
-	(pt 624 464)
-)
-(connector
-	(pt 336 376)
-	(pt 336 464)
-	(bus)
-)
-(connector
 	(text "MIR[3]" (rect 351 480 384 492)(font "Arial" ))
 	(pt 336 496)
 	(pt 384 496)
@@ -535,11 +533,6 @@ applicable agreement for further details.
 	(pt 448 520)
 )
 (connector
-	(pt 336 464)
-	(pt 336 496)
-	(bus)
-)
-(connector
 	(pt 336 496)
 	(pt 336 512)
 	(bus)
@@ -564,10 +557,18 @@ applicable agreement for further details.
 	(pt 1008 272)
 	(bus)
 )
+(connector
+	(pt 336 376)
+	(pt 336 496)
+	(bus)
+)
+(connector
+	(pt 624 400)
+	(pt 672 400)
+)
 (junction (pt 464 360))
 (junction (pt 256 392))
 (junction (pt 336 376))
-(junction (pt 336 464))
 (junction (pt 336 496))
 (junction (pt 336 512))
 (junction (pt 336 528))

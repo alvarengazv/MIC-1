@@ -1,6 +1,6 @@
 Assembler report for MIC1
-Sat Oct 19 17:40:42 2024
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Fri Oct 25 16:42:40 2024
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.sof
-  6. Assembler Device Options: D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.pof
+  5. Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof
+  6. Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Oct 19 17:40:42 2024 ;
+; Assembler Status      ; Successful - Fri Oct 25 16:42:40 2024 ;
 ; Revision Name         ; MIC1                                  ;
 ; Top-level Entity Name ; DATA_PATH                             ;
 ; Family                ; Cyclone II                            ;
@@ -78,53 +78,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------+
-; Assembler Generated Files                       ;
-+-------------------------------------------------+
-; File Name                                       ;
-+-------------------------------------------------+
-; D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.sof ;
-; D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.pof ;
-+-------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                ;
++------------------------------------------------------------------------------------------+
+; File Name                                                                                ;
++------------------------------------------------------------------------------------------+
+; C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof ;
+; C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof ;
++------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Assembler Device Options: D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.sof ;
-+----------------+----------------------------------------------------------+
-; Option         ; Setting                                                  ;
-+----------------+----------------------------------------------------------+
-; Device         ; EP2C70F896I8                                             ;
-; JTAG usercode  ; 0x006966C9                                               ;
-; Checksum       ; 0x006966C9                                               ;
-+----------------+----------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof ;
++----------------+---------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                           ;
++----------------+---------------------------------------------------------------------------------------------------+
+; Device         ; EP2C70F896I8                                                                                      ;
+; JTAG usercode  ; 0x00697898                                                                                        ;
+; Checksum       ; 0x00697898                                                                                        ;
++----------------+---------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Assembler Device Options: D:/Backup/AULAS/AOC/MIC-1/output_files/MIC1.pof ;
-+--------------------+------------------------------------------------------+
-; Option             ; Setting                                              ;
-+--------------------+------------------------------------------------------+
-; Device             ; EPCS16                                               ;
-; JTAG usercode      ; 0x00000000                                           ;
-; Checksum           ; 0x186F496C                                           ;
-; Compression Ratio  ; 3                                                    ;
-+--------------------+------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof ;
++--------------------+-----------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                       ;
++--------------------+-----------------------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                                        ;
+; JTAG usercode      ; 0x00000000                                                                                    ;
+; Checksum           ; 0x18702952                                                                                    ;
+; Compression Ratio  ; 3                                                                                             ;
++--------------------+-----------------------------------------------------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Oct 19 17:40:39 2024
+Info: Running Quartus II 32-bit Assembler
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 25 16:42:37 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4563 megabytes
-    Info: Processing ended: Sat Oct 19 17:40:42 2024
-    Info: Elapsed time: 00:00:03
+Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 371 megabytes
+    Info: Processing ended: Fri Oct 25 16:42:41 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 
