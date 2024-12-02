@@ -38,5 +38,5 @@
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst File: MIC1.vt
 # Simulation passed !
-# ** Note: $finish    : MIC1.vt(958)
-#    Time: 1800 ns  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/tb_out
+# ** Note: $finish    : MIC1.vt(980)
+#    Time: 1400 ns  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/tb_out

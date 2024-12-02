@@ -25,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1800.0;
+	DATA_DURATION = 1400.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 0.0;
@@ -1681,10 +1681,6 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|CLOCK")
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
 	}
 }
 
@@ -1693,7 +1689,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1702,8 +1698,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1399.0;
-		LEVEL 0 FOR 401.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -1712,8 +1709,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1399.0;
-		LEVEL 0 FOR 401.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1722,7 +1718,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -1731,7 +1727,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -1740,9 +1738,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 420.0;
-		LEVEL 1 FOR 979.0;
-		LEVEL 0 FOR 401.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1751,7 +1747,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -1760,7 +1758,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MBR_IN[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1769,7 +1767,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|N")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1778,7 +1776,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|Z")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -1788,7 +1786,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[35]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.066;
-		LEVEL 0 FOR 1795.934;
+		LEVEL 0 FOR 1395.934;
 	}
 }
 
@@ -1798,7 +1796,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[34]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.431;
-		LEVEL 0 FOR 1795.569;
+		LEVEL 0 FOR 1395.569;
 	}
 }
 
@@ -1808,10 +1806,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[33]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.475;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 389.169;
+		LEVEL 0 FOR 1395.525;
 	}
 }
 
@@ -1821,10 +1816,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[32]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.405;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 389.239;
+		LEVEL 0 FOR 1395.595;
 	}
 }
 
@@ -1834,7 +1826,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[31]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.047;
-		LEVEL 0 FOR 1795.953;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 189.597;
 	}
 }
 
@@ -1844,7 +1837,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[30]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.423;
-		LEVEL 0 FOR 1795.577;
+		LEVEL 0 FOR 1395.577;
 	}
 }
 
@@ -1854,10 +1847,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[29]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.421;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 389.223;
+		LEVEL 0 FOR 1395.579;
 	}
 }
 
@@ -1870,9 +1860,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[28]")
 		LEVEL 0 FOR 206.356;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 189.599;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 389.599;
 	}
 }
 
@@ -1882,11 +1871,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[27]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.129;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 188.515;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 188.515;
 	}
 }
 
@@ -1898,9 +1884,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[26]")
 		LEVEL X FOR 5.577;
 		LEVEL 0 FOR 406.357;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 388.066;
+		LEVEL 0 FOR 188.066;
 	}
 }
 
@@ -1910,7 +1896,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[25]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.515;
-		LEVEL 0 FOR 1794.485;
+		LEVEL 0 FOR 1394.485;
 	}
 }
 
@@ -1920,7 +1906,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[24]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.503;
-		LEVEL 0 FOR 1795.497;
+		LEVEL 0 FOR 1395.497;
 	}
 }
 
@@ -1930,7 +1916,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[23]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.453;
-		LEVEL 0 FOR 1794.547;
+		LEVEL 0 FOR 1394.547;
 	}
 }
 
@@ -1940,7 +1926,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[22]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.758;
-		LEVEL 0 FOR 1795.242;
+		LEVEL 0 FOR 1395.242;
 	}
 }
 
@@ -1951,10 +1937,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[21]")
 		REPEAT = 1;
 		LEVEL X FOR 5.83;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 600.0;
-		LEVEL 0 FOR 187.813;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 387.813;
 	}
 }
 
@@ -1965,7 +1950,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[20]")
 		REPEAT = 1;
 		LEVEL X FOR 5.142;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1388.501;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 388.501;
 	}
 }
 
@@ -1975,9 +1962,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[19]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.054;
-		LEVEL 0 FOR 1006.357;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 588.589;
+		LEVEL 0 FOR 1394.946;
 	}
 }
 
@@ -1988,7 +1973,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[18]")
 		REPEAT = 1;
 		LEVEL X FOR 5.124;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1388.519;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 388.519;
 	}
 }
 
@@ -1998,13 +1985,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[17]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.446;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 189.201;
+		LEVEL 0 FOR 1395.554;
 	}
 }
 
@@ -2017,8 +1998,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[16]")
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 389.148;
+		LEVEL 1 FOR 389.148;
 	}
 }
 
@@ -2028,10 +2008,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[15]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.25;
-		LEVEL 0 FOR 806.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 188.397;
+		LEVEL 0 FOR 1394.75;
 	}
 }
 
@@ -2041,7 +2018,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[14]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.217;
-		LEVEL 0 FOR 1794.783;
+		LEVEL 0 FOR 1394.783;
 	}
 }
 
@@ -2051,9 +2028,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[13]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.521;
-		LEVEL 0 FOR 1006.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 588.126;
+		LEVEL 0 FOR 1394.479;
 	}
 }
 
@@ -2063,7 +2038,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[12]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.84;
-		LEVEL 0 FOR 1795.16;
+		LEVEL 0 FOR 1395.16;
 	}
 }
 
@@ -2073,7 +2048,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[11]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.148;
-		LEVEL 0 FOR 1794.852;
+		LEVEL 0 FOR 1394.852;
 	}
 }
 
@@ -2083,11 +2058,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[10]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 5.21;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 188.437;
+		LEVEL 0 FOR 1206.353;
+		LEVEL 1 FOR 188.437;
 	}
 }
 
@@ -2099,9 +2071,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[9]")
 		LEVEL X FOR 4.798;
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 388.849;
+		LEVEL 0 FOR 188.849;
 	}
 }
 
@@ -2111,9 +2083,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[8]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.421;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 589.211;
+		LEVEL 0 FOR 1395.579;
 	}
 }
 
@@ -2123,11 +2093,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[7]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.774;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 188.858;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 188.858;
 	}
 }
 
@@ -2137,9 +2104,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[6]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.387;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 589.245;
+		LEVEL 0 FOR 1395.613;
 	}
 }
 
@@ -2149,11 +2114,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[5]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.729;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 188.903;
+		LEVEL 0 FOR 1395.271;
 	}
 }
 
@@ -2165,9 +2126,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[4]")
 		LEVEL X FOR 4.72;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 388.912;
+		LEVEL 0 FOR 188.912;
 	}
 }
 
@@ -2177,7 +2138,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.377;
-		LEVEL 0 FOR 1795.623;
+		LEVEL 0 FOR 1395.623;
 	}
 }
 
@@ -2187,10 +2148,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.359;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 389.273;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 189.273;
 	}
 }
 
@@ -2200,10 +2159,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.693;
-		LEVEL 0 FOR 806.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 188.939;
+		LEVEL 0 FOR 1395.307;
 	}
 }
 
@@ -2215,12 +2171,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MIR[0]")
 		LEVEL X FOR 4.747;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 188.885;
+		LEVEL 0 FOR 188.885;
 	}
 }
 
@@ -2230,7 +2183,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[8]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.77;
-		LEVEL 0 FOR 1793.23;
+		LEVEL 0 FOR 1393.23;
 	}
 }
 
@@ -2240,7 +2193,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[7]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.814;
-		LEVEL 0 FOR 1793.186;
+		LEVEL 0 FOR 1393.186;
 	}
 }
 
@@ -2250,12 +2203,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[6]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 7.182;
-		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 599.147;
-		LEVEL 0 FOR 200.853;
-		LEVEL 1 FOR 194.309;
-		LEVEL 0 FOR 4.838;
-		LEVEL 1 FOR 387.314;
+		LEVEL 0 FOR 421.666;
+		LEVEL 1 FOR 184.691;
+		LEVEL 0 FOR 786.461;
 	}
 }
 
@@ -2265,10 +2215,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[5]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 7.253;
-		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 599.6;
-		LEVEL 0 FOR 200.4;
-		LEVEL 1 FOR 586.39;
+		LEVEL 0 FOR 1392.747;
 	}
 }
 
@@ -2278,7 +2225,10 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[4]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.836;
-		LEVEL 0 FOR 1793.164;
+		LEVEL 0 FOR 406.357;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 386.807;
 	}
 }
 
@@ -2288,7 +2238,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 7.611;
-		LEVEL 0 FOR 1792.389;
+		LEVEL 0 FOR 425.657;
+		LEVEL 1 FOR 180.7;
+		LEVEL 0 FOR 786.032;
 	}
 }
 
@@ -2298,10 +2250,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 7.191;
-		LEVEL 0 FOR 425.549;
-		LEVEL 1 FOR 580.049;
-		LEVEL 0 FOR 200.759;
-		LEVEL 1 FOR 586.452;
+		LEVEL 0 FOR 1392.809;
 	}
 }
 
@@ -2313,10 +2262,11 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[1]")
 		LEVEL X FOR 7.184;
 		LEVEL 0 FOR 205.911;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 186.905;
+		LEVEL 0 FOR 19.761;
+		LEVEL 1 FOR 180.685;
+		LEVEL 0 FOR 199.554;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 386.905;
 	}
 }
 
@@ -2326,11 +2276,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|MPC[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.995;
-		LEVEL 0 FOR 605.95;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 187.055;
+		LEVEL 0 FOR 1205.95;
+		LEVEL 1 FOR 187.055;
 	}
 }
 
@@ -2340,9 +2287,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|write_enable")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 4.477;
-		LEVEL 0 FOR 1143.654;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 451.869;
+		LEVEL 0 FOR 1395.523;
 	}
 }
 
@@ -2360,13 +2305,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|sampler")
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 59.0;
-		LEVEL 0 FOR 1.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 140.0;
 		LEVEL 0 FOR 60.0;
 		LEVEL 1 FOR 140.0;
@@ -2379,7 +2320,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|gnd")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2388,7 +2329,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|vcc")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -2397,7 +2338,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|unknown")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1800.0;
+		LEVEL X FOR 1400.0;
 	}
 }
 
@@ -2406,7 +2347,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|devclrn")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -2415,7 +2356,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|devpor")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -2424,7 +2365,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|devoe")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -2433,7 +2374,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst8~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2442,7 +2383,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|N~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2452,7 +2393,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst8~feeder_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 6.979;
-		LEVEL 0 FOR 1793.021;
+		LEVEL 0 FOR 1393.021;
 	}
 }
 
@@ -2462,10 +2403,6 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|CLOCK~combout")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 141.1;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
@@ -2501,10 +2438,6 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|CLOCK~clkctrl_outclk")
 		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 58.765;
 	}
 }
@@ -2514,7 +2447,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|Z~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2523,7 +2456,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst1~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2533,7 +2466,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst6~0_combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.103;
-		LEVEL 0 FOR 1798.897;
+		LEVEL 0 FOR 1398.897;
 	}
 }
 
@@ -2543,7 +2476,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst6~combout")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.666;
-		LEVEL 0 FOR 1798.334;
+		LEVEL 0 FOR 1398.334;
 	}
 }
 
@@ -2552,9 +2485,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst1~regout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1143.654;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 456.346;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2563,7 +2494,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2572,7 +2503,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2581,10 +2512,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2593,10 +2521,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2605,7 +2530,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 193.644;
 	}
 }
 
@@ -2614,7 +2540,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2623,10 +2549,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2638,9 +2561,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		LEVEL 0 FOR 206.356;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 193.644;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 393.644;
 	}
 }
 
@@ -2649,11 +2571,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.644;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 193.644;
 	}
 }
 
@@ -2664,9 +2583,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.643;
+		LEVEL 0 FOR 193.643;
 	}
 }
 
@@ -2675,7 +2594,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2684,7 +2603,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2693,7 +2612,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2702,7 +2621,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2712,10 +2631,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 600.0;
-		LEVEL 0 FOR 193.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -2725,7 +2643,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1393.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -2734,9 +2654,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.357;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.643;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2746,7 +2664,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1393.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -2755,13 +2675,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2773,8 +2687,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 393.647;
+		LEVEL 1 FOR 393.647;
 	}
 }
 
@@ -2783,10 +2696,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 806.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 193.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2795,7 +2705,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2804,9 +2714,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2815,7 +2723,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2824,7 +2732,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2833,11 +2741,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.647;
+		LEVEL 0 FOR 1206.353;
+		LEVEL 1 FOR 193.647;
 	}
 }
 
@@ -2848,9 +2753,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.647;
+		LEVEL 0 FOR 193.647;
 	}
 }
 
@@ -2859,9 +2764,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2870,11 +2773,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.632;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 193.632;
 	}
 }
 
@@ -2883,9 +2783,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2894,11 +2792,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2909,9 +2803,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.632;
+		LEVEL 0 FOR 193.632;
 	}
 }
 
@@ -2920,7 +2814,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2929,10 +2823,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.632;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 193.632;
 	}
 }
 
@@ -2941,10 +2833,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 806.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 193.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2955,12 +2844,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 193.632;
+		LEVEL 0 FOR 193.632;
 	}
 }
 
@@ -2969,7 +2855,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2978,8 +2864,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1400.07;
-		LEVEL 0 FOR 399.93;
+		LEVEL 0 FOR 421.07;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 578.93;
 	}
 }
 
@@ -2988,8 +2875,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1399.944;
-		LEVEL 0 FOR 400.056;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -2998,7 +2884,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 1 FOR 1400.0;
 	}
 }
 
@@ -3007,7 +2893,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 420.914;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 579.086;
 	}
 }
 
@@ -3016,9 +2904,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 420.934;
-		LEVEL 1 FOR 979.0;
-		LEVEL 0 FOR 400.066;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3027,7 +2913,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 420.934;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 579.066;
 	}
 }
 
@@ -3036,7 +2924,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|MBR_IN~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3046,7 +2934,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[7]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.716;
-		LEVEL 0 FOR 1798.284;
+		LEVEL 0 FOR 1398.284;
 	}
 }
 
@@ -3056,12 +2944,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[6]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.726;
-		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 599.147;
-		LEVEL 0 FOR 200.853;
-		LEVEL 1 FOR 194.309;
-		LEVEL 0 FOR 4.838;
-		LEVEL 1 FOR 392.77;
+		LEVEL 0 FOR 421.666;
+		LEVEL 1 FOR 184.691;
+		LEVEL 0 FOR 791.917;
 	}
 }
 
@@ -3071,10 +2956,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[5]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.729;
-		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 599.6;
-		LEVEL 0 FOR 200.4;
-		LEVEL 1 FOR 591.914;
+		LEVEL 0 FOR 1398.271;
 	}
 }
 
@@ -3084,7 +2966,10 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[4]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.718;
-		LEVEL 0 FOR 1798.282;
+		LEVEL 0 FOR 406.357;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 391.925;
 	}
 }
 
@@ -3094,7 +2979,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.73;
-		LEVEL 0 FOR 1798.27;
+		LEVEL 0 FOR 425.657;
+		LEVEL 1 FOR 180.7;
+		LEVEL 0 FOR 791.913;
 	}
 }
 
@@ -3104,12 +2991,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.723;
-		LEVEL 0 FOR 425.549;
-		LEVEL 1 FOR 580.049;
-		LEVEL 0 FOR 200.759;
-		LEVEL 1 FOR 198.192;
-		LEVEL 0 FOR 1.049;
-		LEVEL 1 FOR 392.679;
+		LEVEL 0 FOR 1398.277;
 	}
 }
 
@@ -3121,10 +3003,11 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[1]")
 		LEVEL X FOR 1.718;
 		LEVEL 0 FOR 205.911;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 192.371;
+		LEVEL 0 FOR 19.761;
+		LEVEL 1 FOR 180.685;
+		LEVEL 0 FOR 199.554;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 392.371;
 	}
 }
 
@@ -3134,11 +3017,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|inst2|inst9[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 1.73;
-		LEVEL 0 FOR 605.95;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 192.32;
+		LEVEL 0 FOR 1205.95;
+		LEVEL 1 FOR 192.32;
 	}
 }
 
@@ -3147,7 +3027,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3156,7 +3036,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3165,10 +3045,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3177,10 +3054,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3189,7 +3063,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 193.644;
 	}
 }
 
@@ -3198,7 +3073,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3207,10 +3082,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.644;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3222,9 +3094,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		LEVEL 0 FOR 206.356;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 193.644;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 393.644;
 	}
 }
 
@@ -3233,11 +3104,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.356;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.644;
+		LEVEL 0 FOR 1206.356;
+		LEVEL 1 FOR 193.644;
 	}
 }
 
@@ -3248,9 +3116,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.643;
+		LEVEL 0 FOR 193.643;
 	}
 }
 
@@ -3259,7 +3127,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3268,7 +3136,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3277,7 +3145,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3286,7 +3154,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3296,10 +3164,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 600.0;
-		LEVEL 0 FOR 193.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -3309,7 +3176,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1393.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -3318,9 +3187,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.357;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.643;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3330,7 +3197,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 406.357;
-		LEVEL 1 FOR 1393.643;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 393.643;
 	}
 }
 
@@ -3339,13 +3208,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3357,8 +3220,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 393.647;
+		LEVEL 1 FOR 393.647;
 	}
 }
 
@@ -3367,10 +3229,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 806.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 193.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3379,7 +3238,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3388,9 +3247,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.647;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3399,7 +3256,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3408,7 +3265,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3417,11 +3274,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.353;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.647;
+		LEVEL 0 FOR 1206.353;
+		LEVEL 1 FOR 193.647;
 	}
 }
 
@@ -3432,9 +3286,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.353;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.647;
+		LEVEL 0 FOR 193.647;
 	}
 }
 
@@ -3443,9 +3297,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3454,11 +3306,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.632;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 193.632;
 	}
 }
 
@@ -3467,9 +3316,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1006.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 593.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3478,11 +3325,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 193.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3493,9 +3336,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 393.632;
+		LEVEL 0 FOR 193.632;
 	}
 }
 
@@ -3504,7 +3347,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1800.0;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3513,10 +3356,8 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 606.368;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 393.632;
+		LEVEL 0 FOR 1206.368;
+		LEVEL 1 FOR 193.632;
 	}
 }
 
@@ -3525,10 +3366,7 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 806.368;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 600.0;
-		LEVEL 1 FOR 193.632;
+		LEVEL 0 FOR 1400.0;
 	}
 }
 
@@ -3539,12 +3377,9 @@ TRANSITION_LIST("CONTROL_UNIT_vlg_vec_tst|i1|rom|altsyncram_component|auto_gener
 		REPEAT = 1;
 		LEVEL 0 FOR 406.368;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 400.0;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 193.632;
+		LEVEL 0 FOR 193.632;
 	}
 }
 
