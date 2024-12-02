@@ -1,0 +1,87 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=36;
+DEPTH=512;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   010000000;
+	001  :   000000000;
+	002  :   004350211;
+	[003..010]  :   000000000;
+	011  :   090350211;
+	012  :   098948003;
+	013  :   0A01C8003;
+	014  :   0B83C00A6;
+	015  :   0B0188005;
+	016  :   0B83C00A3;
+	017  :   0C0350484;
+	018  :   0C8350251;
+	019  :   010142000;
+	[01A..055]  :   000000000;
+	056  :   2B83604A4;
+	057  :   2C0000000;
+	058  :   010142000;
+	059  :   2D0350484;
+	05A  :   010140147;
+	05B  :   2E03600A4;
+	05C  :   2E8140084;
+	05D  :   2F0148040;
+	05E  :   2F8140107;
+	05F  :   3003600C4;
+	060  :   010182000;
+	061  :   3083604A4;
+	062  :   310182007;
+	063  :   0103C2140;
+	064  :   3283604A4;
+	065  :   330148007;
+	066  :   0103F2140;
+	[067..07F]  :   000000000;
+	080  :   4083604A4;
+	081  :   410148007;
+	082  :   0101C2140;
+	[083..0A3]  :   000000000;
+	0A4  :   528350201;
+	0A5  :   530350211;
+	0A6  :   010000000;
+	0A7  :   540364001;
+	0A8  :   548350211;
+	0A9  :   550948002;
+	0AA  :   5581C8003;
+	0AB  :   5603C0218;
+	0AC  :   010000000;
+	0AD  :   5701404A5;
+	0AE  :   578000000;
+	0AF  :   5801408A0;
+	0B0  :   588350085;
+	0B1  :   590000220;
+	0B2  :   598140084;
+	0B3  :   5A0140800;
+	0B4  :   010140147;
+	0B5  :   000000000;
+	0B6  :   5B0350211;
+	[0B7..0C3]  :   000000000;
+	0C4  :   5B8000211;
+	0C5  :   000000000;
+	0C6  :   638350211;
+	0C7  :   640948003;
+	0C8  :   6481C8003;
+	0C9  :   0B83C00A5;
+	[0CA..1FF]  :   000000000;
+END;
