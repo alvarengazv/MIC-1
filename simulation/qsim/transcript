@@ -16,18 +16,18 @@
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.CONTROL_UNIT_vlg_vec_tst 
 # Loading work.CONTROL_UNIT_vlg_vec_tst
 # Loading work.CONTROL_UNIT
-# Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
 # Loading cycloneii_ver.cycloneii_ram_block
 # Loading cycloneii_ver.cycloneii_ram_register
 # Loading cycloneii_ver.cycloneii_ram_pulse_generator
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading work.CONTROL_UNIT_vlg_sample_tst
 # Loading work.CONTROL_UNIT_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
@@ -37,6 +37,8 @@
 # Loading timing data from MIC1_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst File: MIC1.vt
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1441 ps, d:1673 ps, 234 ps );
+#    Time: 1673 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/i1/\rom|altsyncram_component|auto_generated|ram_block1a27 /addr_a_register
 # Simulation passed !
-# ** Note: $finish    : MIC1.vt(980)
+# ** Note: $finish    : MIC1.vt(958)
 #    Time: 1400 ns  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/tb_out

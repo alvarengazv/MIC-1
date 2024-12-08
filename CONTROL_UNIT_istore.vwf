@@ -623,6 +623,16 @@ SIGNAL("Z")
 	PARENT = "";
 }
 
+SIGNAL("write_enable")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("CLOCK")
 {
 	NODE
@@ -1133,6 +1143,15 @@ TRANSITION_LIST("Z")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 1800.0;
+	}
+}
+
+TRANSITION_LIST("write_enable")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1800.0;
 	}
 }
 
@@ -1721,6 +1740,15 @@ DISPLAY_LINE
 	TREE_INDEX = 58;
 	TREE_LEVEL = 1;
 	PARENT = 49;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "write_enable";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

@@ -1,6 +1,6 @@
 Assembler report for MIC1
-Mon Dec 02 15:32:05 2024
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue Dec 03 11:42:07 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof
-  6. Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof
+  5. Assembler Device Options: C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.sof
+  6. Assembler Device Options: C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.pof
   7. Assembler Messages
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Dec 02 15:32:05 2024 ;
+; Assembler Status      ; Successful - Tue Dec 03 11:42:07 2024 ;
 ; Revision Name         ; MIC1                                  ;
 ; Top-level Entity Name ; CONTROL_UNIT                          ;
 ; Family                ; Cyclone II                            ;
-; Device                ; EP2C70F896I8                          ;
+; Device                ; EP2C5T144C6                           ;
 +-----------------------+---------------------------------------+
 
 
@@ -78,53 +78,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                ;
-+------------------------------------------------------------------------------------------+
-; File Name                                                                                ;
-+------------------------------------------------------------------------------------------+
-; C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof ;
-; C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof ;
-+------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Assembler Generated Files                                            ;
++----------------------------------------------------------------------+
+; File Name                                                            ;
++----------------------------------------------------------------------+
+; C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.sof ;
+; C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.pof ;
++----------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.sof ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                           ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Device         ; EP2C70F896I8                                                                                      ;
-; JTAG usercode  ; 0x006126C7                                                                                        ;
-; Checksum       ; 0x006126C7                                                                                        ;
-+----------------+---------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.sof ;
++----------------+-------------------------------------------------------------------------------+
+; Option         ; Setting                                                                       ;
++----------------+-------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C6                                                                   ;
+; JTAG usercode  ; 0x00080082                                                                    ;
+; Checksum       ; 0x00080082                                                                    ;
++----------------+-------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/hecla/OneDrive/햞ea de Trabalho/CEFET/4 periodo/AOC/MIC-1/output_files/MIC1.pof ;
-+--------------------+-----------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                       ;
-+--------------------+-----------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                        ;
-; JTAG usercode      ; 0x00000000                                                                                    ;
-; Checksum           ; 0x187CE51C                                                                                    ;
-; Compression Ratio  ; 3                                                                                             ;
-+--------------------+-----------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/dudat/OneDrive/Documentos/teste/MIC-1/output_files/MIC1.pof ;
++--------------------+---------------------------------------------------------------------------+
+; Option             ; Setting                                                                   ;
++--------------------+---------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                     ;
+; JTAG usercode      ; 0x00000000                                                                ;
+; Checksum           ; 0x0750A962                                                                ;
+; Compression Ratio  ; 3                                                                         ;
++--------------------+---------------------------------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Assembler
+Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 02 15:32:02 2024
+    Info: Processing started: Tue Dec 03 11:42:06 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 376 megabytes
-    Info: Processing ended: Mon Dec 02 15:32:05 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4541 megabytes
+    Info: Processing ended: Tue Dec 03 11:42:07 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

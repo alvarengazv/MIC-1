@@ -1,6 +1,6 @@
 Simulator report for MIC1
-Mon Dec 02 15:32:40 2024
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Dec 06 17:02:13 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -48,47 +48,47 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.4 us       ;
 ; Simulation Netlist Size     ; 76 nodes     ;
 ; Simulation Coverage         ;      48.15 % ;
-; Total Number of Transitions ; 180          ;
+; Total Number of Transitions ; 184          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
-; Device                      ; EP2C70F896I8 ;
+; Device                      ; EP2C5T144C6  ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                                     ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                                   ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Timing                                                                                    ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                                      ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                                                       ;               ;
-; Vector input source                                                                        ; C:/Users/hecla/OneDrive/Área de Trabalho/CEFET/4 periodo/AOC/MIC-1/CONTROL_UNIT_iload.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                                        ; On            ;
-; Check outputs                                                                              ; Off                                                                                       ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                                        ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                                        ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                                        ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                                        ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                                       ; Off           ;
-; Detect glitches                                                                            ; Off                                                                                       ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                                       ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                                       ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                       ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                                       ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                        ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                       ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                       ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                      ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                                                ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                   ;               ;
+; Vector input source                                                                        ; C:/Users/dudat/OneDrive/Documentos/AOCII/MIC-1/CONTROL_UNIT_iload.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 32-bit to view the waveform report data.
+Please use Quartus II 64-Bit to view the waveform report data.
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -304,20 +304,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Simulator
+Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 02 15:32:40 2024
+    Info: Processing started: Fri Dec 06 17:02:13 2024
 Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
-Info (324025): Using vector source file "C:/Users/hecla/OneDrive/Área de Trabalho/CEFET/4 periodo/AOC/MIC-1/CONTROL_UNIT_iload.vwf"
+Info (324025): Using vector source file "C:/Users/dudat/OneDrive/Documentos/AOCII/MIC-1/CONTROL_UNIT_iload.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
 Info (328053): Simulation coverage is      48.15 %
-Info (328052): Number of transitions in simulation is 180
+Info (328052): Number of transitions in simulation is 184
 Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 286 megabytes
-    Info: Processing ended: Mon Dec 02 15:32:40 2024
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4471 megabytes
+    Info: Processing ended: Fri Dec 06 17:02:13 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
