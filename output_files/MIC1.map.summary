@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Dec 03 11:42:03 2024
+Analysis & Synthesis Status : Successful - Sun Dec 08 16:31:51 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : MIC1
-Top-level Entity Name : CONTROL_UNIT
-Family : Cyclone II
-Total logic elements : 13
-    Total combinational functions : 10
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 57
+Top-level Entity Name : CPU
+Family : Cyclone III
+Total logic elements : 808
+    Total combinational functions : 523
+    Dedicated logic registers : 332
+Total registers : 332
+Total pins : 279
 Total virtual pins : 0
 Total memory bits : 18,432
 Embedded Multiplier 9-bit elements : 0
