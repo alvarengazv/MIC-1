@@ -63,680 +63,492 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-CHIP  "MIC1"  ASSIGNED TO AN: EP2C35F672C8
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "MIC1"  ASSIGNED TO AN: EP2C35F484I8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-GND                          : A2        : gnd    :                   :         :           :                
-VCCIO3                       : A3        : power  :                   : 3.3V    : 3         :                
-GND*                         : A4        :        :                   :         : 3         :                
-GND*                         : A5        :        :                   :         : 3         :                
-GND*                         : A6        :        :                   :         : 3         :                
-GND*                         : A7        :        :                   :         : 3         :                
-GND*                         : A8        :        :                   :         : 3         :                
-GND*                         : A9        :        :                   :         : 3         :                
-GND*                         : A10       :        :                   :         : 3         :                
-VCCIO3                       : A11       : power  :                   : 3.3V    : 3         :                
-GND                          : A12       : gnd    :                   :         :           :                
-GND+                         : A13       :        :                   :         : 4         :                
-DATA_MEM_ADDR[6]             : A14       : output : 3.3-V LVTTL       :         : 4         : N              
-GND                          : A15       : gnd    :                   :         :           :                
-VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-DATA_MEM_OUT[24]             : A17       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[31]                    : A18       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[24]                    : A19       : output : 3.3-V LVTTL       :         : 4         : N              
-PC[23]                       : A20       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[23]              : A21       : input  : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_write_enable        : A22       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[17]              : A23       : input  : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
-GND                          : A25       : gnd    :                   :         :           :                
-GND*                         : AA1       :        :                   :         : 1         :                
-GND*                         : AA2       :        :                   :         : 1         :                
-GND*                         : AA3       :        :                   :         : 1         :                
-GND*                         : AA4       :        :                   :         : 1         :                
-GND*                         : AA5       :        :                   :         : 1         :                
-GND*                         : AA6       :        :                   :         : 1         :                
-GND*                         : AA7       :        :                   :         : 1         :                
-VCCA_PLL1                    : AA8       : power  :                   : 1.2V    :           :                
-GND*                         : AA9       :        :                   :         : 8         :                
-DATA_MEM_IN[2]               : AA10      : input  : 3.3-V LVTTL       :         : 8         : N              
-PC[4]                        : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[26]                       : AA12      : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_OUT[0]              : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
-PC[28]                       : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
-PC[21]                       : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[7]              : AA16      : output : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[18]                    : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
-PROG_MEM_IN[3]               : AA18      : input  : 3.3-V LVTTL       :         : 7         : N              
-VCCA_PLL4                    : AA19      : power  :                   : 1.2V    :           :                
-B_BUS[5]                     : AA20      : output : 3.3-V LVTTL       :         : 7         : N              
-GND_PLL4                     : AA21      : gnd    :                   :         :           :                
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
+GND*                         : A3        :        :                   :         : 3         :                
+A_BUS[28]                    : A4        : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_OUT[27]             : A5        : output : 3.3-V LVTTL       :         : 3         : N              
+PC[17]                       : A6        : output : 3.3-V LVTTL       :         : 3         : N              
+PC[3]                        : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+A_BUS[6]                     : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+C_BUS[19]                    : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+C_BUS[8]                     : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+B_BUS[27]                    : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : A12       :        :                   :         : 4         :                
+C_BUS[31]                    : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[29]              : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[16]             : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[18]              : A16       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[12]             : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[26]                       : A18       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[0]               : A19       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A20       :        :                   :         : 4         :                
+VCCIO4                       : A21       : power  :                   : 3.3V    : 4         :                
+GND                          : A22       : gnd    :                   :         :           :                
+VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+PROG_MEM_IN[2]               : AA3       : input  : 3.3-V LVTTL       :         : 8         : N              
+MIR[27]                      : AA4       : output : 3.3-V LVTTL       :         : 8         : N              
+A_BUS[5]                     : AA5       : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[13]                      : AA6       : output : 3.3-V LVTTL       :         : 8         : N              
+DATA_MEM_ADDR[6]             : AA7       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[7]                     : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[30]                    : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[25]                    : AA10      : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[22]                      : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[22]                    : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
+C_BUS[15]                    : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_ADDR[28]            : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_ADDR[20]            : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_IN[14]              : AA16      : input  : 3.3-V LVTTL       :         : 7         : N              
+C_BUS[12]                    : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
+PC[31]                       : AA18      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA19      :        :                   :         : 7         :                
+GND*                         : AA20      :        :                   :         : 7         :                
+GND                          : AA21      : gnd    :                   :         :           :                
 VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
-B_BUS[4]                     : AA23      : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_ADDR[9]             : AA24      : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[1]                       : AA25      : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[2]                       : AA26      : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : AB1       :        :                   :         : 1         :                
-GND*                         : AB2       :        :                   :         : 1         :                
-GND*                         : AB3       :        :                   :         : 1         :                
-GND*                         : AB4       :        :                   :         : 1         :                
-VCCIO1                       : AB5       : power  :                   : 3.3V    : 1         :                
-VCCIO8                       : AB6       : power  :                   : 3.3V    : 8         :                
-GND                          : AB7       : gnd    :                   :         :           :                
-GND*                         : AB8       :        :                   :         : 8         :                
-VCCIO8                       : AB9       : power  :                   : 3.3V    : 8         :                
-GND*                         : AB10      :        :                   :         : 8         :                
-GND                          : AB11      : gnd    :                   :         :           :                
-MPC[2]                       : AB12      : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO8                       : AB13      : power  :                   : 3.3V    : 8         :                
-VCCIO7                       : AB14      : power  :                   : 3.3V    : 7         :                
-DATA_MEM_IN[4]               : AB15      : input  : 3.3-V LVTTL       :         : 7         : N              
-GND                          : AB16      : gnd    :                   :         :           :                
-VCCIO7                       : AB17      : power  :                   : 3.3V    : 7         :                
-A_BUS[10]                    : AB18      : output : 3.3-V LVTTL       :         : 7         : N              
-GND                          : AB19      : gnd    :                   :         :           :                
-A_BUS[16]                    : AB20      : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[1]                     : AB21      : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : AB22      : power  :                   : 3.3V    : 7         :                
-B_BUS[6]                     : AB23      : output : 3.3-V LVTTL       :         : 6         : N              
-PC[8]                        : AB24      : output : 3.3-V LVTTL       :         : 6         : N              
-PC[1]                        : AB25      : output : 3.3-V LVTTL       :         : 6         : N              
-MBR_OUT[3]                   : AB26      : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : AC1       :        :                   :         : 1         :                
-GND*                         : AC2       :        :                   :         : 1         :                
-GND*                         : AC3       :        :                   :         : 1         :                
-GND                          : AC4       : gnd    :                   :         :           :                
-GND*                         : AC5       :        :                   :         : 8         :                
-GND*                         : AC6       :        :                   :         : 8         :                
-GND*                         : AC7       :        :                   :         : 8         :                
-GND*                         : AC8       :        :                   :         : 8         :                
-DATA_MEM_IN[5]               : AC9       : input  : 3.3-V LVTTL       :         : 8         : N              
-PC[22]                       : AC10      : output : 3.3-V LVTTL       :         : 8         : N              
-A_BUS[2]                     : AC11      : output : 3.3-V LVTTL       :         : 8         : N              
-MPC[8]                       : AC12      : output : 3.3-V LVTTL       :         : 8         : N              
-GND+                         : AC13      :        :                   :         : 8         :                
-DATA_MEM_OUT[12]             : AC14      : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[2]              : AC15      : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_IN[12]              : AC16      : input  : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[17]                    : AC17      : output : 3.3-V LVTTL       :         : 7         : N              
-MBR_OUT[7]                   : AC18      : output : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[6]                     : AC19      : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[13]                    : AC20      : output : 3.3-V LVTTL       :         : 7         : N              
-MIR[34]                      : AC21      : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[8]                     : AC22      : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[15]                    : AC23      : output : 3.3-V LVTTL       :         : 6         : N              
-NC                           : AC24      :        :                   :         :           :                
-MIR[16]                      : AC25      : output : 3.3-V LVTTL       :         : 6         : N              
-PC[9]                        : AC26      : output : 3.3-V LVTTL       :         : 6         : N              
-VCCIO1                       : AD1       : power  :                   : 3.3V    : 1         :                
-GND*                         : AD2       :        :                   :         : 1         :                
-GND*                         : AD3       :        :                   :         : 1         :                
-GND*                         : AD4       :        :                   :         : 8         :                
-GND*                         : AD5       :        :                   :         : 8         :                
-GND*                         : AD6       :        :                   :         : 8         :                
-GND*                         : AD7       :        :                   :         : 8         :                
-GND*                         : AD8       :        :                   :         : 8         :                
-GND                          : AD9       : gnd    :                   :         :           :                
-PC[5]                        : AD10      : output : 3.3-V LVTTL       :         : 8         : N              
-MPC[4]                       : AD11      : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_IN[9]               : AD12      : input  : 3.3-V LVTTL       :         : 8         : N              
-GND+                         : AD13      :        :                   :         : 8         :                
-GND                          : AD14      : gnd    :                   :         :           :                
-DATA_MEM_IN[7]               : AD15      : input  : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_IN[0]               : AD16      : input  : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[31]                    : AD17      : output : 3.3-V LVTTL       :         : 7         : N              
-GND                          : AD18      : gnd    :                   :         :           :                
-A_BUS[3]                     : AD19      : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : AD20      : power  :                   : 3.3V    : 7         :                
-MBR_OUT[0]                   : AD21      : output : 3.3-V LVTTL       :         : 7         : N              
-PROG_MEM_IN[1]               : AD22      : input  : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[12]                    : AD23      : output : 3.3-V LVTTL       :         : 7         : N              
-MIR[31]                      : AD24      : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_ADDR[5]             : AD25      : output : 3.3-V LVTTL       :         : 6         : N              
-VCCIO6                       : AD26      : power  :                   : 3.3V    : 6         :                
-GND                          : AE1       : gnd    :                   :         :           :                
-GND*                         : AE2       :        :                   :         : 1         :                
-GND*                         : AE3       :        :                   :         : 1         :                
-GND*                         : AE4       :        :                   :         : 8         :                
-GND*                         : AE5       :        :                   :         : 8         :                
-GND*                         : AE6       :        :                   :         : 8         :                
-PC[30]                       : AE7       : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_IN[14]              : AE8       : input  : 3.3-V LVTTL       :         : 8         : N              
-A_BUS[20]                    : AE9       : output : 3.3-V LVTTL       :         : 8         : N              
-MPC[6]                       : AE10      : output : 3.3-V LVTTL       :         : 8         : N              
-MPC[7]                       : AE11      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[15]                       : AE12      : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_ADDR[19]            : AE13      : output : 3.3-V LVTTL       :         : 8         : N              
-GND+                         : AE14      :        :                   :         : 7         :                
-DATA_MEM_IN[3]               : AE15      : input  : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[1]              : AE16      : output : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[19]                    : AE17      : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[4]              : AE18      : output : 3.3-V LVTTL       :         : 7         : N              
-PROG_MEM_IN[4]               : AE19      : input  : 3.3-V LVTTL       :         : 7         : N              
-MBR_OUT[5]                   : AE20      : output : 3.3-V LVTTL       :         : 7         : N              
-MBR_OUT[4]                   : AE21      : output : 3.3-V LVTTL       :         : 7         : N              
-MBR_OUT[6]                   : AE22      : output : 3.3-V LVTTL       :         : 7         : N              
-MIR[30]                      : AE23      : output : 3.3-V LVTTL       :         : 7         : N              
-~LVDS150p/nCEO~              : AE24      : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_ADDR[2]             : AE25      : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : AE26      : gnd    :                   :         :           :                
-GND                          : AF2       : gnd    :                   :         :           :                
-VCCIO8                       : AF3       : power  :                   : 3.3V    : 8         :                
-GND*                         : AF4       :        :                   :         : 8         :                
-GND*                         : AF5       :        :                   :         : 8         :                
-GND*                         : AF6       :        :                   :         : 8         :                
-PC[16]                       : AF7       : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_IN[26]              : AF8       : input  : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_IN[10]              : AF9       : input  : 3.3-V LVTTL       :         : 8         : N              
-MPC[3]                       : AF10      : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
-GND                          : AF12      : gnd    :                   :         :           :                
-PC[24]                       : AF13      : output : 3.3-V LVTTL       :         : 8         : N              
-GND+                         : AF14      :        :                   :         : 7         :                
-GND                          : AF15      : gnd    :                   :         :           :                
-VCCIO7                       : AF16      : power  :                   : 3.3V    : 7         :                
-PROG_MEM_IN[5]               : AF17      : input  : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[5]              : AF18      : output : 3.3-V LVTTL       :         : 7         : N              
-PC[14]                       : AF19      : output : 3.3-V LVTTL       :         : 7         : N              
-PROG_MEM_IN[2]               : AF20      : input  : 3.3-V LVTTL       :         : 7         : N              
-PC[0]                        : AF21      : output : 3.3-V LVTTL       :         : 7         : N              
-MIR[33]                      : AF22      : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[6]                     : AF23      : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : AF24      : power  :                   : 3.3V    : 7         :                
-GND                          : AF25      : gnd    :                   :         :           :                
-GND                          : B1        : gnd    :                   :         :           :                
-GND*                         : B2        :        :                   :         : 2         :                
-GND*                         : B3        :        :                   :         : 2         :                
-GND*                         : B4        :        :                   :         : 3         :                
-GND*                         : B5        :        :                   :         : 3         :                
-GND*                         : B6        :        :                   :         : 3         :                
-GND*                         : B7        :        :                   :         : 3         :                
-GND*                         : B8        :        :                   :         : 3         :                
-GND*                         : B9        :        :                   :         : 3         :                
-DATA_MEM_ADDR[23]            : B10       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA_MEM_IN[29]              : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
-PC[19]                       : B12       : output : 3.3-V LVTTL       :         : 3         : N              
-GND+                         : B13       :        :                   :         : 4         :                
-DATA_MEM_IN[25]              : B14       : input  : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[31]              : B15       : input  : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_OUT[26]             : B16       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_OUT[20]             : B17       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[30]                    : B18       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[11]                    : B19       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[21]                    : B20       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[18]            : B21       : output : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[19]                    : B22       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[19]              : B23       : input  : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[9]                     : B24       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_ADDR[11]            : B25       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : B26       : gnd    :                   :         :           :                
-VCCIO2                       : C1        : power  :                   : 3.3V    : 2         :                
-GND*                         : C2        :        :                   :         : 2         :                
-GND*                         : C3        :        :                   :         : 2         :                
-GND*                         : C4        :        :                   :         : 3         :                
-GND*                         : C5        :        :                   :         : 3         :                
-GND*                         : C6        :        :                   :         : 3         :                
-GND*                         : C7        :        :                   :         : 3         :                
-GND*                         : C8        :        :                   :         : 3         :                
-GND*                         : C9        :        :                   :         : 3         :                
-GND*                         : C10       :        :                   :         : 3         :                
-DATA_MEM_IN[24]              : C11       : input  : 3.3-V LVTTL       :         : 3         : N              
-DATA_MEM_ADDR[20]            : C12       : output : 3.3-V LVTTL       :         : 3         : N              
-GND+                         : C13       :        :                   :         : 3         :                
-GND                          : C14       : gnd    :                   :         :           :                
-DATA_MEM_IN[20]              : C15       : input  : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[26]                    : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[25]            : C17       : output : 3.3-V LVTTL       :         : 4         : N              
-GND                          : C18       : gnd    :                   :         :           :                
-DATA_MEM_IN[18]              : C19       : input  : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
-GND*                         : C21       :        :                   :         : 4         :                
-DATA_MEM_ADDR[4]             : C22       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[13]            : C23       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[10]            : C24       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_ADDR[7]             : C25       : output : 3.3-V LVTTL       :         : 5         : N              
-VCCIO5                       : C26       : power  :                   : 3.3V    : 5         :                
-GND*                         : D1        :        :                   :         : 2         :                
-GND*                         : D2        :        :                   :         : 2         :                
-~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D3        : input  : 3.3-V LVTTL       :         : 2         : N              
-GND                          : D4        : gnd    :                   :         :           :                
-GND*                         : D5        :        :                   :         : 3         :                
-GND*                         : D6        :        :                   :         : 3         :                
-GND*                         : D7        :        :                   :         : 3         :                
-GND*                         : D8        :        :                   :         : 3         :                
-GND*                         : D9        :        :                   :         : 3         :                
-GND*                         : D10       :        :                   :         : 3         :                
-A_BUS[31]                    : D11       : output : 3.3-V LVTTL       :         : 3         : N              
-MIR[12]                      : D12       : output : 3.3-V LVTTL       :         : 3         : N              
-GND+                         : D13       :        :                   :         : 3         :                
-DATA_MEM_ADDR[30]            : D14       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[30]              : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
-PC[25]                       : D16       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[22]            : D17       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[22]              : D18       : input  : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[26]            : D19       : output : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[21]                    : D20       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : D21       :        :                   :         : 4         :                
-VCCIO4                       : D22       : power  :                   : 3.3V    : 4         :                
-A_BUS[23]                    : D23       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : D24       : gnd    :                   :         :           :                
-DATA_MEM_OUT[23]             : D25       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[27]             : D26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : E1        :        :                   :         : 2         :                
-GND*                         : E2        :        :                   :         : 2         :                
-~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
-GND_PLL3                     : E4        : gnd    :                   :         :           :                
-GND*                         : E5        :        :                   :         : 2         :                
-VCCIO3                       : E6        : power  :                   : 3.3V    : 3         :                
-GND                          : E7        : gnd    :                   :         :           :                
-GND*                         : E8        :        :                   :         : 3         :                
-VCCIO3                       : E9        : power  :                   : 3.3V    : 3         :                
-GND*                         : E10       :        :                   :         : 3         :                
-GND                          : E11       : gnd    :                   :         :           :                
-MIR[7]                       : E12       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
-VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
-DATA_MEM_ADDR[24]            : E15       : output : 3.3-V LVTTL       :         : 4         : N              
-GND                          : E16       : gnd    :                   :         :           :                
-VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
-DATA_MEM_IN[21]              : E18       : input  : 3.3-V LVTTL       :         : 4         : N              
-GND                          : E19       : gnd    :                   :         :           :                
-B_BUS[14]                    : E20       : output : 3.3-V LVTTL       :         : 4         : N              
-GND_PLL2                     : E21       : gnd    :                   :         :           :                
-A_BUS[22]                    : E22       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[9]                     : E23       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[8]                     : E24       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[10]             : E25       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[28]             : E26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : F1        :        :                   :         : 2         :                
-GND*                         : F2        :        :                   :         : 2         :                
-GND*                         : F3        :        :                   :         : 2         :                
-GND*                         : F4        :        :                   :         : 2         :                
-VCCIO2                       : F5        : power  :                   : 3.3V    : 2         :                
-GND*                         : F6        :        :                   :         : 2         :                
-GND*                         : F7        :        :                   :         : 2         :                
-GNDA_PLL3                    : F8        : gnd    :                   :         :           :                
-GND*                         : F9        :        :                   :         : 3         :                
-GND*                         : F10       :        :                   :         : 3         :                
-GND*                         : F11       :        :                   :         : 3         :                
-MIR[14]                      : F12       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA_MEM_OUT[21]             : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[28]            : F14       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[6]               : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[17]                    : F16       : output : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[29]                    : F17       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_IN[28]              : F18       : input  : 3.3-V LVTTL       :         : 4         : N              
-GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
-DATA_MEM_OUT[11]             : F20       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[6]                       : F21       : output : 3.3-V LVTTL       :         : 5         : N              
-VCCIO5                       : F22       : power  :                   : 3.3V    : 5         :                
-B_BUS[20]                    : F23       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[18]                    : F24       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[15]                    : F25       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_ADDR[15]            : F26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : G1        :        :                   :         : 2         :                
-GND*                         : G2        :        :                   :         : 2         :                
-GND*                         : G3        :        :                   :         : 2         :                
-GND*                         : G4        :        :                   :         : 2         :                
-GND*                         : G5        :        :                   :         : 2         :                
-GND*                         : G6        :        :                   :         : 2         :                
-GND_PLL3                     : G7        : gnd    :                   :         :           :                
-VCCA_PLL3                    : G8        : power  :                   : 1.2V    :           :                
-GND*                         : G9        :        :                   :         : 3         :                
-GND*                         : G10       :        :                   :         : 3         :                
-GND*                         : G11       :        :                   :         : 3         :                
-MIR[15]                      : G12       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA_MEM_OUT[29]             : G13       : output : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[30]                    : G14       : output : 3.3-V LVTTL       :         : 4         : N              
-C_BUS[30]                    : G15       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[26]                    : G16       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[21]            : G17       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_ADDR[0]             : G18       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
-GND_PLL2                     : G20       : gnd    :                   :         :           :                
-MIR[24]                      : G21       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[25]                    : G22       : output : 3.3-V LVTTL       :         : 5         : N              
-MBR_OUT[2]                   : G23       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_ADDR[3]             : G24       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[27]                      : G25       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[6]              : G26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : H1        :        :                   :         : 2         :                
-GND*                         : H2        :        :                   :         : 2         :                
-GND*                         : H3        :        :                   :         : 2         :                
-GND*                         : H4        :        :                   :         : 2         :                
-GND                          : H5        : gnd    :                   :         :           :                
-GND*                         : H6        :        :                   :         : 2         :                
-VCCD_PLL3                    : H7        : power  :                   : 1.2V    :           :                
-GND*                         : H8        :        :                   :         : 3         :                
-VCCIO3                       : H9        : power  :                   : 3.3V    : 3         :                
-GND*                         : H10       :        :                   :         : 3         :                
-GND*                         : H11       :        :                   :         : 3         :                
-GND*                         : H12       :        :                   :         : 3         :                
-GND                          : H13       : gnd    :                   :         :           :                
-GND                          : H14       : gnd    :                   :         :           :                
-DATA_MEM_OUT[30]             : H15       : output : 3.3-V LVTTL       :         : 4         : N              
-DATA_MEM_OUT[31]             : H16       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[16]                    : H17       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
-DATA_MEM_OUT[18]             : H19       : output : 3.3-V LVTTL       :         : 5         : N              
-VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
-B_BUS[28]                    : H21       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : H22       : gnd    :                   :         :           :                
-DATA_MEM_OUT[19]             : H23       : output : 3.3-V LVTTL       :         : 5         : N              
-PC[7]                        : H24       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[29]                      : H25       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[25]             : H26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : J1        :        :                   :         : 2         :                
-GND*                         : J2        :        :                   :         : 2         :                
-GND*                         : J3        :        :                   :         : 2         :                
-GND*                         : J4        :        :                   :         : 2         :                
-GND*                         : J5        :        :                   :         : 2         :                
-GND*                         : J6        :        :                   :         : 2         :                
-GND*                         : J7        :        :                   :         : 2         :                
-GND*                         : J8        :        :                   :         : 2         :                
-GND*                         : J9        :        :                   :         : 3         :                
-DATA_MEM_ADDR[29]            : J10       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA_MEM_ADDR[16]            : J11       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
-MIR[9]                       : J13       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[29]                       : J14       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
-DATA_MEM_IN[1]               : J16       : input  : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[29]                    : J17       : output : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[22]                    : J18       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
-B_BUS[10]                    : J20       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[15]                    : J21       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[17]             : J22       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[12]                    : J23       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[19]                    : J24       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_ADDR[12]            : J25       : output : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[13]                    : J26       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : K1        :        :                   :         : 2         :                
-GND*                         : K2        :        :                   :         : 2         :                
-GND*                         : K3        :        :                   :         : 2         :                
-GND*                         : K4        :        :                   :         : 2         :                
-GND*                         : K5        :        :                   :         : 2         :                
-GND*                         : K6        :        :                   :         : 2         :                
-GND*                         : K7        :        :                   :         : 2         :                
-GND*                         : K8        :        :                   :         : 2         :                
-GND*                         : K9        :        :                   :         : 3         :                
-VCCINT                       : K10       : power  :                   : 1.2V    :           :                
-VCCINT                       : K11       : power  :                   : 1.2V    :           :                
-VCCINT                       : K12       : power  :                   : 1.2V    :           :                
-VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : AB1       : gnd    :                   :         :           :                
+VCCIO8                       : AB2       : power  :                   : 3.3V    : 8         :                
+A_BUS[2]                     : AB3       : output : 3.3-V LVTTL       :         : 8         : N              
+PC[4]                        : AB4       : output : 3.3-V LVTTL       :         : 8         : N              
+A_BUS[4]                     : AB5       : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[25]                      : AB6       : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[34]                      : AB7       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[6]                     : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[1]                     : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[28]                    : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[21]                      : AB11      : output : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[26]                    : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
+C_BUS[20]                    : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[30]                    : AB14      : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[26]                    : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_IN[24]              : AB16      : input  : 3.3-V LVTTL       :         : 7         : N              
+MBR_OUT[3]                   : AB17      : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_IN[6]               : AB18      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB19      :        :                   :         : 7         :                
+GND*                         : AB20      :        :                   :         : 7         :                
+VCCIO7                       : AB21      : power  :                   : 3.3V    : 7         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
+GND                          : B2        : gnd    :                   :         :           :                
+GND*                         : B3        :        :                   :         : 3         :                
+DATA_MEM_ADDR[17]            : B4        : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_OUT[28]             : B5        : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_IN[13]              : B6        : input  : 3.3-V LVTTL       :         : 3         : N              
+PC[30]                       : B7        : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_ADDR[19]            : B8        : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_OUT[4]              : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+C_BUS[10]                    : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+B_BUS[20]                    : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : B12       :        :                   :         : 4         :                
+C_BUS[21]                    : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+C_BUS[24]                    : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[25]             : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[16]              : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[9]              : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[10]              : B18       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[30]              : B19       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B20       :        :                   :         : 4         :                
+GND                          : B21       : gnd    :                   :         :           :                
+VCCIO5                       : B22       : power  :                   : 3.3V    : 5         :                
+DATA_MEM_OUT[19]             : C1        : output : 3.3-V LVTTL       :         : 2         : N              
+MIR[14]                      : C2        : output : 3.3-V LVTTL       :         : 2         : N              
+~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C3        : input  : 3.3-V LVTTL       :         : 2         : N              
+~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C4        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : C5        : gnd    :                   :         :           :                
+VCCIO3                       : C6        : power  :                   : 3.3V    : 3         :                
+DATA_MEM_OUT[0]              : C7        : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : C8        : gnd    :                   :         :           :                
+A_BUS[1]                     : C9        : output : 3.3-V LVTTL       :         : 3         : N              
+C_BUS[3]                     : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
+VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
+DATA_MEM_IN[21]              : C13       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[18]             : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : C15       : gnd    :                   :         :           :                
+DATA_MEM_IN[28]              : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
+MIR[6]                       : C17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C18       :        :                   :         : 4         :                
+GND*                         : C19       :        :                   :         : 5         :                
+DATA_MEM_write_enable        : C20       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_OUT[15]             : C21       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_OUT[31]             : C22       : output : 3.3-V LVTTL       :         : 5         : N              
+C_BUS[14]                    : D1        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_IN[22]              : D2        : input  : 3.3-V LVTTL       :         : 2         : N              
+MIR[7]                       : D3        : output : 3.3-V LVTTL       :         : 2         : N              
+PC[19]                       : D4        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[6]              : D5        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[2]              : D6        : output : 3.3-V LVTTL       :         : 2         : N              
+MIR[8]                       : D7        : output : 3.3-V LVTTL       :         : 3         : N              
+PROG_MEM_IN[5]               : D8        : input  : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_OUT[1]              : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+C_BUS[29]                    : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : D12       :        :                   :         : 3         :                
+GND                          : D13       : gnd    :                   :         :           :                
+DATA_MEM_IN[1]               : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[22]             : D15       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_ADDR[26]            : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
+GND                          : D18       : gnd    :                   :         :           :                
+GND*                         : D19       :        :                   :         : 5         :                
+GND*                         : D20       :        :                   :         : 5         :                
+DATA_MEM_IN[12]              : D21       : input  : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[0]             : D22       : output : 3.3-V LVTTL       :         : 5         : N              
+B_BUS[12]                    : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_ADDR[9]             : E2        : output : 3.3-V LVTTL       :         : 2         : N              
+PC[6]                        : E3        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[3]              : E4        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
+VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
+MIR[15]                      : E7        : output : 3.3-V LVTTL       :         : 3         : N              
+A_BUS[0]                     : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+PC[2]                        : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
+C_BUS[17]                    : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : E12       :        :                   :         : 3         :                
+VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
+DATA_MEM_IN[17]              : E14       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_ADDR[25]            : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+GNDA_PLL2                    : E16       : gnd    :                   :         :           :                
+GND_PLL2                     : E17       : gnd    :                   :         :           :                
+GND*                         : E18       :        :                   :         : 5         :                
+GND*                         : E19       :        :                   :         : 5         :                
+DATA_MEM_IN[31]              : E20       : input  : 3.3-V LVTTL       :         : 5         : N              
+A_BUS[15]                    : E21       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[13]            : E22       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[1]             : F1        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[10]                    : F2        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_IN[11]              : F3        : input  : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[13]             : F4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND_PLL3                     : F5        : gnd    :                   :         :           :                
+GND_PLL3                     : F6        : gnd    :                   :         :           :                
+GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
+MIR[10]                      : F8        : output : 3.3-V LVTTL       :         : 3         : N              
+B_BUS[19]                    : F9        : output : 3.3-V LVTTL       :         : 3         : N              
+MIR[19]                      : F10       : output : 3.3-V LVTTL       :         : 3         : N              
+MIR[17]                      : F11       : output : 3.3-V LVTTL       :         : 3         : N              
+DATA_MEM_IN[27]              : F12       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[30]             : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[21]             : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[9]                        : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
+VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
+GND_PLL2                     : F18       : gnd    :                   :         :           :                
+GND                          : F19       : gnd    :                   :         :           :                
+B_BUS[26]                    : F20       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_IN[23]              : F21       : input  : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[24]            : F22       : output : 3.3-V LVTTL       :         : 5         : N              
+MIR[12]                      : G1        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_IN[2]               : G2        : input  : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_IN[19]              : G3        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : G4        : gnd    :                   :         :           :                
+DATA_MEM_OUT[11]             : G5        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_ADDR[14]            : G6        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[21]                    : G7        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
+GND                          : G10       : gnd    :                   :         :           :                
+C_BUS[9]                     : G11       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : G12       : power  :                   : 1.2V    :           :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
+GND                          : G15       : gnd    :                   :         :           :                
+DATA_MEM_IN[25]              : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
+PC[12]                       : G17       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_IN[3]               : G18       : input  : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
+B_BUS[14]                    : G20       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_OUT[24]             : G21       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_OUT[23]             : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+A_BUS[19]                    : H1        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[8]              : H2        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_IN[8]               : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
+B_BUS[17]                    : H4        : output : 3.3-V LVTTL       :         : 2         : N              
+B_BUS[18]                    : H5        : output : 3.3-V LVTTL       :         : 2         : N              
+B_BUS[8]                     : H6        : output : 3.3-V LVTTL       :         : 2         : N              
+MIR[9]                       : H7        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : H8        : power  :                   : 1.2V    :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+C_BUS[4]                     : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : H12       : power  :                   : 1.2V    :           :                
+VCCINT                       : H13       : power  :                   : 1.2V    :           :                
+DATA_MEM_OUT[17]             : H14       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_IN[9]               : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[14]             : H16       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[18]            : H17       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[21]            : H18       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[29]            : H19       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : H20       : gnd    :                   :         :           :                
+DATA_MEM_ADDR[15]            : H21       : output : 3.3-V LVTTL       :         : 5         : N              
+PC[16]                       : H22       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_ADDR[7]             : J1        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[7]                     : J2        : output : 3.3-V LVTTL       :         : 2         : N              
+MIR[11]                      : J3        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[8]                     : J4        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[3]                     : J5        : output : 3.3-V LVTTL       :         : 2         : N              
+A_BUS[27]                    : J6        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : J7        : power  :                   : 3.3V    : 2         :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+DATA_MEM_OUT[20]             : J14       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA_MEM_OUT[26]             : J15       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
+DATA_MEM_ADDR[11]            : J17       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_IN[4]               : J18       : input  : 3.3-V LVTTL       :         : 5         : N              
+PC[14]                       : J19       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_IN[26]              : J20       : input  : 3.3-V LVTTL       :         : 5         : N              
+B_BUS[16]                    : J21       : output : 3.3-V LVTTL       :         : 5         : N              
+C_BUS[0]                     : J22       : output : 3.3-V LVTTL       :         : 5         : N              
+nCE                          : K1        :        :                   :         : 2         :                
+TCK                          : K2        : input  :                   :         : 2         :                
+GND                          : K3        : gnd    :                   :         :           :                
+DATA0                        : K4        : input  :                   :         : 2         :                
+TDI                          : K5        : input  :                   :         : 2         :                
+TMS                          : K6        : input  :                   :         : 2         :                
+GND                          : K7        : gnd    :                   :         :           :                
+VCCINT                       : K8        : power  :                   : 1.2V    :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
 VCCINT                       : K14       : power  :                   : 1.2V    :           :                
-VCCINT                       : K15       : power  :                   : 1.2V    :           :                
-DATA_MEM_IN[11]              : K16       : input  : 3.3-V LVTTL       :         : 4         : N              
-B_BUS[23]                    : K17       : output : 3.3-V LVTTL       :         : 4         : N              
-A_BUS[25]                    : K18       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[28]                      : K19       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : K20       : gnd    :                   :         :           :                
-DATA_MEM_OUT[22]             : K21       : output : 3.3-V LVTTL       :         : 5         : N              
-PC[13]                       : K22       : output : 3.3-V LVTTL       :         : 5         : N              
-DATA_MEM_OUT[13]             : K23       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[25]                      : K24       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[26]                    : K25       : output : 3.3-V LVTTL       :         : 5         : N              
-PC[12]                       : K26       : output : 3.3-V LVTTL       :         : 5         : N              
-VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
-GND*                         : L2        :        :                   :         : 2         :                
-GND*                         : L3        :        :                   :         : 2         :                
-GND*                         : L4        :        :                   :         : 2         :                
-GND                          : L5        : gnd    :                   :         :           :                
-GND*                         : L6        :        :                   :         : 2         :                
-GND*                         : L7        :        :                   :         : 2         :                
-TMS                          : L8        : input  :                   :         : 2         :                
-GND*                         : L9        :        :                   :         : 2         :                
-GND*                         : L10       :        :                   :         : 2         :                
-VCCINT                       : L11       : power  :                   : 1.2V    :           :                
+GND                          : K15       : gnd    :                   :         :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+B_BUS[23]                    : K17       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_IN[20]              : K18       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND                          : K19       : gnd    :                   :         :           :                
+DATA_MEM_IN[15]              : K20       : input  : 3.3-V LVTTL       :         : 5         : N              
+B_BUS[28]                    : K21       : output : 3.3-V LVTTL       :         : 5         : N              
+DATA_MEM_OUT[29]             : K22       : output : 3.3-V LVTTL       :         : 5         : N              
+GND+                         : L1        :        :                   :         : 2         :                
+GND+                         : L2        :        :                   :         : 2         :                
+VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
+nCONFIG                      : L4        :        :                   :         : 2         :                
+TDO                          : L5        : output :                   :         : 2         :                
+DCLK                         : L6        :        :                   :         : 2         :                
+A_BUS[9]                     : L7        : output : 3.3-V LVTTL       :         : 2         : N              
+DATA_MEM_OUT[10]             : L8        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
 GND                          : L12       : gnd    :                   :         :           :                
 GND                          : L13       : gnd    :                   :         :           :                
-GND                          : L14       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
 GND                          : L15       : gnd    :                   :         :           :                
 VCCINT                       : L16       : power  :                   : 1.2V    :           :                
-VCCINT                       : L17       : power  :                   : 1.2V    :           :                
-VCCINT                       : L18       : power  :                   : 1.2V    :           :                
-DATA_MEM_IN[27]              : L19       : input  : 3.3-V LVTTL       :         : 5         : N              
-B_BUS[27]                    : L20       : output : 3.3-V LVTTL       :         : 5         : N              
-MIR[35]                      : L21       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : L22       : gnd    :                   :         :           :                
-MIR[26]                      : L23       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[20]                    : L24       : output : 3.3-V LVTTL       :         : 5         : N              
-PC[10]                       : L25       : output : 3.3-V LVTTL       :         : 5         : N              
-VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
-GND                          : M1        : gnd    :                   :         :           :                
-GND*                         : M2        :        :                   :         : 2         :                
-GND*                         : M3        :        :                   :         : 2         :                
-GND*                         : M4        :        :                   :         : 2         :                
-GND*                         : M5        :        :                   :         : 2         :                
-TCK                          : M6        : input  :                   :         : 2         :                
-TDO                          : M7        : output :                   :         : 2         :                
-TDI                          : M8        : input  :                   :         : 2         :                
-VCCIO2                       : M9        : power  :                   : 3.3V    : 2         :                
-VCCINT                       : M10       : power  :                   : 1.2V    :           :                
-VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+C_BUS[18]                    : L17       : output : 3.3-V LVTTL       :         : 5         : N              
+B_BUS[15]                    : L18       : output : 3.3-V LVTTL       :         : 5         : N              
+B_BUS[30]                    : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
+GND+                         : L21       :        :                   :         : 5         :                
+LOADN                        : L22       : input  : 3.3-V LVTTL       :         : 5         : N              
+CLOCK                        : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+PROG_MEM_IN[7]               : M2        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
+GND                          : M4        : gnd    :                   :         :           :                
+PC[20]                       : M5        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[0]                       : M6        : output : 3.3-V LVTTL       :         : 1         : N              
+DATA_MEM_OUT[7]              : M7        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[2]                       : M8        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+GND                          : M11       : gnd    :                   :         :           :                
 GND                          : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
-GND                          : M14       : gnd    :                   :         :           :                
-GND                          : M15       : gnd    :                   :         :           :                
-VCCINT                       : M16       : power  :                   : 1.2V    :           :                
-VCCINT                       : M17       : power  :                   : 1.2V    :           :                
-VCCIO5                       : M18       : power  :                   : 3.3V    : 5         :                
-PC[27]                       : M19       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[25]                    : M20       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[23]                    : M21       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[16]                    : M22       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[27]                    : M23       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[22]                    : M24       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[21]                    : M25       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : M26       : gnd    :                   :         :           :                
-GND+                         : N1        :        :                   :         : 2         :                
-GND+                         : N2        :        :                   :         : 2         :                
-DATA0                        : N3        : input  :                   :         : 2         :                
-nCE                          : N4        :        :                   :         : 2         :                
-VCCIO2                       : N5        : power  :                   : 3.3V    : 2         :                
-DCLK                         : N6        :        :                   :         : 2         :                
-nCONFIG                      : N7        :        :                   :         : 2         :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+A_BUS[12]                    : M15       : output : 3.3-V LVTTL       :         : 6         : N              
+C_BUS[11]                    : M16       : output : 3.3-V LVTTL       :         : 6         : N              
+MSEL0                        : M17       :        :                   :         : 6         :                
+B_BUS[21]                    : M18       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[22]                    : M19       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : M20       : power  :                   : 3.3V    : 6         :                
+GND+                         : M21       :        :                   :         : 6         :                
+GND+                         : M22       :        :                   :         : 6         :                
+MIR[1]                       : N1        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[3]                       : N2        : output : 3.3-V LVTTL       :         : 1         : N              
+PROG_MEM_IN[6]               : N3        : input  : 3.3-V LVTTL       :         : 1         : N              
+MIR[26]                      : N4        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[4]                       : N5        : output : 3.3-V LVTTL       :         : 1         : N              
+C_BUS[2]                     : N6        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : N7        : gnd    :                   :         :           :                
 GND                          : N8        : gnd    :                   :         :           :                
-GND*                         : N9        :        :                   :         : 2         :                
-VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 GND                          : N12       : gnd    :                   :         :           :                
 GND                          : N13       : gnd    :                   :         :           :                
-GND                          : N14       : gnd    :                   :         :           :                
-GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+PC[8]                        : N15       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : N16       : gnd    :                   :         :           :                
-VCCINT                       : N17       : power  :                   : 1.2V    :           :                
-C_BUS[14]                    : N18       : output : 3.3-V LVTTL       :         : 5         : N              
+MSEL1                        : N17       :        :                   :         : 6         :                
+CONF_DONE                    : N18       :        :                   :         : 6         :                
 GND                          : N19       : gnd    :                   :         :           :                
-C_BUS[28]                    : N20       : output : 3.3-V LVTTL       :         : 5         : N              
-NC                           : N21       :        :                   :         :           :                
-VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
-MIR[19]                      : N23       : output : 3.3-V LVTTL       :         : 5         : N              
-C_BUS[29]                    : N24       : output : 3.3-V LVTTL       :         : 5         : N              
-LOADN                        : N25       : input  : 3.3-V LVTTL       :         : 5         : N              
-GND+                         : N26       :        :                   :         : 5         :                
-GND+                         : P1        :        :                   :         : 1         :                
-CLOCK                        : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
-DATA_MEM_ADDR[27]            : P3        : output : 3.3-V LVTTL       :         : 1         : N              
-MIR[11]                      : P4        : output : 3.3-V LVTTL       :         : 1         : N              
-VCCIO1                       : P5        : power  :                   : 3.3V    : 1         :                
-GND*                         : P6        :        :                   :         : 1         :                
-GND*                         : P7        :        :                   :         : 1         :                
+nSTATUS                      : N20       :        :                   :         : 6         :                
+PC[27]                       : N21       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[25]                       : N22       : output : 3.3-V LVTTL       :         : 6         : N              
+DATA_MEM_OUT[5]              : P1        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[0]                       : P2        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[7]                       : P3        : output : 3.3-V LVTTL       :         : 1         : N              
+MBR_OUT[7]                   : P4        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[6]                       : P5        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[5]                       : P6        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : P7        : power  :                   : 3.3V    : 1         :                
 GND                          : P8        : gnd    :                   :         :           :                
-GND*                         : P9        :        :                   :         : 2         :                
+GND                          : P9        : gnd    :                   :         :           :                
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
-GND                          : P11       : gnd    :                   :         :           :                
-GND                          : P12       : gnd    :                   :         :           :                
-GND                          : P13       : gnd    :                   :         :           :                
-GND                          : P14       : gnd    :                   :         :           :                
-GND                          : P15       : gnd    :                   :         :           :                
-GND                          : P16       : gnd    :                   :         :           :                
-C_BUS[13]                    : P17       : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_ADDR[14]            : P18       : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : P19       : gnd    :                   :         :           :                
-MSEL0                        : P20       :        :                   :         : 6         :                
-MSEL1                        : P21       :        :                   :         : 6         :                
-VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
-MIR[18]                      : P23       : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[17]                      : P24       : output : 3.3-V LVTTL       :         : 6         : N              
-GND+                         : P25       :        :                   :         : 6         :                
-GND+                         : P26       :        :                   :         : 6         :                
-GND                          : R1        : gnd    :                   :         :           :                
-MIR[13]                      : R2        : output : 3.3-V LVTTL       :         : 1         : N              
-MIR[5]                       : R3        : output : 3.3-V LVTTL       :         : 1         : N              
-MIR[8]                       : R4        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : R5        :        :                   :         : 1         :                
-PC[17]                       : R6        : output : 3.3-V LVTTL       :         : 1         : N              
-A_BUS[28]                    : R7        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : R8        :        :                   :         : 1         :                
-VCCIO1                       : R9        : power  :                   : 3.3V    : 1         :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+DATA_MEM_IN[7]               : P15       : input  : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : P16       : power  :                   : 3.3V    : 6         :                
+B_BUS[13]                    : P17       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[4]                     : P18       : output : 3.3-V LVTTL       :         : 6         : N              
+C_BUS[13]                    : P19       : output : 3.3-V LVTTL       :         : 6         : N              
+C_BUS[23]                    : P20       : output : 3.3-V LVTTL       :         : 6         : N              
+DATA_MEM_ADDR[5]             : P21       : output : 3.3-V LVTTL       :         : 6         : N              
+A_BUS[13]                    : P22       : output : 3.3-V LVTTL       :         : 6         : N              
+MPC[1]                       : R1        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[3]                       : R2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : R3        : gnd    :                   :         :           :                
+MBR_OUT[2]                   : R4        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[11]                    : R5        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[3]                     : R6        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[8]                       : R7        : output : 3.3-V LVTTL       :         : 1         : N              
+MPC[2]                       : R8        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
-VCCINT                       : R11       : power  :                   : 1.2V    :           :                
-GND                          : R12       : gnd    :                   :         :           :                
+MIR[20]                      : R11       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
 GND                          : R13       : gnd    :                   :         :           :                
-GND                          : R14       : gnd    :                   :         :           :                
-GND                          : R15       : gnd    :                   :         :           :                
-VCCINT                       : R16       : power  :                   : 1.2V    :           :                
-C_BUS[24]                    : R17       : output : 3.3-V LVTTL       :         : 6         : N              
-VCCIO6                       : R18       : power  :                   : 3.3V    : 6         :                
-A_BUS[4]                     : R19       : output : 3.3-V LVTTL       :         : 6         : N              
-PC[11]                       : R20       : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : R21       : gnd    :                   :         :           :                
-nSTATUS                      : R22       :        :                   :         : 6         :                
-CONF_DONE                    : R23       :        :                   :         : 6         :                
-MIR[22]                      : R24       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[4]                     : R25       : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : R26       : gnd    :                   :         :           :                
-VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
-GND*                         : T2        :        :                   :         : 1         :                
-GND*                         : T3        :        :                   :         : 1         :                
-PC[20]                       : T4        : output : 3.3-V LVTTL       :         : 1         : N              
-GND                          : T5        : gnd    :                   :         :           :                
-GND*                         : T6        :        :                   :         : 1         :                
-GND*                         : T7        :        :                   :         : 1         :                
-GND*                         : T8        :        :                   :         : 1         :                
-MIR[10]                      : T9        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : T10       :        :                   :         : 1         :                
-VCCINT                       : T11       : power  :                   : 1.2V    :           :                
-GND                          : T12       : gnd    :                   :         :           :                
+PC[11]                       : R14       : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_ADDR[30]            : R15       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[29]                       : R16       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[22]                       : R17       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[23]                       : R18       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[21]                       : R19       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[2]                     : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[15]                       : R21       : output : 3.3-V LVTTL       :         : 6         : N              
+A_BUS[16]                    : R22       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[5]                     : T1        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[10]                    : T2        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[1]                     : T3        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : T4        : power  :                   : 3.3V    : 1         :                
+MIR[31]                      : T5        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[24]                      : T6        : output : 3.3-V LVTTL       :         : 1         : N              
+MBR_OUT[1]                   : T7        : output : 3.3-V LVTTL       :         : 8         : N              
+MIR[29]                      : T8        : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : T9        : power  :                   : 3.3V    : 8         :                
+GND                          : T10       : gnd    :                   :         :           :                
+C_BUS[27]                    : T11       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
 GND                          : T13       : gnd    :                   :         :           :                
-GND                          : T14       : gnd    :                   :         :           :                
-GND                          : T15       : gnd    :                   :         :           :                
-VCCINT                       : T16       : power  :                   : 1.2V    :           :                
-PC[18]                       : T17       : output : 3.3-V LVTTL       :         : 6         : N              
-A_BUS[27]                    : T18       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[8]                     : T19       : output : 3.3-V LVTTL       :         : 6         : N              
-A_BUS[24]                    : T20       : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[23]                      : T21       : output : 3.3-V LVTTL       :         : 6         : N              
-A_BUS[11]                    : T22       : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[21]                      : T23       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[10]                    : T24       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[11]                    : T25       : output : 3.3-V LVTTL       :         : 6         : N              
-VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
-DATA_MEM_IN[8]               : U1        : input  : 3.3-V LVTTL       :         : 1         : N              
-DATA_MEM_IN[15]              : U2        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : U3        :        :                   :         : 1         :                
-GND*                         : U4        :        :                   :         : 1         :                
-GND*                         : U5        :        :                   :         : 1         :                
-GND*                         : U6        :        :                   :         : 1         :                
-GND*                         : U7        :        :                   :         : 1         :                
-GND                          : U8        : gnd    :                   :         :           :                
-DATA_MEM_IN[13]              : U9        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : U10       :        :                   :         : 1         :                
-VCCINT                       : U11       : power  :                   : 1.2V    :           :                
-PROG_MEM_IN[7]               : U12       : input  : 3.3-V LVTTL       :         : 8         : N              
-VCCINT                       : U13       : power  :                   : 1.2V    :           :                
-VCCINT                       : U14       : power  :                   : 1.2V    :           :                
-VCCINT                       : U15       : power  :                   : 1.2V    :           :                
-VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-DATA_MEM_ADDR[8]             : U17       : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[17]                    : U18       : output : 3.3-V LVTTL       :         : 7         : N              
-GND                          : U19       : gnd    :                   :         :           :                
-C_BUS[9]                     : U20       : output : 3.3-V LVTTL       :         : 6         : N              
-PROG_MEM_IN[0]               : U21       : input  : 3.3-V LVTTL       :         : 6         : N              
-MIR[0]                       : U22       : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_OUT[9]              : U23       : output : 3.3-V LVTTL       :         : 6         : N              
-A_BUS[14]                    : U24       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[12]                    : U25       : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_OUT[8]              : U26       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : V1        :        :                   :         : 1         :                
-GND*                         : V2        :        :                   :         : 1         :                
-GND*                         : V3        :        :                   :         : 1         :                
-GND*                         : V4        :        :                   :         : 1         :                
-GND*                         : V5        :        :                   :         : 1         :                
-GND*                         : V6        :        :                   :         : 1         :                
-GND*                         : V7        :        :                   :         : 1         :                
-VCCIO1                       : V8        : power  :                   : 3.3V    : 1         :                
-GND*                         : V9        :        :                   :         : 8         :                
-GND*                         : V10       :        :                   :         : 8         :                
-MPC[0]                       : V11       : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO8                       : V12       : power  :                   : 3.3V    : 8         :                
-MPC[5]                       : V13       : output : 3.3-V LVTTL       :         : 8         : N              
-MPC[1]                       : V14       : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO7                       : V15       : power  :                   : 3.3V    : 7         :                
-VCCINT                       : V16       : power  :                   : 1.2V    :           :                
-B_BUS[3]                     : V17       : output : 3.3-V LVTTL       :         : 7         : N              
-A_BUS[18]                    : V18       : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO6                       : V19       : power  :                   : 3.3V    : 6         :                
-B_BUS[7]                     : V20       : output : 3.3-V LVTTL       :         : 6         : N              
-A_BUS[0]                     : V21       : output : 3.3-V LVTTL       :         : 6         : N              
-DATA_MEM_ADDR[1]             : V22       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[2]                     : V23       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[1]                     : V24       : output : 3.3-V LVTTL       :         : 6         : N              
-PROG_MEM_IN[6]               : V25       : input  : 3.3-V LVTTL       :         : 6         : N              
-MIR[20]                      : V26       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : W1        :        :                   :         : 1         :                
-GND*                         : W2        :        :                   :         : 1         :                
-GND*                         : W3        :        :                   :         : 1         :                
-GND*                         : W4        :        :                   :         : 1         :                
-GND                          : W5        : gnd    :                   :         :           :                
-GND*                         : W6        :        :                   :         : 1         :                
-GND_PLL1                     : W7        : gnd    :                   :         :           :                
-GND*                         : W8        :        :                   :         : 8         :                
-VCCIO8                       : W9        : power  :                   : 3.3V    : 8         :                
-GND*                         : W10       :        :                   :         : 8         :                
-DATA_MEM_ADDR[31]            : W11       : output : 3.3-V LVTTL       :         : 8         : N              
-PC[31]                       : W12       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO7                       : T14       : power  :                   : 3.3V    : 7         :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+A_BUS[22]                    : T16       : output : 3.3-V LVTTL       :         : 7         : N              
+GND_PLL4                     : T17       : gnd    :                   :         :           :                
+DATA_MEM_ADDR[23]            : T18       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : T19       : power  :                   : 3.3V    : 6         :                
+GND                          : T20       : gnd    :                   :         :           :                
+A_BUS[17]                    : T21       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[31]                    : T22       : output : 3.3-V LVTTL       :         : 6         : N              
+MBR_OUT[5]                   : U1        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[16]                      : U2        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[0]                     : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[4]                       : U4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND_PLL1                     : U5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
+VCCA_PLL1                    : U7        : power  :                   : 1.2V    :           :                
+MIR[28]                      : U8        : output : 3.3-V LVTTL       :         : 8         : N              
+PC[7]                        : U9        : output : 3.3-V LVTTL       :         : 8         : N              
+MBR_OUT[0]                   : U10       : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : U11       :        :                   :         : 8         :                
+GND+                         : U12       :        :                   :         : 8         :                
+DATA_MEM_ADDR[8]             : U13       : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_ADDR[16]            : U14       : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[31]                    : U15       : output : 3.3-V LVTTL       :         : 7         : N              
+VCCA_PLL4                    : U16       : power  :                   : 1.2V    :           :                
+VCCD_PLL4                    : U17       : power  :                   : 1.2V    :           :                
+A_BUS[14]                    : U18       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[24]                       : U19       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[24]                    : U20       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[0]                        : U21       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[10]                       : U22       : output : 3.3-V LVTTL       :         : 6         : N              
+DATA_MEM_ADDR[2]             : V1        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[32]                      : V2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : V3        : gnd    :                   :         :           :                
+MIR[5]                       : V4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND_PLL1                     : V5        : gnd    :                   :         :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+GNDA_PLL1                    : V7        : gnd    :                   :         :           :                
+MIR[33]                      : V8        : output : 3.3-V LVTTL       :         : 8         : N              
+PROG_MEM_IN[1]               : V9        : input  : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : V10       : power  :                   : 3.3V    : 8         :                
+MIR[23]                      : V11       : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : V12       :        :                   :         : 7         :                
+VCCIO7                       : V13       : power  :                   : 3.3V    : 7         :                
+DATA_MEM_ADDR[22]            : V14       : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[20]                    : V15       : output : 3.3-V LVTTL       :         : 7         : N              
+GNDA_PLL4                    : V16       : gnd    :                   :         :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+GND_PLL4                     : V18       : gnd    :                   :         :           :                
+GND*                         : V19       :        :                   :         : 6         :                
+DATA_MEM_ADDR[12]            : V20       : output : 3.3-V LVTTL       :         : 6         : N              
+A_BUS[23]                    : V21       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[18]                       : V22       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[7]                     : W1        : output : 3.3-V LVTTL       :         : 1         : N              
+MBR_OUT[6]                   : W2        : output : 3.3-V LVTTL       :         : 1         : N              
+MIR[35]                      : W3        : output : 3.3-V LVTTL       :         : 1         : N              
+DATA_MEM_IN[5]               : W4        : input  : 3.3-V LVTTL       :         : 1         : N              
+PC[1]                        : W5        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO8                       : W6        : power  :                   : 3.3V    : 8         :                
+MIR[30]                      : W7        : output : 3.3-V LVTTL       :         : 8         : N              
+DATA_MEM_ADDR[3]             : W8        : output : 3.3-V LVTTL       :         : 8         : N              
+PROG_MEM_IN[4]               : W9        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : W10       : gnd    :                   :         :           :                
+MIR[18]                      : W11       : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : W12       :        :                   :         : 7         :                
 GND                          : W13       : gnd    :                   :         :           :                
-GND                          : W14       : gnd    :                   :         :           :                
-DATA_MEM_OUT[15]             : W15       : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[3]              : W16       : output : 3.3-V LVTTL       :         : 7         : N              
-B_BUS[1]                     : W17       : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : W18       : power  :                   : 3.3V    : 7         :                
-A_BUS[7]                     : W19       : output : 3.3-V LVTTL       :         : 7         : N              
-GND_PLL4                     : W20       : gnd    :                   :         :           :                
-A_BUS[5]                     : W21       : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : W22       : gnd    :                   :         :           :                
-C_BUS[5]                     : W23       : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[3]                       : W24       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[3]                     : W25       : output : 3.3-V LVTTL       :         : 6         : N              
-C_BUS[7]                     : W26       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : Y1        :        :                   :         : 1         :                
-NC                           : Y2        :        :                   :         :           :                
-GND*                         : Y3        :        :                   :         : 1         :                
-GND*                         : Y4        :        :                   :         : 1         :                
-GND*                         : Y5        :        :                   :         : 1         :                
-GND_PLL1                     : Y6        : gnd    :                   :         :           :                
-VCCD_PLL1                    : Y7        : power  :                   : 1.2V    :           :                
-GNDA_PLL1                    : Y8        : gnd    :                   :         :           :                
-GND                          : Y9        : gnd    :                   :         :           :                
-GND*                         : Y10       :        :                   :         : 8         :                
-DATA_MEM_IN[16]              : Y11       : input  : 3.3-V LVTTL       :         : 8         : N              
-MIR[4]                       : Y12       : output : 3.3-V LVTTL       :         : 8         : N              
-DATA_MEM_ADDR[17]            : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[14]             : Y14       : output : 3.3-V LVTTL       :         : 7         : N              
-DATA_MEM_OUT[16]             : Y15       : output : 3.3-V LVTTL       :         : 7         : N              
-C_BUS[0]                     : Y16       : output : 3.3-V LVTTL       :         : 7         : N              
-GND                          : Y17       : gnd    :                   :         :           :                
-B_BUS[2]                     : Y18       : output : 3.3-V LVTTL       :         : 7         : N              
-GNDA_PLL4                    : Y19       : gnd    :                   :         :           :                
-VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
-B_BUS[0]                     : Y21       : output : 3.3-V LVTTL       :         : 6         : N              
-MBR_OUT[1]                   : Y22       : output : 3.3-V LVTTL       :         : 6         : N              
-PC[2]                        : Y23       : output : 3.3-V LVTTL       :         : 6         : N              
-PC[3]                        : Y24       : output : 3.3-V LVTTL       :         : 6         : N              
-PC[6]                        : Y25       : output : 3.3-V LVTTL       :         : 6         : N              
-MIR[32]                      : Y26       : output : 3.3-V LVTTL       :         : 6         : N              
+A_BUS[24]                    : W14       : output : 3.3-V LVTTL       :         : 7         : N              
+DATA_MEM_ADDR[10]            : W15       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[28]                       : W16       : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : W17       : power  :                   : 3.3V    : 7         :                
+DATA_MEM_ADDR[31]            : W18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND                          : W19       : gnd    :                   :         :           :                
+~LVDS150p/nCEO~              : W20       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[9]                     : W21       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[29]                    : W22       : output : 3.3-V LVTTL       :         : 6         : N              
+B_BUS[25]                    : Y1        : output : 3.3-V LVTTL       :         : 1         : N              
+B_BUS[6]                     : Y2        : output : 3.3-V LVTTL       :         : 1         : N              
+MBR_OUT[4]                   : Y3        : output : 3.3-V LVTTL       :         : 1         : N              
+PC[13]                       : Y4        : output : 3.3-V LVTTL       :         : 1         : N              
+DATA_MEM_ADDR[4]             : Y5        : output : 3.3-V LVTTL       :         : 8         : N              
+DATA_MEM_ADDR[27]            : Y6        : output : 3.3-V LVTTL       :         : 8         : N              
+PROG_MEM_IN[0]               : Y7        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : Y8        : gnd    :                   :         :           :                
+PROG_MEM_IN[3]               : Y9        : input  : 3.3-V LVTTL       :         : 8         : N              
+C_BUS[5]                     : Y10       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : Y11       : power  :                   : 3.3V    : 8         :                
+VCCIO7                       : Y12       : power  :                   : 3.3V    : 7         :                
+C_BUS[16]                    : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[11]                    : Y14       : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : Y15       : gnd    :                   :         :           :                
+PC[5]                        : Y16       : output : 3.3-V LVTTL       :         : 7         : N              
+A_BUS[29]                    : Y17       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y18       :        :                   :         : 6         :                
+GND*                         : Y19       :        :                   :         : 6         :                
+GND*                         : Y20       :        :                   :         : 6         :                
+A_BUS[18]                    : Y21       : output : 3.3-V LVTTL       :         : 6         : N              
+A_BUS[25]                    : Y22       : output : 3.3-V LVTTL       :         : 6         : N              
