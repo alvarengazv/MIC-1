@@ -1,6 +1,6 @@
 Flow report for MIC1
-Sun Dec 08 16:33:14 2024
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Dec 09 00:06:05 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec 08 16:33:14 2024           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; CPU                                             ;
-; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 654 / 15,408 ( 4 % )                            ;
-;     Total combinational functions  ; 523 / 15,408 ( 3 % )                            ;
-;     Dedicated logic registers      ; 332 / 15,408 ( 2 % )                            ;
-; Total registers                    ; 332                                             ;
-; Total pins                         ; 279 / 347 ( 80 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 18,432 / 516,096 ( 4 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-; Device                             ; EP3C16F484C6                                    ;
-; Timing Models                      ; Final                                           ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Mon Dec 09 00:06:05 2024      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; MIC1                                       ;
+; Top-level Entity Name              ; CPU                                        ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C35F672C8                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 629 / 33,216 ( 2 % )                       ;
+;     Total combinational functions  ; 507 / 33,216 ( 2 % )                       ;
+;     Dedicated logic registers      ; 309 / 33,216 ( < 1 % )                     ;
+; Total registers                    ; 309                                        ;
+; Total pins                         ; 288 / 475 ( 61 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 18,432 / 483,840 ( 4 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/08/2024 16:31:44 ;
+; Start date & time ; 12/09/2024 00:05:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIC1                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 14071519086180.173368630402612                        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 198112244448532.173371354614856                       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                   ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/Bruno/Documents/MIC-1/MIC-1/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
@@ -83,6 +83,8 @@ applicable agreement for further details.
 ; EDA_TIME_SCALE                      ; 1 ps                                                  ; --            ; --          ; eda_simulation ;
 ; IP_TOOL_NAME                        ; ROM: 1-PORT                                           ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                                  ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; control_store.bsf                                     ; --            ; --          ; --             ;
 ; MISC_FILE                           ; control_store.cmp                                     ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                                              ; --            ; CPU         ; Top            ;
@@ -100,14 +102,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4633 MB             ; 00:00:04                           ;
-; Fitter                    ; 00:00:17     ; 1.0                     ; 4921 MB             ; 00:00:15                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4549 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4598 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4523 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4539 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4664 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4878 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4574 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4565 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4528 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,13 +116,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-O2FDQBC  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-5AJE0E1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-5AJE0E1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-5AJE0E1  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-5AJE0E1  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-5AJE0E1  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -134,8 +132,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
 quartus_asm --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
 quartus_sta MIC1 -c MIC1
 quartus_eda --read_settings_files=off --write_settings_files=off MIC1 -c MIC1
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1 --vector_source=C:/Users/Bruno/Documents/MIC-1/MIC-1/CPU_wide_iload.vwf --testbench_file=./simulation/qsim/MIC1.vt
-quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog MIC1 -c MIC1
 
 
 
