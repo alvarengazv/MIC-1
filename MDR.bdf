@@ -393,6 +393,22 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 600 384 616 416)
+	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
+	(text "inst1" (rect 5 6 17 29)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 7 8 19 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 24)(pt 8 8))
+	)
+	(rotate90)
+)
 (connector
 	(pt 936 288)
 	(pt 968 288)
@@ -544,10 +560,6 @@ applicable agreement for further details.
 (connector
 	(pt 616 400)
 	(pt 672 400)
-)
-(connector
-	(pt 616 400)
-	(pt 616 464)
 )
 (connector
 	(pt 336 376)

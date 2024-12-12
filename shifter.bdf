@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -848 192 -680 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "S[31..0]" (rect 5 0 44 12)(font "Arial" ))
+	(text "S[31..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect -512 520 -496 688)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "MIR[35..0]" (rect 0 111 12 163)(font "Arial" )(vertical))
+	(text "MIR[35..0]" (rect 0 111 12 162)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -1395,11 +1395,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "MIR[22]" (rect -477 472 -439 484)(font "Arial" ))
-	(pt -424 488)
-	(pt -504 488)
-)
-(connector
 	(pt -504 488)
 	(pt -504 504)
 	(bus)
@@ -1408,11 +1403,6 @@ applicable agreement for further details.
 	(pt -504 504)
 	(pt -504 520)
 	(bus)
-)
-(connector
-	(text "MIR[23]" (rect -477 512 -439 524)(font "Arial" ))
-	(pt -424 504)
-	(pt -504 504)
 )
 (connector
 	(text "SLL8_OUT[7..0]" (rect -405 288 -326 300)(font "Arial" ))
@@ -1430,6 +1420,16 @@ applicable agreement for further details.
 	(text "C[31]" (rect 719 224 746 236)(font "Arial" ))
 	(pt 232 240)
 	(pt 872 240)
+)
+(connector
+	(text "MIR[23]" (rect -477 472 -439 484)(font "Arial" ))
+	(pt -424 488)
+	(pt -504 488)
+)
+(connector
+	(text "MIR[22]" (rect -477 512 -439 524)(font "Arial" ))
+	(pt -424 504)
+	(pt -504 504)
 )
 (junction (pt -576 360))
 (junction (pt 792 320))
