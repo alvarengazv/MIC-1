@@ -1,0 +1,155 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+
+
+WIDTH=36;
+DEPTH=512;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   010000000;
+	001  :   000000000;
+	002  :   004350211;
+	[003..00F]  :   000000000;
+	010  :   100350484;
+	011  :   0A01C8003;
+	012  :   098948003;
+	013  :   090350211;
+	014  :   0B83C00A6;
+	015  :   0B0148005;
+	016  :   0B83C00A3;
+	017  :   0C0350484;
+	018  :   0C8350251;
+	019  :   010142000;
+	[01A..01F]  :   000000000;
+	020  :   108350211;
+	021  :   010142142;
+	[022..035]  :   000000000;
+	036  :   1B8148005;
+	037  :   1C03C0083;
+	038  :   1C8140147;
+	039  :   1D03604A4;
+	03A  :   1D8350211;
+	03B  :   010142000;
+	[03C..055]  :   000000000;
+	056  :   2B83604A4;
+	057  :   2C0000000;
+	058  :   010142000;
+	059  :   2D0350484;
+	05A  :   010140147;
+	05B  :   2E03600A4;
+	05C  :   2E8140084;
+	05D  :   2F0148040;
+	05E  :   2F8140107;
+	05F  :   3383600C4;
+	060  :   3083604A4;
+	061  :   310148007;
+	062  :   0103C2140;
+	063  :   000000000;
+	064  :   3283604A4;
+	065  :   330148007;
+	066  :   0103F2140;
+	067  :   010182000;
+	[068..07D]  :   000000000;
+	07E  :   3F83604A4;
+	07F  :   480148007;
+	080  :   4083604A4;
+	081  :   410148007;
+	082  :   0101C2140;
+	083  :   000000000;
+	084  :   428148005;
+	085  :   4303C00A3;
+	086  :   438350211;
+	087  :   440148000;
+	088  :   448350211;
+	089  :   0103C0142;
+	[08A..08F]  :   000000000;
+	090  :   0100C2140;
+	[091..098]  :   000000000;
+	099  :   4D03604A4;
+	09A  :   6A8144007;
+	09B  :   4E03604A4;
+	09C  :   4E8144007;
+	09D  :   4F0142000;
+	09E  :   522140008;
+	09F  :   5003604A4;
+	0A0  :   508360484;
+	0A1  :   510148022;
+	0A2  :   680144007;
+	0A3  :   000000000;
+	0A4  :   528350201;
+	0A5  :   530350211;
+	0A6  :   010000000;
+	0A7  :   540364001;
+	0A8  :   548350211;
+	0A9  :   550948002;
+	0AA  :   5581C8003;
+	0AB  :   5603C0218;
+	0AC  :   010000000;
+	0AD  :   5701404A5;
+	0AE  :   578000000;
+	0AF  :   5801408A0;
+	0B0  :   588350085;
+	0B1  :   590140230;
+	0B2  :   598140084;
+	0B3  :   5A0140800;
+	0B4  :   010140147;
+	0B5  :   000000000;
+	0B6  :   5B8350211;
+	0B7  :   5C0948003;
+	0B8  :   5C81C8003;
+	0B9  :   5D03C00A6;
+	0BA  :   5D8354001;
+	0BB  :   5E0140210;
+	0BC  :   5E8350211;
+	0BD  :   5F0948003;
+	0BE  :   5F81C8003;
+	0BF  :   600350211;
+	0C0  :   6083F2004;
+	0C1  :   610352087;
+	0C2  :   618350211;
+	0C3  :   630948003;
+	0C4  :   628350211;
+	0C5  :   804000000;
+	0C6  :   6381C8003;
+	0C7  :   6403D0144;
+	0C8  :   648140480;
+	0C9  :   650140148;
+	0CA  :   658350484;
+	0CB  :   660140145;
+	0CC  :   668350211;
+	0CD  :   010140807;
+	[0CE..0CF]  :   000000000;
+	0D0  :   688142000;
+	0D1  :   5213F0008;
+	[0D2..0D4]  :   000000000;
+	0D5  :   6B0142000;
+	0D6  :   521140008;
+	[0D7..114]  :   000000000;
+	115  :   8B0350211;
+	116  :   8B8948003;
+	117  :   8C01C8003;
+	118  :   0B83C00A5;
+	[119..135]  :   000000000;
+	136  :   9B8350211;
+	137  :   9C0948003;
+	138  :   9C81C8003;
+	139  :   1C03C0085;
+	[13A..1A3]  :   000000000;
+	1A4  :   540364001;
+	[1A5..1FF]  :   000000000;
+END;
