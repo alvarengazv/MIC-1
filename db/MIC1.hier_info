@@ -1,4 +1,192 @@
-|CPU
+|MIC1
+DATA_MEM_write_enable <= CPU:inst.DATA_MEM_write_enable
+LOADN => CPU:inst.LOADN
+CLOCK => CPU:inst.CLOCK
+CLOCK => inst2.IN0
+PC[0] <= CPU:inst.PC[0]
+PC[1] <= CPU:inst.PC[1]
+PC[2] <= CPU:inst.PC[2]
+PC[3] <= CPU:inst.PC[3]
+PC[4] <= CPU:inst.PC[4]
+PC[5] <= CPU:inst.PC[5]
+PC[6] <= CPU:inst.PC[6]
+PC[7] <= CPU:inst.PC[7]
+PC[8] <= CPU:inst.PC[8]
+PC[9] <= CPU:inst.PC[9]
+PC[10] <= CPU:inst.PC[10]
+PC[11] <= CPU:inst.PC[11]
+PC[12] <= CPU:inst.PC[12]
+PC[13] <= CPU:inst.PC[13]
+PC[14] <= CPU:inst.PC[14]
+PC[15] <= CPU:inst.PC[15]
+PC[16] <= CPU:inst.PC[16]
+PC[17] <= CPU:inst.PC[17]
+PC[18] <= CPU:inst.PC[18]
+PC[19] <= CPU:inst.PC[19]
+PC[20] <= CPU:inst.PC[20]
+PC[21] <= CPU:inst.PC[21]
+PC[22] <= CPU:inst.PC[22]
+PC[23] <= CPU:inst.PC[23]
+PC[24] <= CPU:inst.PC[24]
+PC[25] <= CPU:inst.PC[25]
+PC[26] <= CPU:inst.PC[26]
+PC[27] <= CPU:inst.PC[27]
+PC[28] <= CPU:inst.PC[28]
+PC[29] <= CPU:inst.PC[29]
+PC[30] <= CPU:inst.PC[30]
+PC[31] <= CPU:inst.PC[31]
+DATA_MEM_ADDR[0] <= CPU:inst.DATA_MEM_ADDR[0]
+DATA_MEM_ADDR[1] <= CPU:inst.DATA_MEM_ADDR[1]
+DATA_MEM_ADDR[2] <= CPU:inst.DATA_MEM_ADDR[2]
+DATA_MEM_ADDR[3] <= CPU:inst.DATA_MEM_ADDR[3]
+DATA_MEM_ADDR[4] <= CPU:inst.DATA_MEM_ADDR[4]
+DATA_MEM_ADDR[5] <= CPU:inst.DATA_MEM_ADDR[5]
+DATA_MEM_ADDR[6] <= CPU:inst.DATA_MEM_ADDR[6]
+DATA_MEM_ADDR[7] <= CPU:inst.DATA_MEM_ADDR[7]
+DATA_MEM_ADDR[8] <= CPU:inst.DATA_MEM_ADDR[8]
+DATA_MEM_ADDR[9] <= CPU:inst.DATA_MEM_ADDR[9]
+DATA_MEM_ADDR[10] <= CPU:inst.DATA_MEM_ADDR[10]
+DATA_MEM_ADDR[11] <= CPU:inst.DATA_MEM_ADDR[11]
+DATA_MEM_ADDR[12] <= CPU:inst.DATA_MEM_ADDR[12]
+DATA_MEM_ADDR[13] <= CPU:inst.DATA_MEM_ADDR[13]
+DATA_MEM_ADDR[14] <= CPU:inst.DATA_MEM_ADDR[14]
+DATA_MEM_ADDR[15] <= CPU:inst.DATA_MEM_ADDR[15]
+DATA_MEM_ADDR[16] <= CPU:inst.DATA_MEM_ADDR[16]
+DATA_MEM_ADDR[17] <= CPU:inst.DATA_MEM_ADDR[17]
+DATA_MEM_ADDR[18] <= CPU:inst.DATA_MEM_ADDR[18]
+DATA_MEM_ADDR[19] <= CPU:inst.DATA_MEM_ADDR[19]
+DATA_MEM_ADDR[20] <= CPU:inst.DATA_MEM_ADDR[20]
+DATA_MEM_ADDR[21] <= CPU:inst.DATA_MEM_ADDR[21]
+DATA_MEM_ADDR[22] <= CPU:inst.DATA_MEM_ADDR[22]
+DATA_MEM_ADDR[23] <= CPU:inst.DATA_MEM_ADDR[23]
+DATA_MEM_ADDR[24] <= CPU:inst.DATA_MEM_ADDR[24]
+DATA_MEM_ADDR[25] <= CPU:inst.DATA_MEM_ADDR[25]
+DATA_MEM_ADDR[26] <= CPU:inst.DATA_MEM_ADDR[26]
+DATA_MEM_ADDR[27] <= CPU:inst.DATA_MEM_ADDR[27]
+DATA_MEM_ADDR[28] <= CPU:inst.DATA_MEM_ADDR[28]
+DATA_MEM_ADDR[29] <= CPU:inst.DATA_MEM_ADDR[29]
+DATA_MEM_ADDR[30] <= CPU:inst.DATA_MEM_ADDR[30]
+DATA_MEM_ADDR[31] <= CPU:inst.DATA_MEM_ADDR[31]
+C_BUS[0] <= CPU:inst.C_BUS[0]
+C_BUS[1] <= CPU:inst.C_BUS[1]
+C_BUS[2] <= CPU:inst.C_BUS[2]
+C_BUS[3] <= CPU:inst.C_BUS[3]
+C_BUS[4] <= CPU:inst.C_BUS[4]
+C_BUS[5] <= CPU:inst.C_BUS[5]
+C_BUS[6] <= CPU:inst.C_BUS[6]
+C_BUS[7] <= CPU:inst.C_BUS[7]
+C_BUS[8] <= CPU:inst.C_BUS[8]
+C_BUS[9] <= CPU:inst.C_BUS[9]
+C_BUS[10] <= CPU:inst.C_BUS[10]
+C_BUS[11] <= CPU:inst.C_BUS[11]
+C_BUS[12] <= CPU:inst.C_BUS[12]
+C_BUS[13] <= CPU:inst.C_BUS[13]
+C_BUS[14] <= CPU:inst.C_BUS[14]
+C_BUS[15] <= CPU:inst.C_BUS[15]
+C_BUS[16] <= CPU:inst.C_BUS[16]
+C_BUS[17] <= CPU:inst.C_BUS[17]
+C_BUS[18] <= CPU:inst.C_BUS[18]
+C_BUS[19] <= CPU:inst.C_BUS[19]
+C_BUS[20] <= CPU:inst.C_BUS[20]
+C_BUS[21] <= CPU:inst.C_BUS[21]
+C_BUS[22] <= CPU:inst.C_BUS[22]
+C_BUS[23] <= CPU:inst.C_BUS[23]
+C_BUS[24] <= CPU:inst.C_BUS[24]
+C_BUS[25] <= CPU:inst.C_BUS[25]
+C_BUS[26] <= CPU:inst.C_BUS[26]
+C_BUS[27] <= CPU:inst.C_BUS[27]
+C_BUS[28] <= CPU:inst.C_BUS[28]
+C_BUS[29] <= CPU:inst.C_BUS[29]
+C_BUS[30] <= CPU:inst.C_BUS[30]
+C_BUS[31] <= CPU:inst.C_BUS[31]
+DATA_MEM_OUT[0] <= CPU:inst.DATA_MEM_OUT[0]
+DATA_MEM_OUT[1] <= CPU:inst.DATA_MEM_OUT[1]
+DATA_MEM_OUT[2] <= CPU:inst.DATA_MEM_OUT[2]
+DATA_MEM_OUT[3] <= CPU:inst.DATA_MEM_OUT[3]
+DATA_MEM_OUT[4] <= CPU:inst.DATA_MEM_OUT[4]
+DATA_MEM_OUT[5] <= CPU:inst.DATA_MEM_OUT[5]
+DATA_MEM_OUT[6] <= CPU:inst.DATA_MEM_OUT[6]
+DATA_MEM_OUT[7] <= CPU:inst.DATA_MEM_OUT[7]
+DATA_MEM_OUT[8] <= CPU:inst.DATA_MEM_OUT[8]
+DATA_MEM_OUT[9] <= CPU:inst.DATA_MEM_OUT[9]
+DATA_MEM_OUT[10] <= CPU:inst.DATA_MEM_OUT[10]
+DATA_MEM_OUT[11] <= CPU:inst.DATA_MEM_OUT[11]
+DATA_MEM_OUT[12] <= CPU:inst.DATA_MEM_OUT[12]
+DATA_MEM_OUT[13] <= CPU:inst.DATA_MEM_OUT[13]
+DATA_MEM_OUT[14] <= CPU:inst.DATA_MEM_OUT[14]
+DATA_MEM_OUT[15] <= CPU:inst.DATA_MEM_OUT[15]
+DATA_MEM_OUT[16] <= CPU:inst.DATA_MEM_OUT[16]
+DATA_MEM_OUT[17] <= CPU:inst.DATA_MEM_OUT[17]
+DATA_MEM_OUT[18] <= CPU:inst.DATA_MEM_OUT[18]
+DATA_MEM_OUT[19] <= CPU:inst.DATA_MEM_OUT[19]
+DATA_MEM_OUT[20] <= CPU:inst.DATA_MEM_OUT[20]
+DATA_MEM_OUT[21] <= CPU:inst.DATA_MEM_OUT[21]
+DATA_MEM_OUT[22] <= CPU:inst.DATA_MEM_OUT[22]
+DATA_MEM_OUT[23] <= CPU:inst.DATA_MEM_OUT[23]
+DATA_MEM_OUT[24] <= CPU:inst.DATA_MEM_OUT[24]
+DATA_MEM_OUT[25] <= CPU:inst.DATA_MEM_OUT[25]
+DATA_MEM_OUT[26] <= CPU:inst.DATA_MEM_OUT[26]
+DATA_MEM_OUT[27] <= CPU:inst.DATA_MEM_OUT[27]
+DATA_MEM_OUT[28] <= CPU:inst.DATA_MEM_OUT[28]
+DATA_MEM_OUT[29] <= CPU:inst.DATA_MEM_OUT[29]
+DATA_MEM_OUT[30] <= CPU:inst.DATA_MEM_OUT[30]
+DATA_MEM_OUT[31] <= CPU:inst.DATA_MEM_OUT[31]
+MBR_OUT[0] <= CPU:inst.MBR_OUT[0]
+MBR_OUT[1] <= CPU:inst.MBR_OUT[1]
+MBR_OUT[2] <= CPU:inst.MBR_OUT[2]
+MBR_OUT[3] <= CPU:inst.MBR_OUT[3]
+MBR_OUT[4] <= CPU:inst.MBR_OUT[4]
+MBR_OUT[5] <= CPU:inst.MBR_OUT[5]
+MBR_OUT[6] <= CPU:inst.MBR_OUT[6]
+MBR_OUT[7] <= CPU:inst.MBR_OUT[7]
+MIR[0] <= CPU:inst.MIR[0]
+MIR[1] <= CPU:inst.MIR[1]
+MIR[2] <= CPU:inst.MIR[2]
+MIR[3] <= CPU:inst.MIR[3]
+MIR[4] <= CPU:inst.MIR[4]
+MIR[5] <= CPU:inst.MIR[5]
+MIR[6] <= CPU:inst.MIR[6]
+MIR[7] <= CPU:inst.MIR[7]
+MIR[8] <= CPU:inst.MIR[8]
+MIR[9] <= CPU:inst.MIR[9]
+MIR[10] <= CPU:inst.MIR[10]
+MIR[11] <= CPU:inst.MIR[11]
+MIR[12] <= CPU:inst.MIR[12]
+MIR[13] <= CPU:inst.MIR[13]
+MIR[14] <= CPU:inst.MIR[14]
+MIR[15] <= CPU:inst.MIR[15]
+MIR[16] <= CPU:inst.MIR[16]
+MIR[17] <= CPU:inst.MIR[17]
+MIR[18] <= CPU:inst.MIR[18]
+MIR[19] <= CPU:inst.MIR[19]
+MIR[20] <= CPU:inst.MIR[20]
+MIR[21] <= CPU:inst.MIR[21]
+MIR[22] <= CPU:inst.MIR[22]
+MIR[23] <= CPU:inst.MIR[23]
+MIR[24] <= CPU:inst.MIR[24]
+MIR[25] <= CPU:inst.MIR[25]
+MIR[26] <= CPU:inst.MIR[26]
+MIR[27] <= CPU:inst.MIR[27]
+MIR[28] <= CPU:inst.MIR[28]
+MIR[29] <= CPU:inst.MIR[29]
+MIR[30] <= CPU:inst.MIR[30]
+MIR[31] <= CPU:inst.MIR[31]
+MIR[32] <= CPU:inst.MIR[32]
+MIR[33] <= CPU:inst.MIR[33]
+MIR[34] <= CPU:inst.MIR[34]
+MIR[35] <= CPU:inst.MIR[35]
+MPC[0] <= CPU:inst.MPC[0]
+MPC[1] <= CPU:inst.MPC[1]
+MPC[2] <= CPU:inst.MPC[2]
+MPC[3] <= CPU:inst.MPC[3]
+MPC[4] <= CPU:inst.MPC[4]
+MPC[5] <= CPU:inst.MPC[5]
+MPC[6] <= CPU:inst.MPC[6]
+MPC[7] <= CPU:inst.MPC[7]
+MPC[8] <= CPU:inst.MPC[8]
+
+
+|MIC1|CPU:inst
 DATA_MEM_write_enable <= CONTROL_UNIT:inst2.write_enable
 LOADN => DATA_PATH:inst.LOAD
 CLOCK => DATA_PATH:inst.CLOCK
@@ -290,7 +478,7 @@ PC[30] <= DATA_PATH:inst.PC[30]
 PC[31] <= DATA_PATH:inst.PC[31]
 
 
-|CPU|CONTROL_UNIT:inst2
+|MIC1|CPU:inst|CONTROL_UNIT:inst2
 write_enable <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLOCK => inst1.CLK
 CLOCK => inst.IN0
@@ -353,7 +541,7 @@ MPC[7] <= MPC_GENERATOR:inst2.MPC[7]
 MPC[8] <= MPC_GENERATOR:inst2.MPC[8]
 
 
-|CPU|CONTROL_UNIT:inst2|control_store:rom
+|MIC1|CPU:inst|CONTROL_UNIT:inst2|control_store:rom
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -402,7 +590,7 @@ q[34] <= altsyncram:altsyncram_component.q_a[34]
 q[35] <= altsyncram:altsyncram_component.q_a[35]
 
 
-|CPU|CONTROL_UNIT:inst2|control_store:rom|altsyncram:altsyncram_component
+|MIC1|CPU:inst|CONTROL_UNIT:inst2|control_store:rom|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -508,7 +696,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|CPU|CONTROL_UNIT:inst2|control_store:rom|altsyncram:altsyncram_component|altsyncram_ag81:auto_generated
+|MIC1|CPU:inst|CONTROL_UNIT:inst2|control_store:rom|altsyncram:altsyncram_component|altsyncram_ag81:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -907,7 +1095,7 @@ q_a[34] <= ram_block1a34.PORTADATAOUT
 q_a[35] <= ram_block1a35.PORTADATAOUT
 
 
-|CPU|CONTROL_UNIT:inst2|MPC_GENERATOR:inst2
+|MIC1|CPU:inst|CONTROL_UNIT:inst2|MPC_GENERATOR:inst2
 MPC[0] <= inst9[0].DB_MAX_OUTPUT_PORT_TYPE
 MPC[1] <= inst9[1].DB_MAX_OUTPUT_PORT_TYPE
 MPC[2] <= inst9[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -950,7 +1138,7 @@ Z => inst1.DATAIN
 N => inst8.DATAIN
 
 
-|CPU|DATA_PATH:inst
+|MIC1|CPU:inst|DATA_PATH:inst
 N <= ula_32bit:inst2.N
 LOAD => BANK_REGS:inst.LOAD
 CLOCK => BANK_REGS:inst.CLOCK
@@ -1269,7 +1457,7 @@ PC[30] <= BANK_REGS:inst.PC[30]
 PC[31] <= BANK_REGS:inst.PC[31]
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2
 COUT <= ula_8bit:inst4.COUT
 MIR[0] => shifter:inst1.MIR[0]
 MIR[1] => shifter:inst1.MIR[1]
@@ -1460,7 +1648,7 @@ C[30] <= shifter:inst1.C[30]
 C[31] <= shifter:inst1.C[31]
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4
 COUT <= ula_1bit:inst3.COUT
 INC => ula_1bit:inst6.CIN
 INVA => ula_1bit:inst6.INVA
@@ -1529,7 +1717,7 @@ S[6] <= ula_1bit:inst4.S
 S[7] <= ula_1bit:inst3.S
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1542,7 +1730,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1556,7 +1744,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1569,7 +1757,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst3|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1583,7 +1771,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1596,7 +1784,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1610,7 +1798,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1623,7 +1811,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst4|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1637,7 +1825,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1650,7 +1838,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1664,7 +1852,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1677,7 +1865,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst2|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1691,7 +1879,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1704,7 +1892,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1718,7 +1906,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1731,7 +1919,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1745,7 +1933,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1758,7 +1946,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1772,7 +1960,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1785,7 +1973,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst7|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1799,7 +1987,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1812,7 +2000,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1826,7 +2014,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1839,7 +2027,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst8|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1853,7 +2041,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1866,7 +2054,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1880,7 +2068,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1893,7 +2081,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst5|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1907,7 +2095,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -1920,7 +2108,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -1934,7 +2122,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -1947,7 +2135,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst4|ula_1bit:inst6|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -1961,7 +2149,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3
 COUT <= ula_1bit:inst3.COUT
 INC => ula_1bit:inst6.CIN
 INVA => ula_1bit:inst6.INVA
@@ -2030,7 +2218,7 @@ S[6] <= ula_1bit:inst4.S
 S[7] <= ula_1bit:inst3.S
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2043,7 +2231,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2057,7 +2245,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2070,7 +2258,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst3|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2084,7 +2272,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2097,7 +2285,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2111,7 +2299,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2124,7 +2312,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst4|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2138,7 +2326,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2151,7 +2339,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2165,7 +2353,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2178,7 +2366,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst2|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2192,7 +2380,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2205,7 +2393,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2219,7 +2407,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2232,7 +2420,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2246,7 +2434,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2259,7 +2447,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2273,7 +2461,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2286,7 +2474,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst7|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2300,7 +2488,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2313,7 +2501,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2327,7 +2515,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2340,7 +2528,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst8|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2354,7 +2542,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2367,7 +2555,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2381,7 +2569,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2394,7 +2582,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst5|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2408,7 +2596,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2421,7 +2609,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2435,7 +2623,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2448,7 +2636,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst3|ula_1bit:inst6|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2462,7 +2650,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2
 COUT <= ula_1bit:inst3.COUT
 INC => ula_1bit:inst6.CIN
 INVA => ula_1bit:inst6.INVA
@@ -2531,7 +2719,7 @@ S[6] <= ula_1bit:inst4.S
 S[7] <= ula_1bit:inst3.S
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2544,7 +2732,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2558,7 +2746,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2571,7 +2759,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst3|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2585,7 +2773,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2598,7 +2786,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2612,7 +2800,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2625,7 +2813,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst4|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2639,7 +2827,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2652,7 +2840,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2666,7 +2854,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2679,7 +2867,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst2|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2693,7 +2881,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2706,7 +2894,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2720,7 +2908,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2733,7 +2921,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2747,7 +2935,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2760,7 +2948,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2774,7 +2962,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2787,7 +2975,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst7|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2801,7 +2989,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2814,7 +3002,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2828,7 +3016,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2841,7 +3029,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst8|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2855,7 +3043,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2868,7 +3056,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2882,7 +3070,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2895,7 +3083,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst5|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2909,7 +3097,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -2922,7 +3110,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -2936,7 +3124,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -2949,7 +3137,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst2|ula_1bit:inst6|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -2963,7 +3151,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst
 COUT <= ula_1bit:inst3.COUT
 INC => ula_1bit:inst6.CIN
 INVA => ula_1bit:inst6.INVA
@@ -3032,7 +3220,7 @@ S[6] <= ula_1bit:inst4.S
 S[7] <= ula_1bit:inst3.S
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3045,7 +3233,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3059,7 +3247,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3072,7 +3260,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst3|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3086,7 +3274,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3099,7 +3287,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3113,7 +3301,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3126,7 +3314,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst4|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3140,7 +3328,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3153,7 +3341,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3167,7 +3355,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3180,7 +3368,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst2|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3194,7 +3382,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3207,7 +3395,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3221,7 +3409,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3234,7 +3422,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3248,7 +3436,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3261,7 +3449,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3275,7 +3463,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3288,7 +3476,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst7|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3302,7 +3490,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3315,7 +3503,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3329,7 +3517,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3342,7 +3530,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst8|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3356,7 +3544,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3369,7 +3557,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3383,7 +3571,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3396,7 +3584,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst5|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3410,7 +3598,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6
 COUT <= full_adder_1bit_ula:inst10.COUT
 INVA => inst2.IN0
 A => inst3.IN0
@@ -3423,7 +3611,7 @@ F1 => decoder2_4:inst6.B
 S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|full_adder_1bit_ula:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|full_adder_1bit_ula:inst10
 SUM <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst2.IN2
@@ -3437,7 +3625,7 @@ EN[3] => inst3.IN1
 COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|decoder2_4:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|decoder2_4:inst6
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3450,7 +3638,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|logic_unit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|ula_8bit:inst|ula_1bit:inst6|logic_unit:inst1
 AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst4.IN0
 A => inst6.IN1
@@ -3464,7 +3652,7 @@ OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|shifter:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|shifter:inst1
 N <= inst18[31].DB_MAX_OUTPUT_PORT_TYPE
 C[0] <= inst18[0].DB_MAX_OUTPUT_PORT_TYPE
 C[1] <= inst18[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -3625,7 +3813,7 @@ MIR[35] => ~NO_FANOUT~
 Z <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|ula_32bit:inst2|shifter:inst1|decoder2_4:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|ula_32bit:inst2|shifter:inst1|decoder2_4:inst1
 S3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst5.IN0
@@ -3638,7 +3826,7 @@ S1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 S2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst
 MAR[0] <= MAR:inst.DATA_ADDRESS[0]
 MAR[1] <= MAR:inst.DATA_ADDRESS[1]
 MAR[2] <= MAR:inst.DATA_ADDRESS[2]
@@ -4517,7 +4705,7 @@ PC[30] <= PC:inst3.PROGRAM_COUNTER[30]
 PC[31] <= PC:inst3.PROGRAM_COUNTER[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst
 DATA_ADDRESS[0] <= register_32bit:inst.OUTPUT_MEM[0]
 DATA_ADDRESS[1] <= register_32bit:inst.OUTPUT_MEM[1]
 DATA_ADDRESS[2] <= register_32bit:inst.OUTPUT_MEM[2]
@@ -4622,7 +4810,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -4892,7 +5080,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -4916,7 +5104,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -4940,7 +5128,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -4964,7 +5152,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -4988,7 +5176,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5012,7 +5200,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5036,7 +5224,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5060,7 +5248,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MAR:inst|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5084,7 +5272,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4
 OUT_B[0] <= OUT_B.DB_MAX_OUTPUT_PORT_TYPE
 OUT_B[1] <= OUT_B.DB_MAX_OUTPUT_PORT_TYPE
 OUT_B[2] <= OUT_B.DB_MAX_OUTPUT_PORT_TYPE
@@ -5180,7 +5368,7 @@ OUT_MBR[6] <= OUTPUT_MEM[6].DB_MAX_OUTPUT_PORT_TYPE
 OUT_MBR[7] <= OUTPUT_MEM[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -5450,7 +5638,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5474,7 +5662,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5498,7 +5686,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5522,7 +5710,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5546,7 +5734,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5570,7 +5758,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5594,7 +5782,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5618,7 +5806,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -5642,7 +5830,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|MBR_EXTENSOR:inst44
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|MBR_EXTENSOR:inst44
 MBR_OUT[0] <= MBR_MEM[0].DB_MAX_OUTPUT_PORT_TYPE
 MBR_OUT[1] <= MBR_MEM[1].DB_MAX_OUTPUT_PORT_TYPE
 MBR_OUT[2] <= MBR_MEM[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -5749,7 +5937,7 @@ MBRU_OUT[30] <= inst1[22].DB_MAX_OUTPUT_PORT_TYPE
 MBRU_OUT[31] <= inst1[23].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -6019,7 +6207,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6043,7 +6231,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6067,7 +6255,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6091,7 +6279,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6115,7 +6303,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6139,7 +6327,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6163,7 +6351,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6187,7 +6375,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MBR:inst4|register_32bit:inst1|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6211,7 +6399,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2
 DATA_ADDRESS[0] <= register_32bit:inst.OUTPUT_MEM[0]
 DATA_ADDRESS[1] <= register_32bit:inst.OUTPUT_MEM[1]
 DATA_ADDRESS[2] <= register_32bit:inst.OUTPUT_MEM[2]
@@ -6381,7 +6569,7 @@ OUT_B[30] <= register_32bit:inst.OUTPUT[30]
 OUT_B[31] <= register_32bit:inst.OUTPUT[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -6651,7 +6839,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6675,7 +6863,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6699,7 +6887,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6723,7 +6911,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6747,7 +6935,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6771,7 +6959,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6795,7 +6983,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6819,7 +7007,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|MDR:inst2|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -6843,7 +7031,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10
 OUT_A[0] <= register_32bit:inst.OUTPUT[0]
 OUT_A[1] <= register_32bit:inst.OUTPUT[1]
 OUT_A[2] <= register_32bit:inst.OUTPUT[2]
@@ -6948,7 +7136,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -7218,7 +7406,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7242,7 +7430,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7266,7 +7454,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7290,7 +7478,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7314,7 +7502,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7338,7 +7526,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7362,7 +7550,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7386,7 +7574,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|H:inst10|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7410,7 +7598,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -7515,7 +7703,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -7785,7 +7973,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7809,7 +7997,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7833,7 +8021,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7857,7 +8045,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7881,7 +8069,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7905,7 +8093,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7929,7 +8117,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7953,7 +8141,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|OPC:inst9|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -7977,7 +8165,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -8082,7 +8270,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -8352,7 +8540,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8376,7 +8564,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8400,7 +8588,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8424,7 +8612,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8448,7 +8636,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8472,7 +8660,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8496,7 +8684,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8520,7 +8708,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|TOS:inst8|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8544,7 +8732,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -8649,7 +8837,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -8919,7 +9107,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8943,7 +9131,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8967,7 +9155,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -8991,7 +9179,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9015,7 +9203,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9039,7 +9227,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9063,7 +9251,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9087,7 +9275,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9111,7 +9299,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|CPP_initial_address:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|CPP:inst7|CPP_initial_address:inst5
 CPP_INIT[0] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
 CPP_INIT[1] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
 CPP_INIT[2] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -9146,7 +9334,7 @@ CPP_INIT[30] <= inst4[20].DB_MAX_OUTPUT_PORT_TYPE
 CPP_INIT[31] <= inst4[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -9251,7 +9439,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -9521,7 +9709,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9545,7 +9733,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9569,7 +9757,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9593,7 +9781,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9617,7 +9805,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9641,7 +9829,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9665,7 +9853,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9689,7 +9877,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -9713,7 +9901,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|LV_initial_address:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|LV:inst6|LV_initial_address:inst5
 LV_INIT[0] <= inst4[0].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[1] <= inst4[1].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[2] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -9748,7 +9936,7 @@ LV_INIT[30] <= inst2[23].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[31] <= inst2[24].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -9853,7 +10041,7 @@ IN_C[30] => register_32bit:inst.IN_C[30]
 IN_C[31] => register_32bit:inst.IN_C[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -10123,7 +10311,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10147,7 +10335,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10171,7 +10359,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10195,7 +10383,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10219,7 +10407,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10243,7 +10431,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10267,7 +10455,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10291,7 +10479,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10315,7 +10503,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|LV_initial_address:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|SP:inst5|LV_initial_address:inst5
 LV_INIT[0] <= inst4[0].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[1] <= inst4[1].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[2] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -10350,7 +10538,7 @@ LV_INIT[30] <= inst2[23].DB_MAX_OUTPUT_PORT_TYPE
 LV_INIT[31] <= inst2[24].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3
 OUT_B[0] <= register_32bit:inst.OUTPUT[0]
 OUT_B[1] <= register_32bit:inst.OUTPUT[1]
 OUT_B[2] <= register_32bit:inst.OUTPUT[2]
@@ -10487,7 +10675,7 @@ PROGRAM_COUNTER[30] <= register_32bit:inst.OUTPUT_MEM[30]
 PROGRAM_COUNTER[31] <= register_32bit:inst.OUTPUT_MEM[31]
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst
 OUTPUT[0] <= inst14[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= inst14[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= inst14[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -10757,7 +10945,7 @@ OUT_MEM_EN => inst13[1].OE
 OUT_MEM_EN => inst13[0].OE
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst4
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst4
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10781,7 +10969,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst5
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst5
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10805,7 +10993,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst6
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst6
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10829,7 +11017,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10853,7 +11041,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst7
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst7
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10877,7 +11065,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst1
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst1
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10901,7 +11089,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst2
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst2
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10925,7 +11113,7 @@ D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
 
 
-|CPU|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst3
+|MIC1|CPU:inst|DATA_PATH:inst|BANK_REGS:inst|PC:inst3|register_32bit:inst|register_4bit:inst3
 O[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
@@ -10947,5 +11135,520 @@ D[0] => inst3.DATAIN
 D[1] => inst2.DATAIN
 D[2] => inst1.DATAIN
 D[3] => inst.DATAIN
+
+
+|MIC1|RAM:inst1
+address_a[0] => altsyncram:altsyncram_component.address_a[0]
+address_a[1] => altsyncram:altsyncram_component.address_a[1]
+address_a[2] => altsyncram:altsyncram_component.address_a[2]
+address_a[3] => altsyncram:altsyncram_component.address_a[3]
+address_a[4] => altsyncram:altsyncram_component.address_a[4]
+address_a[5] => altsyncram:altsyncram_component.address_a[5]
+address_a[6] => altsyncram:altsyncram_component.address_a[6]
+address_a[7] => altsyncram:altsyncram_component.address_a[7]
+address_a[8] => altsyncram:altsyncram_component.address_a[8]
+address_a[9] => altsyncram:altsyncram_component.address_a[9]
+address_a[10] => altsyncram:altsyncram_component.address_a[10]
+address_a[11] => altsyncram:altsyncram_component.address_a[11]
+address_b[0] => altsyncram:altsyncram_component.address_b[0]
+address_b[1] => altsyncram:altsyncram_component.address_b[1]
+address_b[2] => altsyncram:altsyncram_component.address_b[2]
+address_b[3] => altsyncram:altsyncram_component.address_b[3]
+address_b[4] => altsyncram:altsyncram_component.address_b[4]
+address_b[5] => altsyncram:altsyncram_component.address_b[5]
+address_b[6] => altsyncram:altsyncram_component.address_b[6]
+address_b[7] => altsyncram:altsyncram_component.address_b[7]
+address_b[8] => altsyncram:altsyncram_component.address_b[8]
+address_b[9] => altsyncram:altsyncram_component.address_b[9]
+clock => altsyncram:altsyncram_component.clock0
+data_a[0] => altsyncram:altsyncram_component.data_a[0]
+data_a[1] => altsyncram:altsyncram_component.data_a[1]
+data_a[2] => altsyncram:altsyncram_component.data_a[2]
+data_a[3] => altsyncram:altsyncram_component.data_a[3]
+data_a[4] => altsyncram:altsyncram_component.data_a[4]
+data_a[5] => altsyncram:altsyncram_component.data_a[5]
+data_a[6] => altsyncram:altsyncram_component.data_a[6]
+data_a[7] => altsyncram:altsyncram_component.data_a[7]
+data_b[0] => altsyncram:altsyncram_component.data_b[0]
+data_b[1] => altsyncram:altsyncram_component.data_b[1]
+data_b[2] => altsyncram:altsyncram_component.data_b[2]
+data_b[3] => altsyncram:altsyncram_component.data_b[3]
+data_b[4] => altsyncram:altsyncram_component.data_b[4]
+data_b[5] => altsyncram:altsyncram_component.data_b[5]
+data_b[6] => altsyncram:altsyncram_component.data_b[6]
+data_b[7] => altsyncram:altsyncram_component.data_b[7]
+data_b[8] => altsyncram:altsyncram_component.data_b[8]
+data_b[9] => altsyncram:altsyncram_component.data_b[9]
+data_b[10] => altsyncram:altsyncram_component.data_b[10]
+data_b[11] => altsyncram:altsyncram_component.data_b[11]
+data_b[12] => altsyncram:altsyncram_component.data_b[12]
+data_b[13] => altsyncram:altsyncram_component.data_b[13]
+data_b[14] => altsyncram:altsyncram_component.data_b[14]
+data_b[15] => altsyncram:altsyncram_component.data_b[15]
+data_b[16] => altsyncram:altsyncram_component.data_b[16]
+data_b[17] => altsyncram:altsyncram_component.data_b[17]
+data_b[18] => altsyncram:altsyncram_component.data_b[18]
+data_b[19] => altsyncram:altsyncram_component.data_b[19]
+data_b[20] => altsyncram:altsyncram_component.data_b[20]
+data_b[21] => altsyncram:altsyncram_component.data_b[21]
+data_b[22] => altsyncram:altsyncram_component.data_b[22]
+data_b[23] => altsyncram:altsyncram_component.data_b[23]
+data_b[24] => altsyncram:altsyncram_component.data_b[24]
+data_b[25] => altsyncram:altsyncram_component.data_b[25]
+data_b[26] => altsyncram:altsyncram_component.data_b[26]
+data_b[27] => altsyncram:altsyncram_component.data_b[27]
+data_b[28] => altsyncram:altsyncram_component.data_b[28]
+data_b[29] => altsyncram:altsyncram_component.data_b[29]
+data_b[30] => altsyncram:altsyncram_component.data_b[30]
+data_b[31] => altsyncram:altsyncram_component.data_b[31]
+wren_a => altsyncram:altsyncram_component.wren_a
+wren_b => altsyncram:altsyncram_component.wren_b
+q_a[0] <= altsyncram:altsyncram_component.q_a[0]
+q_a[1] <= altsyncram:altsyncram_component.q_a[1]
+q_a[2] <= altsyncram:altsyncram_component.q_a[2]
+q_a[3] <= altsyncram:altsyncram_component.q_a[3]
+q_a[4] <= altsyncram:altsyncram_component.q_a[4]
+q_a[5] <= altsyncram:altsyncram_component.q_a[5]
+q_a[6] <= altsyncram:altsyncram_component.q_a[6]
+q_a[7] <= altsyncram:altsyncram_component.q_a[7]
+q_b[0] <= altsyncram:altsyncram_component.q_b[0]
+q_b[1] <= altsyncram:altsyncram_component.q_b[1]
+q_b[2] <= altsyncram:altsyncram_component.q_b[2]
+q_b[3] <= altsyncram:altsyncram_component.q_b[3]
+q_b[4] <= altsyncram:altsyncram_component.q_b[4]
+q_b[5] <= altsyncram:altsyncram_component.q_b[5]
+q_b[6] <= altsyncram:altsyncram_component.q_b[6]
+q_b[7] <= altsyncram:altsyncram_component.q_b[7]
+q_b[8] <= altsyncram:altsyncram_component.q_b[8]
+q_b[9] <= altsyncram:altsyncram_component.q_b[9]
+q_b[10] <= altsyncram:altsyncram_component.q_b[10]
+q_b[11] <= altsyncram:altsyncram_component.q_b[11]
+q_b[12] <= altsyncram:altsyncram_component.q_b[12]
+q_b[13] <= altsyncram:altsyncram_component.q_b[13]
+q_b[14] <= altsyncram:altsyncram_component.q_b[14]
+q_b[15] <= altsyncram:altsyncram_component.q_b[15]
+q_b[16] <= altsyncram:altsyncram_component.q_b[16]
+q_b[17] <= altsyncram:altsyncram_component.q_b[17]
+q_b[18] <= altsyncram:altsyncram_component.q_b[18]
+q_b[19] <= altsyncram:altsyncram_component.q_b[19]
+q_b[20] <= altsyncram:altsyncram_component.q_b[20]
+q_b[21] <= altsyncram:altsyncram_component.q_b[21]
+q_b[22] <= altsyncram:altsyncram_component.q_b[22]
+q_b[23] <= altsyncram:altsyncram_component.q_b[23]
+q_b[24] <= altsyncram:altsyncram_component.q_b[24]
+q_b[25] <= altsyncram:altsyncram_component.q_b[25]
+q_b[26] <= altsyncram:altsyncram_component.q_b[26]
+q_b[27] <= altsyncram:altsyncram_component.q_b[27]
+q_b[28] <= altsyncram:altsyncram_component.q_b[28]
+q_b[29] <= altsyncram:altsyncram_component.q_b[29]
+q_b[30] <= altsyncram:altsyncram_component.q_b[30]
+q_b[31] <= altsyncram:altsyncram_component.q_b[31]
+
+
+|MIC1|RAM:inst1|altsyncram:altsyncram_component
+wren_a => altsyncram_uab2:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => altsyncram_uab2:auto_generated.wren_b
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_uab2:auto_generated.data_a[0]
+data_a[1] => altsyncram_uab2:auto_generated.data_a[1]
+data_a[2] => altsyncram_uab2:auto_generated.data_a[2]
+data_a[3] => altsyncram_uab2:auto_generated.data_a[3]
+data_a[4] => altsyncram_uab2:auto_generated.data_a[4]
+data_a[5] => altsyncram_uab2:auto_generated.data_a[5]
+data_a[6] => altsyncram_uab2:auto_generated.data_a[6]
+data_a[7] => altsyncram_uab2:auto_generated.data_a[7]
+data_b[0] => altsyncram_uab2:auto_generated.data_b[0]
+data_b[1] => altsyncram_uab2:auto_generated.data_b[1]
+data_b[2] => altsyncram_uab2:auto_generated.data_b[2]
+data_b[3] => altsyncram_uab2:auto_generated.data_b[3]
+data_b[4] => altsyncram_uab2:auto_generated.data_b[4]
+data_b[5] => altsyncram_uab2:auto_generated.data_b[5]
+data_b[6] => altsyncram_uab2:auto_generated.data_b[6]
+data_b[7] => altsyncram_uab2:auto_generated.data_b[7]
+data_b[8] => altsyncram_uab2:auto_generated.data_b[8]
+data_b[9] => altsyncram_uab2:auto_generated.data_b[9]
+data_b[10] => altsyncram_uab2:auto_generated.data_b[10]
+data_b[11] => altsyncram_uab2:auto_generated.data_b[11]
+data_b[12] => altsyncram_uab2:auto_generated.data_b[12]
+data_b[13] => altsyncram_uab2:auto_generated.data_b[13]
+data_b[14] => altsyncram_uab2:auto_generated.data_b[14]
+data_b[15] => altsyncram_uab2:auto_generated.data_b[15]
+data_b[16] => altsyncram_uab2:auto_generated.data_b[16]
+data_b[17] => altsyncram_uab2:auto_generated.data_b[17]
+data_b[18] => altsyncram_uab2:auto_generated.data_b[18]
+data_b[19] => altsyncram_uab2:auto_generated.data_b[19]
+data_b[20] => altsyncram_uab2:auto_generated.data_b[20]
+data_b[21] => altsyncram_uab2:auto_generated.data_b[21]
+data_b[22] => altsyncram_uab2:auto_generated.data_b[22]
+data_b[23] => altsyncram_uab2:auto_generated.data_b[23]
+data_b[24] => altsyncram_uab2:auto_generated.data_b[24]
+data_b[25] => altsyncram_uab2:auto_generated.data_b[25]
+data_b[26] => altsyncram_uab2:auto_generated.data_b[26]
+data_b[27] => altsyncram_uab2:auto_generated.data_b[27]
+data_b[28] => altsyncram_uab2:auto_generated.data_b[28]
+data_b[29] => altsyncram_uab2:auto_generated.data_b[29]
+data_b[30] => altsyncram_uab2:auto_generated.data_b[30]
+data_b[31] => altsyncram_uab2:auto_generated.data_b[31]
+address_a[0] => altsyncram_uab2:auto_generated.address_a[0]
+address_a[1] => altsyncram_uab2:auto_generated.address_a[1]
+address_a[2] => altsyncram_uab2:auto_generated.address_a[2]
+address_a[3] => altsyncram_uab2:auto_generated.address_a[3]
+address_a[4] => altsyncram_uab2:auto_generated.address_a[4]
+address_a[5] => altsyncram_uab2:auto_generated.address_a[5]
+address_a[6] => altsyncram_uab2:auto_generated.address_a[6]
+address_a[7] => altsyncram_uab2:auto_generated.address_a[7]
+address_a[8] => altsyncram_uab2:auto_generated.address_a[8]
+address_a[9] => altsyncram_uab2:auto_generated.address_a[9]
+address_a[10] => altsyncram_uab2:auto_generated.address_a[10]
+address_a[11] => altsyncram_uab2:auto_generated.address_a[11]
+address_b[0] => altsyncram_uab2:auto_generated.address_b[0]
+address_b[1] => altsyncram_uab2:auto_generated.address_b[1]
+address_b[2] => altsyncram_uab2:auto_generated.address_b[2]
+address_b[3] => altsyncram_uab2:auto_generated.address_b[3]
+address_b[4] => altsyncram_uab2:auto_generated.address_b[4]
+address_b[5] => altsyncram_uab2:auto_generated.address_b[5]
+address_b[6] => altsyncram_uab2:auto_generated.address_b[6]
+address_b[7] => altsyncram_uab2:auto_generated.address_b[7]
+address_b[8] => altsyncram_uab2:auto_generated.address_b[8]
+address_b[9] => altsyncram_uab2:auto_generated.address_b[9]
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_uab2:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_uab2:auto_generated.q_a[0]
+q_a[1] <= altsyncram_uab2:auto_generated.q_a[1]
+q_a[2] <= altsyncram_uab2:auto_generated.q_a[2]
+q_a[3] <= altsyncram_uab2:auto_generated.q_a[3]
+q_a[4] <= altsyncram_uab2:auto_generated.q_a[4]
+q_a[5] <= altsyncram_uab2:auto_generated.q_a[5]
+q_a[6] <= altsyncram_uab2:auto_generated.q_a[6]
+q_a[7] <= altsyncram_uab2:auto_generated.q_a[7]
+q_b[0] <= altsyncram_uab2:auto_generated.q_b[0]
+q_b[1] <= altsyncram_uab2:auto_generated.q_b[1]
+q_b[2] <= altsyncram_uab2:auto_generated.q_b[2]
+q_b[3] <= altsyncram_uab2:auto_generated.q_b[3]
+q_b[4] <= altsyncram_uab2:auto_generated.q_b[4]
+q_b[5] <= altsyncram_uab2:auto_generated.q_b[5]
+q_b[6] <= altsyncram_uab2:auto_generated.q_b[6]
+q_b[7] <= altsyncram_uab2:auto_generated.q_b[7]
+q_b[8] <= altsyncram_uab2:auto_generated.q_b[8]
+q_b[9] <= altsyncram_uab2:auto_generated.q_b[9]
+q_b[10] <= altsyncram_uab2:auto_generated.q_b[10]
+q_b[11] <= altsyncram_uab2:auto_generated.q_b[11]
+q_b[12] <= altsyncram_uab2:auto_generated.q_b[12]
+q_b[13] <= altsyncram_uab2:auto_generated.q_b[13]
+q_b[14] <= altsyncram_uab2:auto_generated.q_b[14]
+q_b[15] <= altsyncram_uab2:auto_generated.q_b[15]
+q_b[16] <= altsyncram_uab2:auto_generated.q_b[16]
+q_b[17] <= altsyncram_uab2:auto_generated.q_b[17]
+q_b[18] <= altsyncram_uab2:auto_generated.q_b[18]
+q_b[19] <= altsyncram_uab2:auto_generated.q_b[19]
+q_b[20] <= altsyncram_uab2:auto_generated.q_b[20]
+q_b[21] <= altsyncram_uab2:auto_generated.q_b[21]
+q_b[22] <= altsyncram_uab2:auto_generated.q_b[22]
+q_b[23] <= altsyncram_uab2:auto_generated.q_b[23]
+q_b[24] <= altsyncram_uab2:auto_generated.q_b[24]
+q_b[25] <= altsyncram_uab2:auto_generated.q_b[25]
+q_b[26] <= altsyncram_uab2:auto_generated.q_b[26]
+q_b[27] <= altsyncram_uab2:auto_generated.q_b[27]
+q_b[28] <= altsyncram_uab2:auto_generated.q_b[28]
+q_b[29] <= altsyncram_uab2:auto_generated.q_b[29]
+q_b[30] <= altsyncram_uab2:auto_generated.q_b[30]
+q_b[31] <= altsyncram_uab2:auto_generated.q_b[31]
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|MIC1|RAM:inst1|altsyncram:altsyncram_component|altsyncram_uab2:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[0] => ram_block1a4.PORTAADDR
+address_a[0] => ram_block1a5.PORTAADDR
+address_a[0] => ram_block1a6.PORTAADDR
+address_a[0] => ram_block1a7.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[1] => ram_block1a4.PORTAADDR1
+address_a[1] => ram_block1a5.PORTAADDR1
+address_a[1] => ram_block1a6.PORTAADDR1
+address_a[1] => ram_block1a7.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[2] => ram_block1a4.PORTAADDR2
+address_a[2] => ram_block1a5.PORTAADDR2
+address_a[2] => ram_block1a6.PORTAADDR2
+address_a[2] => ram_block1a7.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[3] => ram_block1a4.PORTAADDR3
+address_a[3] => ram_block1a5.PORTAADDR3
+address_a[3] => ram_block1a6.PORTAADDR3
+address_a[3] => ram_block1a7.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+address_a[4] => ram_block1a4.PORTAADDR4
+address_a[4] => ram_block1a5.PORTAADDR4
+address_a[4] => ram_block1a6.PORTAADDR4
+address_a[4] => ram_block1a7.PORTAADDR4
+address_a[5] => ram_block1a0.PORTAADDR5
+address_a[5] => ram_block1a1.PORTAADDR5
+address_a[5] => ram_block1a2.PORTAADDR5
+address_a[5] => ram_block1a3.PORTAADDR5
+address_a[5] => ram_block1a4.PORTAADDR5
+address_a[5] => ram_block1a5.PORTAADDR5
+address_a[5] => ram_block1a6.PORTAADDR5
+address_a[5] => ram_block1a7.PORTAADDR5
+address_a[6] => ram_block1a0.PORTAADDR6
+address_a[6] => ram_block1a1.PORTAADDR6
+address_a[6] => ram_block1a2.PORTAADDR6
+address_a[6] => ram_block1a3.PORTAADDR6
+address_a[6] => ram_block1a4.PORTAADDR6
+address_a[6] => ram_block1a5.PORTAADDR6
+address_a[6] => ram_block1a6.PORTAADDR6
+address_a[6] => ram_block1a7.PORTAADDR6
+address_a[7] => ram_block1a0.PORTAADDR7
+address_a[7] => ram_block1a1.PORTAADDR7
+address_a[7] => ram_block1a2.PORTAADDR7
+address_a[7] => ram_block1a3.PORTAADDR7
+address_a[7] => ram_block1a4.PORTAADDR7
+address_a[7] => ram_block1a5.PORTAADDR7
+address_a[7] => ram_block1a6.PORTAADDR7
+address_a[7] => ram_block1a7.PORTAADDR7
+address_a[8] => ram_block1a0.PORTAADDR8
+address_a[8] => ram_block1a1.PORTAADDR8
+address_a[8] => ram_block1a2.PORTAADDR8
+address_a[8] => ram_block1a3.PORTAADDR8
+address_a[8] => ram_block1a4.PORTAADDR8
+address_a[8] => ram_block1a5.PORTAADDR8
+address_a[8] => ram_block1a6.PORTAADDR8
+address_a[8] => ram_block1a7.PORTAADDR8
+address_a[9] => ram_block1a0.PORTAADDR9
+address_a[9] => ram_block1a1.PORTAADDR9
+address_a[9] => ram_block1a2.PORTAADDR9
+address_a[9] => ram_block1a3.PORTAADDR9
+address_a[9] => ram_block1a4.PORTAADDR9
+address_a[9] => ram_block1a5.PORTAADDR9
+address_a[9] => ram_block1a6.PORTAADDR9
+address_a[9] => ram_block1a7.PORTAADDR9
+address_a[10] => ram_block1a0.PORTAADDR10
+address_a[10] => ram_block1a1.PORTAADDR10
+address_a[10] => ram_block1a2.PORTAADDR10
+address_a[10] => ram_block1a3.PORTAADDR10
+address_a[10] => ram_block1a4.PORTAADDR10
+address_a[10] => ram_block1a5.PORTAADDR10
+address_a[10] => ram_block1a6.PORTAADDR10
+address_a[10] => ram_block1a7.PORTAADDR10
+address_a[11] => ram_block1a0.PORTAADDR11
+address_a[11] => ram_block1a1.PORTAADDR11
+address_a[11] => ram_block1a2.PORTAADDR11
+address_a[11] => ram_block1a3.PORTAADDR11
+address_a[11] => ram_block1a4.PORTAADDR11
+address_a[11] => ram_block1a5.PORTAADDR11
+address_a[11] => ram_block1a6.PORTAADDR11
+address_a[11] => ram_block1a7.PORTAADDR11
+address_b[0] => ram_block1a0.PORTBADDR
+address_b[0] => ram_block1a1.PORTBADDR
+address_b[0] => ram_block1a2.PORTBADDR
+address_b[0] => ram_block1a3.PORTBADDR
+address_b[0] => ram_block1a4.PORTBADDR
+address_b[0] => ram_block1a5.PORTBADDR
+address_b[0] => ram_block1a6.PORTBADDR
+address_b[0] => ram_block1a7.PORTBADDR
+address_b[1] => ram_block1a0.PORTBADDR1
+address_b[1] => ram_block1a1.PORTBADDR1
+address_b[1] => ram_block1a2.PORTBADDR1
+address_b[1] => ram_block1a3.PORTBADDR1
+address_b[1] => ram_block1a4.PORTBADDR1
+address_b[1] => ram_block1a5.PORTBADDR1
+address_b[1] => ram_block1a6.PORTBADDR1
+address_b[1] => ram_block1a7.PORTBADDR1
+address_b[2] => ram_block1a0.PORTBADDR2
+address_b[2] => ram_block1a1.PORTBADDR2
+address_b[2] => ram_block1a2.PORTBADDR2
+address_b[2] => ram_block1a3.PORTBADDR2
+address_b[2] => ram_block1a4.PORTBADDR2
+address_b[2] => ram_block1a5.PORTBADDR2
+address_b[2] => ram_block1a6.PORTBADDR2
+address_b[2] => ram_block1a7.PORTBADDR2
+address_b[3] => ram_block1a0.PORTBADDR3
+address_b[3] => ram_block1a1.PORTBADDR3
+address_b[3] => ram_block1a2.PORTBADDR3
+address_b[3] => ram_block1a3.PORTBADDR3
+address_b[3] => ram_block1a4.PORTBADDR3
+address_b[3] => ram_block1a5.PORTBADDR3
+address_b[3] => ram_block1a6.PORTBADDR3
+address_b[3] => ram_block1a7.PORTBADDR3
+address_b[4] => ram_block1a0.PORTBADDR4
+address_b[4] => ram_block1a1.PORTBADDR4
+address_b[4] => ram_block1a2.PORTBADDR4
+address_b[4] => ram_block1a3.PORTBADDR4
+address_b[4] => ram_block1a4.PORTBADDR4
+address_b[4] => ram_block1a5.PORTBADDR4
+address_b[4] => ram_block1a6.PORTBADDR4
+address_b[4] => ram_block1a7.PORTBADDR4
+address_b[5] => ram_block1a0.PORTBADDR5
+address_b[5] => ram_block1a1.PORTBADDR5
+address_b[5] => ram_block1a2.PORTBADDR5
+address_b[5] => ram_block1a3.PORTBADDR5
+address_b[5] => ram_block1a4.PORTBADDR5
+address_b[5] => ram_block1a5.PORTBADDR5
+address_b[5] => ram_block1a6.PORTBADDR5
+address_b[5] => ram_block1a7.PORTBADDR5
+address_b[6] => ram_block1a0.PORTBADDR6
+address_b[6] => ram_block1a1.PORTBADDR6
+address_b[6] => ram_block1a2.PORTBADDR6
+address_b[6] => ram_block1a3.PORTBADDR6
+address_b[6] => ram_block1a4.PORTBADDR6
+address_b[6] => ram_block1a5.PORTBADDR6
+address_b[6] => ram_block1a6.PORTBADDR6
+address_b[6] => ram_block1a7.PORTBADDR6
+address_b[7] => ram_block1a0.PORTBADDR7
+address_b[7] => ram_block1a1.PORTBADDR7
+address_b[7] => ram_block1a2.PORTBADDR7
+address_b[7] => ram_block1a3.PORTBADDR7
+address_b[7] => ram_block1a4.PORTBADDR7
+address_b[7] => ram_block1a5.PORTBADDR7
+address_b[7] => ram_block1a6.PORTBADDR7
+address_b[7] => ram_block1a7.PORTBADDR7
+address_b[8] => ram_block1a0.PORTBADDR8
+address_b[8] => ram_block1a1.PORTBADDR8
+address_b[8] => ram_block1a2.PORTBADDR8
+address_b[8] => ram_block1a3.PORTBADDR8
+address_b[8] => ram_block1a4.PORTBADDR8
+address_b[8] => ram_block1a5.PORTBADDR8
+address_b[8] => ram_block1a6.PORTBADDR8
+address_b[8] => ram_block1a7.PORTBADDR8
+address_b[9] => ram_block1a0.PORTBADDR9
+address_b[9] => ram_block1a1.PORTBADDR9
+address_b[9] => ram_block1a2.PORTBADDR9
+address_b[9] => ram_block1a3.PORTBADDR9
+address_b[9] => ram_block1a4.PORTBADDR9
+address_b[9] => ram_block1a5.PORTBADDR9
+address_b[9] => ram_block1a6.PORTBADDR9
+address_b[9] => ram_block1a7.PORTBADDR9
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a7.CLK0
+data_a[0] => ram_block1a0.PORTADATAIN
+data_a[1] => ram_block1a1.PORTADATAIN
+data_a[2] => ram_block1a2.PORTADATAIN
+data_a[3] => ram_block1a3.PORTADATAIN
+data_a[4] => ram_block1a4.PORTADATAIN
+data_a[5] => ram_block1a5.PORTADATAIN
+data_a[6] => ram_block1a6.PORTADATAIN
+data_a[7] => ram_block1a7.PORTADATAIN
+data_b[0] => ram_block1a0.PORTBDATAIN
+data_b[1] => ram_block1a1.PORTBDATAIN
+data_b[2] => ram_block1a2.PORTBDATAIN
+data_b[3] => ram_block1a3.PORTBDATAIN
+data_b[4] => ram_block1a4.PORTBDATAIN
+data_b[5] => ram_block1a5.PORTBDATAIN
+data_b[6] => ram_block1a6.PORTBDATAIN
+data_b[7] => ram_block1a7.PORTBDATAIN
+data_b[8] => ram_block1a0.PORTBDATAIN1
+data_b[9] => ram_block1a1.PORTBDATAIN1
+data_b[10] => ram_block1a2.PORTBDATAIN1
+data_b[11] => ram_block1a3.PORTBDATAIN1
+data_b[12] => ram_block1a4.PORTBDATAIN1
+data_b[13] => ram_block1a5.PORTBDATAIN1
+data_b[14] => ram_block1a6.PORTBDATAIN1
+data_b[15] => ram_block1a7.PORTBDATAIN1
+data_b[16] => ram_block1a0.PORTBDATAIN2
+data_b[17] => ram_block1a1.PORTBDATAIN2
+data_b[18] => ram_block1a2.PORTBDATAIN2
+data_b[19] => ram_block1a3.PORTBDATAIN2
+data_b[20] => ram_block1a4.PORTBDATAIN2
+data_b[21] => ram_block1a5.PORTBDATAIN2
+data_b[22] => ram_block1a6.PORTBDATAIN2
+data_b[23] => ram_block1a7.PORTBDATAIN2
+data_b[24] => ram_block1a0.PORTBDATAIN3
+data_b[25] => ram_block1a1.PORTBDATAIN3
+data_b[26] => ram_block1a2.PORTBDATAIN3
+data_b[27] => ram_block1a3.PORTBDATAIN3
+data_b[28] => ram_block1a4.PORTBDATAIN3
+data_b[29] => ram_block1a5.PORTBDATAIN3
+data_b[30] => ram_block1a6.PORTBDATAIN3
+data_b[31] => ram_block1a7.PORTBDATAIN3
+q_a[0] <= ram_block1a0.PORTADATAOUT
+q_a[1] <= ram_block1a1.PORTADATAOUT
+q_a[2] <= ram_block1a2.PORTADATAOUT
+q_a[3] <= ram_block1a3.PORTADATAOUT
+q_a[4] <= ram_block1a4.PORTADATAOUT
+q_a[5] <= ram_block1a5.PORTADATAOUT
+q_a[6] <= ram_block1a6.PORTADATAOUT
+q_a[7] <= ram_block1a7.PORTADATAOUT
+q_b[0] <= ram_block1a0.PORTBDATAOUT
+q_b[1] <= ram_block1a1.PORTBDATAOUT
+q_b[2] <= ram_block1a2.PORTBDATAOUT
+q_b[3] <= ram_block1a3.PORTBDATAOUT
+q_b[4] <= ram_block1a4.PORTBDATAOUT
+q_b[5] <= ram_block1a5.PORTBDATAOUT
+q_b[6] <= ram_block1a6.PORTBDATAOUT
+q_b[7] <= ram_block1a7.PORTBDATAOUT
+q_b[8] <= ram_block1a0.PORTBDATAOUT1
+q_b[9] <= ram_block1a1.PORTBDATAOUT1
+q_b[10] <= ram_block1a2.PORTBDATAOUT1
+q_b[11] <= ram_block1a3.PORTBDATAOUT1
+q_b[12] <= ram_block1a4.PORTBDATAOUT1
+q_b[13] <= ram_block1a5.PORTBDATAOUT1
+q_b[14] <= ram_block1a6.PORTBDATAOUT1
+q_b[15] <= ram_block1a7.PORTBDATAOUT1
+q_b[16] <= ram_block1a0.PORTBDATAOUT2
+q_b[17] <= ram_block1a1.PORTBDATAOUT2
+q_b[18] <= ram_block1a2.PORTBDATAOUT2
+q_b[19] <= ram_block1a3.PORTBDATAOUT2
+q_b[20] <= ram_block1a4.PORTBDATAOUT2
+q_b[21] <= ram_block1a5.PORTBDATAOUT2
+q_b[22] <= ram_block1a6.PORTBDATAOUT2
+q_b[23] <= ram_block1a7.PORTBDATAOUT2
+q_b[24] <= ram_block1a0.PORTBDATAOUT3
+q_b[25] <= ram_block1a1.PORTBDATAOUT3
+q_b[26] <= ram_block1a2.PORTBDATAOUT3
+q_b[27] <= ram_block1a3.PORTBDATAOUT3
+q_b[28] <= ram_block1a4.PORTBDATAOUT3
+q_b[29] <= ram_block1a5.PORTBDATAOUT3
+q_b[30] <= ram_block1a6.PORTBDATAOUT3
+q_b[31] <= ram_block1a7.PORTBDATAOUT3
+wren_a => ram_block1a0.PORTAWE
+wren_a => ram_block1a1.PORTAWE
+wren_a => ram_block1a2.PORTAWE
+wren_a => ram_block1a3.PORTAWE
+wren_a => ram_block1a4.PORTAWE
+wren_a => ram_block1a5.PORTAWE
+wren_a => ram_block1a6.PORTAWE
+wren_a => ram_block1a7.PORTAWE
+wren_b => ram_block1a0.PORTBRE
+wren_b => ram_block1a1.PORTBRE
+wren_b => ram_block1a2.PORTBRE
+wren_b => ram_block1a3.PORTBRE
+wren_b => ram_block1a4.PORTBRE
+wren_b => ram_block1a5.PORTBRE
+wren_b => ram_block1a6.PORTBRE
+wren_b => ram_block1a7.PORTBRE
 
 
